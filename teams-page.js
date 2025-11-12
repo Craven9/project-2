@@ -11,6 +11,25 @@ export class TeamsPage extends HTMLElement {
         margin: 0 auto;
         font-family: Arial, sans-serif;
       ">
+        <!-- Back Button -->
+        <div style="margin-bottom: 30px;">
+          <button id="back-btn" style="
+            background: transparent;
+            color: #1e3a8a;
+            border: 2px solid #1e3a8a;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+          " onmouseover="this.style.backgroundColor='#1e3a8a'; this.style.color='white'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#1e3a8a'">
+            ← Back to Home
+          </button>
+        </div>
+        
         <h1 style="
           text-align: center;
           color: #1e3a8a;
@@ -110,6 +129,19 @@ export class TeamsPage extends HTMLElement {
         </div>
       </div>
     `;
+    
+    // Add event listener for back button
+    setTimeout(() => {
+      const backBtn = this.querySelector('#back-btn');
+      if (backBtn) {
+        backBtn.addEventListener('click', () => {
+          this.dispatchEvent(new CustomEvent('navigate', { 
+            detail: { page: 'home' },
+            bubbles: true 
+          }));
+        });
+      }
+    }, 0);
   }
 }
 
