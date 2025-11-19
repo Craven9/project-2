@@ -120,6 +120,17 @@ export class HomePage extends DDDSuper(LitElement) {
       box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
     }
 
+    .btn-success {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      color: var(--ddd-theme-default-white, #ffffff);
+      border: 2px solid transparent;
+    }
+
+    .btn-success:hover {
+      background: linear-gradient(135deg, #059669 0%, #047857 100%);
+      box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+    }
+
     .btn:hover {
       transform: translateY(-2px);
       box-shadow: var(--ddd-boxShadow-lg);
@@ -248,6 +259,9 @@ export class HomePage extends DDDSuper(LitElement) {
               </button>
               <button class="btn btn-secondary" @click="${(e) => this._navigate('teams', e)}">
                 Explore Teams
+              </button>
+              <button class="btn btn-success" @click="${(e) => this._navigate('register', e)}">
+                Register Team
               </button>
             </div>
           </div>

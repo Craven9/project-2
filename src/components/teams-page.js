@@ -4,7 +4,8 @@ import { DDDSuper } from '@haxtheweb/d-d-d/d-d-d.js';
 export class TeamsPage extends DDDSuper(LitElement) {
   static properties = {
     active: { type: Boolean, reflect: true },
-    teams: { type: Array }
+    teams: { type: Array },
+    registeredTeams: { type: Array }
   };
 
   static styles = css`
@@ -176,6 +177,7 @@ export class TeamsPage extends DDDSuper(LitElement) {
 
   constructor() {
     super();
+    this.registeredTeams = [];
     this.teams = [
       {
         id: 1,
@@ -241,7 +243,7 @@ export class TeamsPage extends DDDSuper(LitElement) {
         </div>
 
         <div class="teams-grid">
-          ${this.teams.map(team => html`
+          ${[...this.teams, ...this.registeredTeams].map(team => html`
             <div class="team-card">
               <div class="team-logo" style="background-color: ${team.color}">
                 ${this._getTeamInitials(team.name)}

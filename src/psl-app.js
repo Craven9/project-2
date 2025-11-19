@@ -4,10 +4,12 @@ import './components/home-page.js';
 import './components/schedule-page.js';
 import './components/teams-page.js';
 import './components/stats-page.js';
+import './components/register-page.js';
 
 export class PslApp extends DDDSuper(LitElement) {
   static properties = {
-    page: { type: String, reflect: true }
+    page: { type: String, reflect: true },
+    teams: { type: Array }
   };
 
   static styles = css`
@@ -42,12 +44,15 @@ export class PslApp extends DDDSuper(LitElement) {
   constructor() {
     super();
     this.page = 'home';
+    this.teams = [];
     this._handlePopState = this._handlePopState.bind(this);
+    this._handleTeamRegistration = this._handleTeamRegistration.bind(this);
   }
 
   connectedCallback() {
     super.connectedCallback();
     window.addEventListener('popstate', this._handlePopState);
+    this.addEventListener('team-registered', this._handleTeamRegistration);
     this._handleRouting();
   }
 
@@ -68,7 +73,8 @@ export class PslApp extends DDDSuper(LitElement) {
       '/': 'home',
       '/schedule': 'schedule',
       '/teams': 'teams',
-      '/stats': 'stats'
+      '/stats': 'stats',
+      '/register': 'register'
     };
 
     this.page = routes[path] || 'home';
@@ -80,12 +86,18 @@ export class PslApp extends DDDSuper(LitElement) {
       'home': '/',
       'schedule': '/schedule',
       'teams': '/teams',
-      'stats': '/stats'
+      'stats': '/stats',
+      'register': '/register'
     };
 
     const url = routes[page] || '/';
     window.history.pushState({}, '', url);
     this.page = page;
+  }
+
+  _handleTeamRegistration(event) {
+    // Add the new team to the teams array
+    this.teams = [...this.teams, event.detail.team];
   }
 
   render() {
@@ -106,6 +118,7 @@ export class PslApp extends DDDSuper(LitElement) {
         <teams-page 
           class="page" 
           ?active="${this.page === 'teams'}"
+          .registeredTeams="${this.teams}"
           @navigate="${(e) => this.navigate(e.detail.page)}">
         </teams-page>
         
@@ -114,6 +127,12 @@ export class PslApp extends DDDSuper(LitElement) {
           ?active="${this.page === 'stats'}"
           @navigate="${(e) => this.navigate(e.detail.page)}">
         </stats-page>
+
+        <register-page 
+          class="page" 
+          ?active="${this.page === 'register'}"
+          @navigate="${(e) => this.navigate(e.detail.page)}">
+        </register-page>
       </div>
     `;
   }
