@@ -83,7 +83,7 @@ export class StatsPage extends HTMLElement {
               box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
             ">
               <div style="font-size: 32px; margin-bottom: 10px;">⚽</div>
-              <div style="font-size: 36px; font-weight: 900; margin-bottom: 5px;">127</div>
+              <div style="font-size: 36px; font-weight: 900; margin-bottom: 5px;">89</div>
               <div style="font-size: 14px; opacity: 0.9;">Total Goals Scored</div>
             </div>
             
@@ -96,7 +96,7 @@ export class StatsPage extends HTMLElement {
               box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
             ">
               <div style="font-size: 32px; margin-bottom: 10px;">🏆</div>
-              <div style="font-size: 36px; font-weight: 900; margin-bottom: 5px;">32</div>
+              <div style="font-size: 36px; font-weight: 900; margin-bottom: 5px;">19</div>
               <div style="font-size: 14px; opacity: 0.9;">Games Played</div>
             </div>
             
@@ -109,7 +109,7 @@ export class StatsPage extends HTMLElement {
               box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
             ">
               <div style="font-size: 32px; margin-bottom: 10px;">👥</div>
-              <div style="font-size: 36px; font-weight: 900; margin-bottom: 5px;">54</div>
+              <div style="font-size: 36px; font-weight: 900; margin-bottom: 5px;">108</div>
               <div style="font-size: 14px; opacity: 0.9;">Active Players</div>
             </div>
             
@@ -122,7 +122,7 @@ export class StatsPage extends HTMLElement {
               box-shadow: 0 8px 25px rgba(139, 92, 246, 0.3);
             ">
               <div style="font-size: 32px; margin-bottom: 10px;">📊</div>
-              <div style="font-size: 36px; font-weight: 900; margin-bottom: 5px;">3.97</div>
+              <div style="font-size: 36px; font-weight: 900; margin-bottom: 5px;">4.68</div>
               <div style="font-size: 14px; opacity: 0.9;">Avg Goals/Game</div>
             </div>
           </div>
@@ -174,46 +174,101 @@ export class StatsPage extends HTMLElement {
                     <tr style="border-bottom: 1px solid #e2e8f0; background: linear-gradient(90deg, rgba(16, 185, 129, 0.1), transparent);">
                       <td style="padding: 15px 10px; font-weight: 700; color: #10b981;">1</td>
                       <td style="padding: 15px 10px; font-weight: 600; color: #1e3a8a;">Nittany Lions FC</td>
-                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">8</td>
-                      <td style="padding: 15px 10px; text-align: center; color: #10b981; font-weight: 600;">6</td>
-                      <td style="padding: 15px 10px; text-align: center; color: #ef4444;">1</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">4</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #10b981; font-weight: 600;">3</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #ef4444;">0</td>
                       <td style="padding: 15px 10px; text-align: center; color: #6b7280;">1</td>
-                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">18</td>
-                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">7</td>
-                      <td style="padding: 15px 10px; text-align: center; font-weight: 700; color: #1e3a8a;">19</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">12</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">4</td>
+                      <td style="padding: 15px 10px; text-align: center; font-weight: 700; color: #1e3a8a;">10</td>
                     </tr>
                     <tr style="border-bottom: 1px solid #e2e8f0;">
                       <td style="padding: 15px 10px; font-weight: 700; color: #6b7280;">2</td>
                       <td style="padding: 15px 10px; font-weight: 600; color: #1e3a8a;">Penn State United</td>
-                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">8</td>
-                      <td style="padding: 15px 10px; text-align: center; color: #10b981; font-weight: 600;">5</td>
-                      <td style="padding: 15px 10px; text-align: center; color: #ef4444;">2</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">3</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #10b981; font-weight: 600;">2</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #ef4444;">0</td>
                       <td style="padding: 15px 10px; text-align: center; color: #6b7280;">1</td>
-                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">16</td>
                       <td style="padding: 15px 10px; text-align: center; color: #6b7280;">9</td>
-                      <td style="padding: 15px 10px; text-align: center; font-weight: 700; color: #1e3a8a;">16</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">3</td>
+                      <td style="padding: 15px 10px; text-align: center; font-weight: 700; color: #1e3a8a;">7</td>
                     </tr>
                     <tr style="border-bottom: 1px solid #e2e8f0;">
                       <td style="padding: 15px 10px; font-weight: 700; color: #6b7280;">3</td>
-                      <td style="padding: 15px 10px; font-weight: 600; color: #1e3a8a;">Blue & White SC</td>
+                      <td style="padding: 15px 10px; font-weight: 600; color: #1e3a8a;">State College FC</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">2</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #10b981; font-weight: 600;">2</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #ef4444;">0</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">0</td>
                       <td style="padding: 15px 10px; text-align: center; color: #6b7280;">8</td>
-                      <td style="padding: 15px 10px; text-align: center; color: #10b981; font-weight: 600;">4</td>
-                      <td style="padding: 15px 10px; text-align: center; color: #ef4444;">3</td>
-                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">1</td>
-                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">14</td>
-                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">11</td>
-                      <td style="padding: 15px 10px; text-align: center; font-weight: 700; color: #1e3a8a;">13</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">2</td>
+                      <td style="padding: 15px 10px; text-align: center; font-weight: 700; color: #1e3a8a;">6</td>
                     </tr>
                     <tr style="border-bottom: 1px solid #e2e8f0;">
                       <td style="padding: 15px 10px; font-weight: 700; color: #6b7280;">4</td>
-                      <td style="padding: 15px 10px; font-weight: 600; color: #1e3a8a;">Happy Valley FC</td>
-                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">8</td>
-                      <td style="padding: 15px 10px; text-align: center; color: #10b981; font-weight: 600;">2</td>
-                      <td style="padding: 15px 10px; text-align: center; color: #ef4444;">5</td>
+                      <td style="padding: 15px 10px; font-weight: 600; color: #1e3a8a;">Blue & White SC</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">2</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #10b981; font-weight: 600;">1</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #ef4444;">0</td>
                       <td style="padding: 15px 10px; text-align: center; color: #6b7280;">1</td>
-                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">8</td>
-                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">16</td>
-                      <td style="padding: 15px 10px; text-align: center; font-weight: 700; color: #1e3a8a;">7</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">6</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">3</td>
+                      <td style="padding: 15px 10px; text-align: center; font-weight: 700; color: #1e3a8a;">4</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 15px 10px; font-weight: 700; color: #6b7280;">5</td>
+                      <td style="padding: 15px 10px; font-weight: 600; color: #1e3a8a;">Centre County SC</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">2</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #10b981; font-weight: 600;">1</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #ef4444;">1</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">0</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">5</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">4</td>
+                      <td style="padding: 15px 10px; text-align: center; font-weight: 700; color: #1e3a8a;">3</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 15px 10px; font-weight: 700; color: #6b7280;">6</td>
+                      <td style="padding: 15px 10px; font-weight: 600; color: #1e3a8a;">Beaver Stadium FC</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">2</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #10b981; font-weight: 600;">1</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #ef4444;">1</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">0</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">4</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">5</td>
+                      <td style="padding: 15px 10px; text-align: center; font-weight: 700; color: #1e3a8a;">3</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 15px 10px; font-weight: 700; color: #6b7280;">7</td>
+                      <td style="padding: 15px 10px; font-weight: 600; color: #1e3a8a;">University Park United</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">1</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #10b981; font-weight: 600;">0</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #ef4444;">0</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">1</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">3</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">3</td>
+                      <td style="padding: 15px 10px; text-align: center; font-weight: 700; color: #1e3a8a;">1</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 15px 10px; font-weight: 700; color: #6b7280;">8</td>
+                      <td style="padding: 15px 10px; font-weight: 600; color: #1e3a8a;">Mount Nittany FC</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">1</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #10b981; font-weight: 600;">0</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #ef4444;">1</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">0</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">2</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">4</td>
+                      <td style="padding: 15px 10px; text-align: center; font-weight: 700; color: #1e3a8a;">0</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 15px 10px; font-weight: 700; color: #6b7280;">9</td>
+                      <td style="padding: 15px 10px; font-weight: 600; color: #1e3a8a;">Happy Valley FC</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">2</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #10b981; font-weight: 600;">0</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #ef4444;">2</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">0</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">1</td>
+                      <td style="padding: 15px 10px; text-align: center; color: #6b7280;">7</td>
+                      <td style="padding: 15px 10px; text-align: center; font-weight: 700; color: #1e3a8a;">0</td>
                     </tr>
                   </tbody>
                 </table>
@@ -261,7 +316,7 @@ export class StatsPage extends HTMLElement {
                         border-radius: 12px;
                         font-weight: 700;
                         font-size: 14px;
-                      ">12</div>
+                      ">8</div>
                     </div>
 
                     <div style="
@@ -273,7 +328,29 @@ export class StatsPage extends HTMLElement {
                       border-radius: 8px;
                     ">
                       <div>
-                        <div style="font-weight: 600; color: #1e3a8a; font-size: 14px;">Sarah Chen</div>
+                        <div style="font-weight: 600; color: #1e3a8a; font-size: 14px;">David Chen</div>
+                        <div style="font-size: 12px; color: #6b7280;">State College FC</div>
+                      </div>
+                      <div style="
+                        background: #6b7280;
+                        color: white;
+                        padding: 5px 10px;
+                        border-radius: 12px;
+                        font-weight: 700;
+                        font-size: 14px;
+                      ">6</div>
+                    </div>
+
+                    <div style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      padding: 10px;
+                      background: #f8fafc;
+                      border-radius: 8px;
+                    ">
+                      <div>
+                        <div style="font-weight: 600; color: #1e3a8a; font-size: 14px;">Sarah Martinez</div>
                         <div style="font-size: 12px; color: #6b7280;">Penn State United</div>
                       </div>
                       <div style="
@@ -283,7 +360,7 @@ export class StatsPage extends HTMLElement {
                         border-radius: 12px;
                         font-weight: 700;
                         font-size: 14px;
-                      ">9</div>
+                      ">5</div>
                     </div>
 
                     <div style="
@@ -305,7 +382,7 @@ export class StatsPage extends HTMLElement {
                         border-radius: 12px;
                         font-weight: 700;
                         font-size: 14px;
-                      ">8</div>
+                      ">4</div>
                     </div>
 
                     <div style="
@@ -317,8 +394,8 @@ export class StatsPage extends HTMLElement {
                       border-radius: 8px;
                     ">
                       <div>
-                        <div style="font-weight: 600; color: #1e3a8a; font-size: 14px;">Jordan Smith</div>
-                        <div style="font-size: 12px; color: #6b7280;">Nittany Lions FC</div>
+                        <div style="font-weight: 600; color: #1e3a8a; font-size: 14px;">Jamie Thompson</div>
+                        <div style="font-size: 12px; color: #6b7280;">Centre County SC</div>
                       </div>
                       <div style="
                         background: #6b7280;
@@ -327,7 +404,7 @@ export class StatsPage extends HTMLElement {
                         border-radius: 12px;
                         font-weight: 700;
                         font-size: 14px;
-                      ">7</div>
+                      ">4</div>
                     </div>
 
                   </div>
@@ -360,7 +437,7 @@ export class StatsPage extends HTMLElement {
                         margin-bottom: 5px;
                       ">
                         <span style="font-size: 14px; color: #6b7280;">Goals per Game</span>
-                        <span style="font-size: 14px; font-weight: 600; color: #1e3a8a;">3.97</span>
+                        <span style="font-size: 14px; font-weight: 600; color: #1e3a8a;">4.68</span>
                       </div>
                       <div style="
                         width: 100%;
@@ -370,7 +447,7 @@ export class StatsPage extends HTMLElement {
                         overflow: hidden;
                       ">
                         <div style="
-                          width: 79%;
+                          width: 94%;
                           height: 100%;
                           background: linear-gradient(90deg, #8b5cf6, #a78bfa);
                         "></div>
@@ -383,32 +460,8 @@ export class StatsPage extends HTMLElement {
                         justify-content: space-between;
                         margin-bottom: 5px;
                       ">
-                        <span style="font-size: 14px; color: #6b7280;">Average Attendance</span>
-                        <span style="font-size: 14px; font-weight: 600; color: #1e3a8a;">142</span>
-                      </div>
-                      <div style="
-                        width: 100%;
-                        height: 8px;
-                        background: #e2e8f0;
-                        border-radius: 4px;
-                        overflow: hidden;
-                      ">
-                        <div style="
-                          width: 71%;
-                          height: 100%;
-                          background: linear-gradient(90deg, #10b981, #34d399);
-                        "></div>
-                      </div>
-                    </div>
-
-                    <div>
-                      <div style="
-                        display: flex;
-                        justify-content: space-between;
-                        margin-bottom: 5px;
-                      ">
                         <span style="font-size: 14px; color: #6b7280;">Fair Play Score</span>
-                        <span style="font-size: 14px; font-weight: 600; color: #1e3a8a;">8.4/10</span>
+                        <span style="font-size: 14px; font-weight: 600; color: #1e3a8a;">8.7/10</span>
                       </div>
                       <div style="
                         width: 100%;
@@ -418,7 +471,7 @@ export class StatsPage extends HTMLElement {
                         overflow: hidden;
                       ">
                         <div style="
-                          width: 84%;
+                          width: 87%;
                           height: 100%;
                           background: linear-gradient(90deg, #f59e0b, #fbbf24);
                         "></div>

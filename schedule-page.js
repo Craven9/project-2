@@ -2,59 +2,10 @@ export class SchedulePage extends HTMLElement {
   constructor() {
     super();
     this.scheduleData = [
-      {
-        id: 1,
-        date: '2025-01-15',
-        team1: 'Nittany Lions FC',
-        team2: 'Penn State United',
-        time: '3:00 PM',
-        location: 'Field A',
-        type: 'regular',
-        status: 'upcoming'
-      },
-      {
-        id: 2,
-        date: '2025-01-18',
-        team1: 'Blue & White SC',
-        team2: 'Happy Valley FC',
-        time: '5:30 PM',
-        location: 'Field B',
-        type: 'regular',
-        status: 'upcoming'
-      },
-      {
-        id: 3,
-        date: '2025-01-22',
-        team1: 'Nittany Lions FC',
-        team2: 'Blue & White SC',
-        time: '2:00 PM',
-        location: 'Main Stadium',
-        type: 'playoff',
-        status: 'upcoming'
-      },
-      {
-        id: 4,
-        date: '2025-01-25',
-        team1: 'Penn State United',
-        team2: 'Happy Valley FC',
-        time: '4:00 PM',
-        location: 'Field A',
-        type: 'regular',
-        status: 'upcoming'
-      },
-      {
-        id: 5,
-        date: '2025-01-29',
-        team1: 'TBD',
-        team2: 'TBD',
-        time: '7:00 PM',
-        location: 'Main Stadium',
-        type: 'final',
-        status: 'upcoming'
-      },
+      // Completed Games (Past dates)
       {
         id: 6,
-        date: '2025-01-08',
+        date: '2025-11-01',
         team1: 'Nittany Lions FC',
         team2: 'Happy Valley FC',
         time: '3:00 PM',
@@ -64,13 +15,176 @@ export class SchedulePage extends HTMLElement {
       },
       {
         id: 7,
-        date: '2025-01-12',
+        date: '2025-11-03',
         team1: 'Penn State United',
         team2: 'Blue & White SC',
         time: '5:30 PM',
         location: 'Field B',
         type: 'regular',
         status: 'completed'
+      },
+      {
+        id: 8,
+        date: '2025-11-05',
+        team1: 'State College FC',
+        team2: 'University Park United',
+        time: '2:00 PM',
+        location: 'Field C',
+        type: 'regular',
+        status: 'completed'
+      },
+      {
+        id: 9,
+        date: '2025-11-08',
+        team1: 'Centre County SC',
+        team2: 'Mount Nittany FC',
+        time: '4:30 PM',
+        location: 'Field A',
+        type: 'regular',
+        status: 'completed'
+      },
+      {
+        id: 10,
+        date: '2025-11-10',
+        team1: 'Beaver Stadium FC',
+        team2: 'Happy Valley FC',
+        time: '1:00 PM',
+        location: 'Field B',
+        type: 'regular',
+        status: 'completed'
+      },
+      {
+        id: 11,
+        date: '2025-11-12',
+        team1: 'Nittany Lions FC',
+        team2: 'Centre County SC',
+        time: '6:00 PM',
+        location: 'Main Stadium',
+        type: 'regular',
+        status: 'completed'
+      },
+      {
+        id: 12,
+        date: '2025-11-15',
+        team1: 'Penn State United',
+        team2: 'Beaver Stadium FC',
+        time: '3:30 PM',
+        location: 'Field C',
+        type: 'regular',
+        status: 'completed'
+      },
+      // Upcoming Regular Season Games
+      {
+        id: 1,
+        date: '2025-11-20',
+        team1: 'Nittany Lions FC',
+        team2: 'Penn State United',
+        time: '3:00 PM',
+        location: 'Field A',
+        type: 'regular',
+        status: 'upcoming'
+      },
+      {
+        id: 2,
+        date: '2025-11-22',
+        team1: 'Blue & White SC',
+        team2: 'State College FC',
+        time: '5:30 PM',
+        location: 'Field B',
+        type: 'regular',
+        status: 'upcoming'
+      },
+      {
+        id: 13,
+        date: '2025-11-23',
+        team1: 'University Park United',
+        team2: 'Mount Nittany FC',
+        time: '2:30 PM',
+        location: 'Field C',
+        type: 'regular',
+        status: 'upcoming'
+      },
+      {
+        id: 14,
+        date: '2025-11-25',
+        team1: 'Centre County SC',
+        team2: 'Beaver Stadium FC',
+        time: '4:00 PM',
+        location: 'Field A',
+        type: 'regular',
+        status: 'upcoming'
+      },
+      {
+        id: 4,
+        date: '2025-11-27',
+        team1: 'Penn State United',
+        team2: 'Happy Valley FC',
+        time: '4:00 PM',
+        location: 'Field A',
+        type: 'regular',
+        status: 'upcoming'
+      },
+      {
+        id: 15,
+        date: '2025-11-29',
+        team1: 'Blue & White SC',
+        team2: 'University Park United',
+        time: '1:30 PM',
+        location: 'Field B',
+        type: 'regular',
+        status: 'upcoming'
+      },
+      {
+        id: 16,
+        date: '2025-12-01',
+        team1: 'State College FC',
+        team2: 'Mount Nittany FC',
+        time: '3:00 PM',
+        location: 'Field C',
+        type: 'regular',
+        status: 'upcoming'
+      },
+      {
+        id: 17,
+        date: '2025-12-03',
+        team1: 'Nittany Lions FC',
+        team2: 'Beaver Stadium FC',
+        time: '5:00 PM',
+        location: 'Main Stadium',
+        type: 'regular',
+        status: 'upcoming'
+      },
+      // Playoff Games (After regular season)
+      {
+        id: 3,
+        date: '2025-12-08',
+        team1: 'Nittany Lions FC',
+        team2: 'Blue & White SC',
+        time: '2:00 PM',
+        location: 'Main Stadium',
+        type: 'playoff',
+        status: 'upcoming'
+      },
+      {
+        id: 18,
+        date: '2025-12-08',
+        team1: 'Penn State United',
+        team2: 'State College FC',
+        time: '5:00 PM',
+        location: 'Main Stadium',
+        type: 'playoff',
+        status: 'upcoming'
+      },
+      // Final Game (After playoffs)
+      {
+        id: 5,
+        date: '2025-12-15',
+        team1: 'TBD',
+        team2: 'TBD',
+        time: '7:00 PM',
+        location: 'Main Stadium',
+        type: 'final',
+        status: 'upcoming'
       }
     ];
     this.filteredData = this.scheduleData;
@@ -132,7 +246,14 @@ export class SchedulePage extends HTMLElement {
       return;
     }
 
-    tableBody.innerHTML = this.filteredData.map(game => `
+    // Sort games by date (closest first)
+    const sortedData = [...this.filteredData].sort((a, b) => {
+      const dateA = new Date(a.date);
+      const dateB = new Date(b.date);
+      return dateA - dateB;
+    });
+
+    tableBody.innerHTML = sortedData.map(game => `
       <tr style="
         border-bottom: 1px solid #e2e8f0;
         transition: background-color 0.3s ease;
@@ -322,6 +443,11 @@ export class SchedulePage extends HTMLElement {
                 <option value="Penn State United">Penn State United</option>
                 <option value="Blue & White SC">Blue & White SC</option>
                 <option value="Happy Valley FC">Happy Valley FC</option>
+                <option value="State College FC">State College FC</option>
+                <option value="University Park United">University Park United</option>
+                <option value="Centre County SC">Centre County SC</option>
+                <option value="Mount Nittany FC">Mount Nittany FC</option>
+                <option value="Beaver Stadium FC">Beaver Stadium FC</option>
               </select>
             </div>
             

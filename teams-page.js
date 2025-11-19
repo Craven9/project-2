@@ -8,8 +8,8 @@ export class TeamsPage extends HTMLElement {
         title: "Nittany Lions FC",
         description: "The pride of Penn State soccer! Known for their aggressive offensive play and team unity. Our most successful team with multiple championship titles.",
         color: "#1e3a8a",
-        wins: 6,
-        losses: 1,
+        wins: 3,
+        losses: 0,
         draws: 1,
         captain: "Marcus Johnson",
         coach: "Coach Sarah Williams",
@@ -34,10 +34,10 @@ export class TeamsPage extends HTMLElement {
         title: "Penn State United",
         description: "A team built on teamwork and strategic play. Known for their solid defense and quick counter-attacks. Always a tough opponent!",
         color: "#dc2626",
-        wins: 5,
-        losses: 2,
+        wins: 2,
+        losses: 0,
         draws: 1,
-        captain: "Sarah Chen",
+        captain: "Sarah Martinez",
         coach: "Coach Mike Thompson",
         homeField: "IM Fields Complex",
         founded: "2020",
@@ -48,63 +48,193 @@ export class TeamsPage extends HTMLElement {
           "Sportsmanship Champions 2023"
         ],
         roster: [
-          { number: 9, name: "Sarah Chen", position: "Striker", year: "Senior" },
-          { number: 6, name: "Michael Park", position: "Midfielder", year: "Junior" },
-          { number: 3, name: "Lisa Wang", position: "Defender", year: "Sophomore" },
-          { number: 12, name: "Tyler Brooks", position: "Forward", year: "Senior" },
-          { number: 2, name: "Amanda Foster", position: "Defender", year: "Junior" }
+          { number: 9, name: "Sarah Martinez", position: "Striker", year: "Senior" },
+          { number: 6, name: "Mike Rodriguez", position: "Midfielder", year: "Junior" },
+          { number: 1, name: "Taylor Brooks", position: "Goalkeeper", year: "Freshman" },
+          { number: 4, name: "Jessica Lee", position: "Defender", year: "Sophomore" },
+          { number: 8, name: "Daniel Kim", position: "Winger", year: "Senior" }
         ]
       },
       {
         id: 3,
         title: "Blue & White SC",
-        description: "Representing the classic Penn State colors with pride! A balanced team with strong midfield control and excellent team chemistry.",
+        description: "Athletic and competitive team known for their speed and agility. They bring energy and excitement to every match with their dynamic playstyle.",
         color: "#059669",
-        wins: 4,
-        losses: 3,
+        wins: 1,
+        losses: 0,
         draws: 1,
         captain: "Alex Rodriguez",
-        coach: "Coach Jennifer Martinez",
-        homeField: "Recreation Park",
+        coach: "Coach Lisa Martinez",
+        homeField: "Penn State Practice Fields",
         founded: "2021",
-        teamImage: "https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        teamImage: "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         achievements: [
-          "Best Newcomer Team 2021",
-          "Most Goals Scored in 2023",
-          "Team Spirit Award 2024"
+          "Fastest Rising Team 2024",
+          "Best Team Spirit Award",
+          "Youth Development Champions"
         ],
         roster: [
-          { number: 8, name: "Alex Rodriguez", position: "Midfielder", year: "Senior" },
-          { number: 4, name: "Rachel Green", position: "Defender", year: "Junior" },
-          { number: 15, name: "Kevin Liu", position: "Forward", year: "Sophomore" },
-          { number: 13, name: "Maya Patel", position: "Midfielder", year: "Freshman" },
-          { number: 21, name: "Jake Wilson", position: "Goalkeeper", year: "Junior" }
+          { number: 10, name: "Alex Rodriguez", position: "Forward", year: "Junior" },
+          { number: 7, name: "Maria Santos", position: "Midfielder", year: "Sophomore" },
+          { number: 1, name: "Ryan Mitchell", position: "Goalkeeper", year: "Senior" },
+          { number: 3, name: "Ashley Wang", position: "Defender", year: "Junior" },
+          { number: 11, name: "Tyler Johnson", position: "Winger", year: "Freshman" }
         ]
       },
       {
         id: 4,
         title: "Happy Valley FC",
-        description: "Named after our beloved Happy Valley! This team embodies the fun and competitive spirit of PSL with creative plays and boundless energy.",
-        color: "#f59e0b",
-        wins: 2,
-        losses: 5,
-        draws: 1,
-        captain: "Taylor Martinez",
-        coach: "Coach David Kim",
-        homeField: "University Park Fields",
+        description: "Community-focused team that emphasizes fun and sportsmanship. Despite being newer to the league, they show great potential and team chemistry.",
+        color: "#7c3aed",
+        wins: 0,
+        losses: 2,
+        draws: 0,
+        captain: "Jamie Foster",
+        coach: "Coach David Park",
+        homeField: "Happy Valley Community Field",
         founded: "2022",
-        teamImage: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        teamImage: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         achievements: [
-          "Most Creative Plays 2024",
-          "Rising Stars Award 2023",
-          "Best Team Celebration 2024"
+          "Community Choice Award 2024",
+          "Best Newcomer Team 2023",
+          "Fan Favorite Team"
         ],
         roster: [
-          { number: 14, name: "Taylor Martinez", position: "Forward", year: "Junior" },
-          { number: 16, name: "Samantha Lee", position: "Midfielder", year: "Sophomore" },
-          { number: 17, name: "Carlos Silva", position: "Defender", year: "Senior" },
-          { number: 19, name: "Jessica Brown", position: "Winger", year: "Freshman" },
-          { number: 20, name: "Ryan Thomas", position: "Goalkeeper", year: "Junior" }
+          { number: 9, name: "Jamie Foster", position: "Striker", year: "Senior" },
+          { number: 8, name: "Kevin Liu", position: "Midfielder", year: "Junior" },
+          { number: 1, name: "Samantha Gray", position: "Goalkeeper", year: "Sophomore" },
+          { number: 2, name: "Brandon Torres", position: "Defender", year: "Freshman" },
+          { number: 10, name: "Nicole Adams", position: "Forward", year: "Junior" }
+        ]
+      },
+      {
+        id: 5,
+        title: "State College FC",
+        description: "Technical and disciplined team with excellent ball control and strategic gameplay. Known for their precision and tactical awareness.",
+        color: "#ea580c",
+        wins: 2,
+        losses: 0,
+        draws: 0,
+        captain: "David Chen",
+        coach: "Coach Amanda Rodriguez",
+        homeField: "State College Municipal Stadium",
+        founded: "2020",
+        teamImage: "https://images.unsplash.com/photo-1553778263-73a83bab9b0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        achievements: [
+          "Technical Excellence Award 2024",
+          "Best Tactical Team 2023",
+          "Precision Play Champions"
+        ],
+        roster: [
+          { number: 10, name: "David Chen", position: "Attacking Midfielder", year: "Senior" },
+          { number: 6, name: "Isabella Moore", position: "Central Midfielder", year: "Junior" },
+          { number: 1, name: "Marcus Thompson", position: "Goalkeeper", year: "Sophomore" },
+          { number: 4, name: "Luis Hernandez", position: "Center Back", year: "Senior" },
+          { number: 7, name: "Rachel Kim", position: "Winger", year: "Freshman" }
+        ]
+      },
+      {
+        id: 6,
+        title: "University Park United",
+        description: "Young and ambitious team with fresh energy and modern playing style. They bring innovation and creativity to their matches.",
+        color: "#0891b2",
+        wins: 0,
+        losses: 0,
+        draws: 1,
+        captain: "Taylor Anderson",
+        coach: "Coach Robert Kim",
+        homeField: "University Park Sports Complex",
+        founded: "2023",
+        teamImage: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        achievements: [
+          "Most Creative Team 2024",
+          "Innovation in Play Award",
+          "Rising Stars Recognition"
+        ],
+        roster: [
+          { number: 11, name: "Taylor Anderson", position: "Forward", year: "Sophomore" },
+          { number: 8, name: "Jordan Williams", position: "Midfielder", year: "Freshman" },
+          { number: 1, name: "Casey Martinez", position: "Goalkeeper", year: "Junior" },
+          { number: 3, name: "Morgan Davis", position: "Defender", year: "Sophomore" },
+          { number: 9, name: "Riley Jackson", position: "Striker", year: "Freshman" }
+        ]
+      },
+      {
+        id: 7,
+        title: "Centre County SC",
+        description: "Strong regional team with deep community roots and passionate fanbase. Known for their resilience and never-give-up attitude.",
+        color: "#be185d",
+        wins: 1,
+        losses: 1,
+        draws: 0,
+        captain: "Jamie Thompson",
+        coach: "Coach Patricia Wilson",
+        homeField: "Centre County Regional Field",
+        founded: "2021",
+        teamImage: "https://images.unsplash.com/photo-1577223625816-7546f13df25d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        achievements: [
+          "Community Spirit Award 2024",
+          "Best Regional Team 2023",
+          "Resilience Champions"
+        ],
+        roster: [
+          { number: 10, name: "Jamie Thompson", position: "Attacking Midfielder", year: "Senior" },
+          { number: 5, name: "Austin Carter", position: "Defensive Midfielder", year: "Junior" },
+          { number: 1, name: "Megan Foster", position: "Goalkeeper", year: "Sophomore" },
+          { number: 2, name: "Carlos Ruiz", position: "Fullback", year: "Senior" },
+          { number: 7, name: "Sophia Park", position: "Winger", year: "Freshman" }
+        ]
+      },
+      {
+        id: 8,
+        title: "Mount Nittany FC",
+        description: "Mountain-inspired team with strong defensive play and endurance. They're known for their physical fitness and stamina throughout matches.",
+        color: "#059669",
+        wins: 0,
+        losses: 1,
+        draws: 0,
+        captain: "Alex Mountain",
+        coach: "Coach Jennifer Lee",
+        homeField: "Mount Nittany Sports Park",
+        founded: "2022",
+        teamImage: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        achievements: [
+          "Best Fitness Team 2024",
+          "Endurance Champions 2023",
+          "Mountain Spirit Award"
+        ],
+        roster: [
+          { number: 6, name: "Alex Mountain", position: "Defensive Midfielder", year: "Senior" },
+          { number: 9, name: "Sierra Ridge", position: "Forward", year: "Junior" },
+          { number: 1, name: "Peak Goalkeeper", position: "Goalkeeper", year: "Sophomore" },
+          { number: 4, name: "Rocky Defense", position: "Center Back", year: "Senior" },
+          { number: 11, name: "Valley Sprint", position: "Winger", year: "Freshman" }
+        ]
+      },
+      {
+        id: 9,
+        title: "Beaver Stadium FC",
+        description: "Stadium-based team with strong home field advantage and passionate supporters. They excel in high-pressure situations and big games.",
+        color: "#7c2d12",
+        wins: 1,
+        losses: 1,
+        draws: 0,
+        captain: "Stadium Captain",
+        coach: "Coach Mark Stevens",
+        homeField: "Beaver Stadium Practice Field",
+        founded: "2020",
+        teamImage: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        achievements: [
+          "Home Field Champions 2024",
+          "Big Game Specialists 2023",
+          "Stadium Spirit Award"
+        ],
+        roster: [
+          { number: 12, name: "Stadium Captain", position: "Captain/Midfielder", year: "Senior" },
+          { number: 10, name: "Goal Scorer", position: "Striker", year: "Junior" },
+          { number: 1, name: "Net Guardian", position: "Goalkeeper", year: "Sophomore" },
+          { number: 3, name: "Wall Defender", position: "Defender", year: "Senior" },
+          { number: 7, name: "Speed Runner", position: "Winger", year: "Freshman" }
         ]
       }
     ];
@@ -316,20 +446,7 @@ export class TeamsPage extends HTMLElement {
           background-size: cover;
           background-position: center;
         ">
-          <div style="text-align: center;">
-            <div style="
-              background: ${team.color};
-              color: white;
-              border-radius: 50%;
-              width: 80px;
-              height: 80px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              font-size: 36px;
-              margin: 0 auto 20px auto;
-              box-shadow: 0 4px 15px ${team.color}40;
-            ">⚽</div>
+         
             <h1 style="
               font-size: 48px;
               color: ${team.color};
@@ -415,10 +532,10 @@ export class TeamsPage extends HTMLElement {
             ">Team Information</h3>
             <div style="space-y: 15px;">
               <div style="padding: 12px; background: #f8fafc; border-radius: 8px; margin-bottom: 10px;">
-                <strong style="color: #374151;">Captain:</strong> ${team.captain}
+                <strong style="color: #374151;">Head Coach:</strong> ${team.coach}
               </div>
               <div style="padding: 12px; background: #f8fafc; border-radius: 8px; margin-bottom: 10px;">
-                <strong style="color: #374151;">Coach:</strong> ${team.coach}
+                <strong style="color: #374151;">Captain:</strong> ${team.captain}
               </div>
               <div style="padding: 12px; background: #f8fafc; border-radius: 8px; margin-bottom: 10px;">
                 <strong style="color: #374151;">Home Field:</strong> ${team.homeField}
