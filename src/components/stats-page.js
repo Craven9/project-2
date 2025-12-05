@@ -113,7 +113,7 @@ export class StatsPage extends DDDSuper(LitElement) {
     }
 
     .stat-label {
-      color: var(--ddd-theme-default-slateMaxLight);
+      color: var(--ddd-theme-default-slateMaxdark);
       font-size: var(--ddd-font-size-lg);
       font-weight: var(--ddd-font-weight-bold);
       text-transform: uppercase;
