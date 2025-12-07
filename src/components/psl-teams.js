@@ -45,13 +45,14 @@ export class PslTeams extends DDDSuper(LitElement) {
       .teams-title {
         font-size: var(--ddd-font-size-3xl, 2.25rem);
         font-weight: var(--ddd-font-weight-bold, 700);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        color: #111; /* darker */
         margin: 0 0 var(--ddd-spacing-2, 0.5rem) 0;
       }
 
       .teams-subtitle {
         font-size: var(--ddd-font-size-lg, 1.125rem);
-        color: var(--ddd-theme-default-slateMaxLight, #666);
+        color: #222; /* darker subtitle */
+        font-weight: 500;
         margin: 0;
       }
 
@@ -70,13 +71,20 @@ export class PslTeams extends DDDSuper(LitElement) {
         align-items: center;
       }
 
+      /* make labels darker and clearer */
+      .teams-filters label {
+        font-size: var(--ddd-font-size-sm, 0.875rem);
+        font-weight: 600;
+        color: #222;
+      }
+
       .filter-select,
       .search-input {
         padding: var(--ddd-spacing-3, 0.75rem);
         border: 2px solid var(--ddd-theme-default-slateLight, #e2e8f0);
         border-radius: var(--ddd-radius-md, 8px);
         font-size: var(--ddd-font-size-sm, 0.875rem);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        color: #111; /* darker input text */
         font-family: var(--ddd-font-primary);
       }
 
@@ -105,7 +113,11 @@ export class PslTeams extends DDDSuper(LitElement) {
       }
 
       .team-header {
-        background: linear-gradient(135deg, var(--ddd-theme-default-skyBlue, #3b82f6), var(--ddd-theme-default-navy, #1e3a8a));
+        background: linear-gradient(
+          135deg,
+          var(--ddd-theme-default-skyBlue, #3b82f6),
+          var(--ddd-theme-default-navy, #1e3a8a)
+        );
         color: var(--ddd-theme-default-white, #fff);
         padding: var(--ddd-spacing-4, 1rem);
         position: relative;
@@ -119,7 +131,7 @@ export class PslTeams extends DDDSuper(LitElement) {
 
       .team-division {
         font-size: var(--ddd-font-size-sm, 0.875rem);
-        opacity: 0.9;
+        opacity: 0.95;
         text-transform: uppercase;
         letter-spacing: 0.5px;
       }
@@ -148,7 +160,7 @@ export class PslTeams extends DDDSuper(LitElement) {
 
       .stat-label {
         font-size: var(--ddd-font-size-xs, 0.75rem);
-        color: var(--ddd-theme-default-slateMaxLight, #666);
+        color: #444; /* darker label text */
         text-transform: uppercase;
         letter-spacing: 0.5px;
         margin: var(--ddd-spacing-1, 0.25rem) 0 0 0;
@@ -172,13 +184,13 @@ export class PslTeams extends DDDSuper(LitElement) {
 
       .detail-label {
         font-size: var(--ddd-font-size-sm, 0.875rem);
-        color: var(--ddd-theme-default-slateMaxLight, #666);
+        color: #444; /* darker */
         font-weight: var(--ddd-font-weight-medium, 500);
       }
 
       .detail-value {
         font-size: var(--ddd-font-size-sm, 0.875rem);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        color: #111; /* darker, stronger */
         font-weight: var(--ddd-font-weight-bold, 700);
       }
 
@@ -186,8 +198,9 @@ export class PslTeams extends DDDSuper(LitElement) {
         text-align: center;
         grid-column: 1 / -1;
         padding: var(--ddd-spacing-8, 3rem);
-        color: var(--ddd-theme-default-slateMaxLight, #666);
+        color: #333; /* darker */
         font-size: var(--ddd-font-size-lg, 1.125rem);
+        font-weight: 500;
       }
 
       @media (max-width: 768px) {

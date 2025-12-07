@@ -45,13 +45,15 @@ export class PslSchedule extends DDDSuper(LitElement) {
       .schedule-title {
         font-size: var(--ddd-font-size-3xl, 2.25rem);
         font-weight: var(--ddd-font-weight-bold, 700);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        color: #111; /* darker */
         margin: 0 0 var(--ddd-spacing-2, 0.5rem) 0;
       }
 
+      /* darker + more readable */
       .schedule-subtitle {
         font-size: var(--ddd-font-size-lg, 1.125rem);
-        color: var(--ddd-theme-default-slateMaxLight, #666);
+        color: #222;
+        font-weight: 500;
         margin: 0;
       }
 
@@ -70,10 +72,11 @@ export class PslSchedule extends DDDSuper(LitElement) {
         align-items: center;
       }
 
+      /* darker label */
       .filter-label {
         font-size: var(--ddd-font-size-sm, 0.875rem);
-        font-weight: var(--ddd-font-weight-medium, 500);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        font-weight: 600;
+        color: #222;
       }
 
       .filter-select {
@@ -81,7 +84,7 @@ export class PslSchedule extends DDDSuper(LitElement) {
         border: 2px solid var(--ddd-theme-default-slateLight, #e2e8f0);
         border-radius: var(--ddd-radius-md, 8px);
         font-size: var(--ddd-font-size-sm, 0.875rem);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        color: #111;
         font-family: var(--ddd-font-primary);
         min-width: 150px;
       }
@@ -100,7 +103,11 @@ export class PslSchedule extends DDDSuper(LitElement) {
       }
 
       .week-header {
-        background: linear-gradient(135deg, var(--ddd-theme-default-skyBlue, #3b82f6), var(--ddd-theme-default-navy, #1e3a8a));
+        background: linear-gradient(
+          135deg,
+          var(--ddd-theme-default-skyBlue, #3b82f6),
+          var(--ddd-theme-default-navy, #1e3a8a)
+        );
         color: var(--ddd-theme-default-white, #fff);
         padding: var(--ddd-spacing-4, 1rem);
       }
@@ -143,13 +150,14 @@ export class PslSchedule extends DDDSuper(LitElement) {
       .team-name {
         font-size: var(--ddd-font-size-base, 1rem);
         font-weight: var(--ddd-font-weight-bold, 700);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        color: #111;
         margin: 0 0 var(--ddd-spacing-1, 0.25rem) 0;
       }
 
+      /* darker division text */
       .team-division {
         font-size: var(--ddd-font-size-xs, 0.75rem);
-        color: var(--ddd-theme-default-slateMaxLight, #666);
+        color: #444;
         text-transform: uppercase;
         letter-spacing: 0.5px;
       }
@@ -166,16 +174,18 @@ export class PslSchedule extends DDDSuper(LitElement) {
         min-width: 120px;
       }
 
+      /* darker time text */
       .game-time {
         font-size: var(--ddd-font-size-sm, 0.875rem);
         font-weight: var(--ddd-font-weight-bold, 700);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        color: #111;
         margin: 0 0 var(--ddd-spacing-1, 0.25rem) 0;
       }
 
+      /* darker location */
       .game-location {
         font-size: var(--ddd-font-size-xs, 0.75rem);
-        color: var(--ddd-theme-default-slateMaxLight, #666);
+        color: #444;
       }
 
       .score {
@@ -190,18 +200,20 @@ export class PslSchedule extends DDDSuper(LitElement) {
 
       .completed .game-card {
         background: var(--ddd-theme-default-athertonViolet, #f8fafc);
-        opacity: 0.8;
+        opacity: 0.85;
       }
 
       .upcoming .team-name {
         color: var(--ddd-theme-default-skyBlue, #3b82f6);
       }
 
+      /* darker "no games" text */
       .no-games {
         text-align: center;
         padding: var(--ddd-spacing-8, 3rem);
-        color: var(--ddd-theme-default-slateMaxLight, #666);
+        color: #333;
         font-size: var(--ddd-font-size-lg, 1.125rem);
+        font-weight: 500;
       }
 
       @media (max-width: 768px) {

@@ -101,15 +101,16 @@ export class PslFooter extends DDDSuper(LitElement) {
       opacity: 0.7;
     }
 
+    /* Bigger Back Seat Bros logo */
     .powered-logo {
-      width: 40px;
-      height: 40px;
+      width: 64px;
+      height: 64px;
       background: var(--ddd-theme-default-white, #ffffff);
       border-radius: var(--ddd-radius-sm, 4px);
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 4px;
+      padding: 6px;
     }
 
     .powered-logo img {

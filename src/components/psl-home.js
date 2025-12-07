@@ -90,9 +90,12 @@ export class PslHome extends DDDSuper(LitElement) {
         margin-bottom: var(--ddd-spacing-2, 0.5rem);
       }
 
+      /* UPDATED — darker readable subtitle */
       .cta-subtitle {
         font-size: var(--ddd-font-size-base, 1rem);
-        color: var(--ddd-theme-default-slateMaxLight, #666);
+        color: #222;       /* dark + readable */
+        font-weight: 500;
+        opacity: 0.95;
         margin-bottom: var(--ddd-spacing-6, 2rem);
       }
 
@@ -133,26 +136,10 @@ export class PslHome extends DDDSuper(LitElement) {
         </div>
 
         <div class="quick-stats">
-          <stat-card
-            number="12"
-            label="Active Teams"
-            color="var(--ddd-theme-default-skyBlue, #3b82f6)">
-          </stat-card>
-          <stat-card
-            number="156"
-            label="Total Players"
-            color="var(--ddd-theme-default-forestGreen, #10b981)">
-          </stat-card>
-          <stat-card
-            number="28"
-            label="Games Played"
-            color="var(--ddd-theme-default-orange, #f59e0b)">
-          </stat-card>
-          <stat-card
-            number="89"
-            label="Total Goals"
-            color="var(--ddd-theme-default-alertImmediate, #dc2626)">
-          </stat-card>
+          <stat-card number="12" label="Active Teams" color="var(--ddd-theme-default-skyBlue, #3b82f6)"></stat-card>
+          <stat-card number="156" label="Total Players" color="var(--ddd-theme-default-forestGreen, #10b981)"></stat-card>
+          <stat-card number="28" label="Games Played" color="var(--ddd-theme-default-orange, #f59e0b)"></stat-card>
+          <stat-card number="89" label="Total Goals" color="var(--ddd-theme-default-alertImmediate, #dc2626)"></stat-card>
         </div>
 
         <div class="upcoming-games">
@@ -166,6 +153,7 @@ export class PslHome extends DDDSuper(LitElement) {
               location="IM Field 6"
               status="upcoming">
             </game-card>
+
             <game-card
               date="Dec 7, 2025"
               time="3:30 PM"
@@ -189,7 +177,9 @@ export class PslHome extends DDDSuper(LitElement) {
 
         <div class="cta-section">
           <h2 class="cta-title">Ready to Join?</h2>
-          <p class="cta-subtitle">Register your team today and be part of the Penn State Soccer League community</p>
+          <p class="cta-subtitle">
+            Register your team today and be part of the Penn State Soccer League community
+          </p>
           <psl-button
             text="Register Team"
             type="primary"

@@ -43,13 +43,14 @@ export class PslStandings extends DDDSuper(LitElement) {
       .standings-title {
         font-size: var(--ddd-font-size-3xl, 2.25rem);
         font-weight: var(--ddd-font-weight-bold, 700);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        color: #111; /* darker title */
         margin: 0 0 var(--ddd-spacing-2, 0.5rem) 0;
       }
 
       .standings-subtitle {
         font-size: var(--ddd-font-size-lg, 1.125rem);
-        color: var(--ddd-theme-default-slateMaxLight, #666);
+        color: #222; /* darker subtitle */
+        font-weight: 500;
         margin: 0;
       }
 
@@ -68,7 +69,7 @@ export class PslStandings extends DDDSuper(LitElement) {
         border-radius: var(--ddd-radius-md, 8px);
         font-size: var(--ddd-font-size-sm, 0.875rem);
         font-weight: var(--ddd-font-weight-medium, 500);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        color: #111; /* darker tab text */
         cursor: pointer;
         transition: all 0.3s ease;
         font-family: var(--ddd-font-primary);
@@ -98,7 +99,11 @@ export class PslStandings extends DDDSuper(LitElement) {
       }
 
       .table-header {
-        background: linear-gradient(135deg, var(--ddd-theme-default-skyBlue, #3b82f6), var(--ddd-theme-default-navy, #1e3a8a));
+        background: linear-gradient(
+          135deg,
+          var(--ddd-theme-default-skyBlue, #3b82f6),
+          var(--ddd-theme-default-navy, #1e3a8a)
+        );
         color: var(--ddd-theme-default-white, #fff);
       }
 
@@ -135,7 +140,7 @@ export class PslStandings extends DDDSuper(LitElement) {
       tbody td {
         padding: var(--ddd-spacing-4, 1rem);
         font-size: var(--ddd-font-size-sm, 0.875rem);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        color: #111; /* darker body text */
       }
 
       .position {
@@ -189,15 +194,23 @@ export class PslStandings extends DDDSuper(LitElement) {
       }
 
       .form-indicator.draw {
-        background: var(--ddd-theme-default-slateMaxLight, #666);
+        background: #4b5563; /* darker gray for draws */
       }
 
       .top-position {
-        background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.05));
+        background: linear-gradient(
+          135deg,
+          rgba(255, 215, 0, 0.12),
+          rgba(255, 215, 0, 0.06)
+        );
       }
 
       .playoff-position {
-        background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(59, 130, 246, 0.05));
+        background: linear-gradient(
+          135deg,
+          rgba(59, 130, 246, 0.12),
+          rgba(59, 130, 246, 0.06)
+        );
       }
 
       @media (max-width: 768px) {
@@ -377,7 +390,9 @@ export class PslStandings extends DDDSuper(LitElement) {
       <div class="standings-container">
         <div class="standings-header">
           <h1 class="standings-title">League Standings</h1>
-          <p class="standings-subtitle">Current standings for all divisions in the Penn State Soccer League</p>
+          <p class="standings-subtitle">
+            Current standings for all divisions in the Penn State Soccer League
+          </p>
         </div>
 
         <div class="division-tabs">
@@ -418,7 +433,9 @@ export class PslStandings extends DDDSuper(LitElement) {
                   <td class="stats">${team.losses}</td>
                   <td class="stats">${team.goalsFor}</td>
                   <td class="stats">${team.goalsAgainst}</td>
-                  <td class="stats">${team.goalsFor - team.goalsAgainst >= 0 ? '+' : ''}${team.goalsFor - team.goalsAgainst}</td>
+                  <td class="stats">
+                    ${team.goalsFor - team.goalsAgainst >= 0 ? '+' : ''}${team.goalsFor - team.goalsAgainst}
+                  </td>
                   <td class="points">${team.points}</td>
                   <td class="form">${this._renderFormIndicators(team.form)}</td>
                 </tr>

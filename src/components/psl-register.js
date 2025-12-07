@@ -43,13 +43,14 @@ export class PslRegister extends DDDSuper(LitElement) {
       .register-title {
         font-size: var(--ddd-font-size-3xl, 2.25rem);
         font-weight: var(--ddd-font-weight-bold, 700);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        color: #111; /* darker title */
         margin: 0 0 var(--ddd-spacing-2, 0.5rem) 0;
       }
 
       .register-subtitle {
         font-size: var(--ddd-font-size-lg, 1.125rem);
-        color: var(--ddd-theme-default-slateMaxLight, #666);
+        color: #222; /* darker subtitle */
+        font-weight: 500;
         margin: 0;
       }
 
@@ -80,7 +81,7 @@ export class PslRegister extends DDDSuper(LitElement) {
       .form-label {
         font-size: var(--ddd-font-size-sm, 0.875rem);
         font-weight: var(--ddd-font-weight-medium, 500);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        color: #111; /* darker label text */
         margin-bottom: var(--ddd-spacing-2, 0.5rem);
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -93,9 +94,14 @@ export class PslRegister extends DDDSuper(LitElement) {
         border: 2px solid var(--ddd-theme-default-slateLight, #e2e8f0);
         border-radius: var(--ddd-radius-md, 8px);
         font-size: var(--ddd-font-size-base, 1rem);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        color: #111; /* darker input text */
         transition: border-color 0.3s ease, box-shadow 0.3s ease;
         font-family: var(--ddd-font-primary);
+      }
+
+      .form-input::placeholder,
+      .form-textarea::placeholder {
+        color: #6b7280; /* slightly darker placeholder */
       }
 
       .form-input:focus,
@@ -126,7 +132,7 @@ export class PslRegister extends DDDSuper(LitElement) {
 
       .checkbox-label {
         font-size: var(--ddd-font-size-sm, 0.875rem);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        color: #111; /* darker checkbox text */
       }
 
       .form-actions {
@@ -180,7 +186,10 @@ export class PslRegister extends DDDSuper(LitElement) {
   }
 
   _handleSubmit(e) {
-    e.preventDefault();
+    // so it works both on <form submit> and button click
+    if (e) {
+      e.preventDefault();
+    }
     
     // Basic validation
     if (!this.formData.teamName || !this.formData.captainName || !this.formData.email || !this.formData.agreeTerms) {
@@ -195,7 +204,11 @@ export class PslRegister extends DDDSuper(LitElement) {
     this._handleReset();
   }
 
-  _handleReset() {
+  _handleReset(e) {
+    if (e) {
+      e.preventDefault();
+    }
+
     this.formData = {
       teamName: '',
       captainName: '',
@@ -214,7 +227,9 @@ export class PslRegister extends DDDSuper(LitElement) {
       <div class="register-container">
         <div class="register-header">
           <h1 class="register-title">Register Your Team</h1>
-          <p class="register-subtitle">Join the Penn State Soccer League and compete with teams from across the region</p>
+          <p class="register-subtitle">
+            Join the Penn State Soccer League and compete with teams from across the region
+          </p>
         </div>
 
         <div class="form-container">
