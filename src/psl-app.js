@@ -27,7 +27,7 @@ export class PslApp extends DDDSuper(LitElement) {
 
   constructor() {
     super();
-    this.route = window.location.pathname || "/";
+    this.route = this.normalizeRoute(window.location.pathname);
     this.initRouting();
   }
 
@@ -59,20 +59,28 @@ export class PslApp extends DDDSuper(LitElement) {
     `];
   }
 
+  normalizeRoute(path) {
+    // Remove trailing slashes and ensure valid routes
+    const cleanPath = path.replace(/\/+$/, '') || '/';
+    const validRoutes = ['/', '/schedule', '/teams', '/register', '/standings'];
+    return validRoutes.includes(cleanPath) ? cleanPath : '/';
+  }
+
   initRouting() {
     // Handle initial page load
-    this.route = window.location.pathname;
+    this.route = this.normalizeRoute(window.location.pathname);
     
     // Handle browser back/forward
     window.addEventListener('popstate', () => {
-      this.route = window.location.pathname;
+      this.route = this.normalizeRoute(window.location.pathname);
     });
   }
 
   handleNavigation(e) {
     if (e.detail && e.detail.path) {
-      this.route = e.detail.path;
-      window.history.pushState({}, "", e.detail.path);
+      const normalizedPath = this.normalizeRoute(e.detail.path);
+      this.route = normalizedPath;
+      window.history.pushState({}, "", normalizedPath);
     }
   }
 
