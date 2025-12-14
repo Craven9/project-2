@@ -17,22 +17,22 @@ export class TeamsPage extends DDDSuper(LitElement) {
 
     .teams-container {
       min-height: 100vh;
-      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-      padding: var(--ddd-spacing-8, 2rem);
-      color: var(--ddd-theme-default-coalyGray, #333333);
+      background: linear-gradient(135deg);
+      padding: var(--ddd-spacing-8);
+      color: var(--ddd-theme-default-coalyGray);
     }
 
     .back-button {
       position: absolute;
-      top: var(--ddd-spacing-8, 2rem);
-      left: var(--ddd-spacing-8, 2rem);
-      padding: var(--ddd-spacing-2, 0.5rem) var(--ddd-spacing-5, 1.25rem);
+      top: var(--ddd-spacing-8);
+      left: var(--ddd-spacing-8);
+      padding: var(--ddd-spacing-2) var(--ddd-spacing-5);
       background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-      color: var(--ddd-theme-default-white, #ffffff);
+      color: var(--ddd-theme-default-white);
       border: none;
       
       cursor: pointer;
-      font-weight: var(--ddd-font-weight-bold, 600);
+      font-weight: var(--ddd-font-weight-bold);
       transition: all 0.3s ease;
       box-shadow: 0 2px 8px rgba(30, 64, 175, 0.3);
     }
@@ -64,7 +64,7 @@ export class TeamsPage extends DDDSuper(LitElement) {
       max-width: var(--ddd-breakpoint-lg);
       margin: 0 auto;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit));
       gap: var(--ddd-spacing-8);
     }
 
@@ -104,38 +104,38 @@ export class TeamsPage extends DDDSuper(LitElement) {
     }
 
     .team-record {
-      color: var(--ddd-theme-default-slateMaxLight, #666666);
-      margin-bottom: var(--ddd-spacing-4, 1rem);
+      color: var(--ddd-theme-default-slateMaxLight);
+      margin-bottom: var(--ddd-spacing-4);
     }
 
     .team-captain, .team-coach, .team-founded {
-      color: var(--ddd-theme-default-slateMaxLight, #666666);
-      font-size: var(--ddd-font-size-xs, 0.75rem);
-      margin-bottom: var(--ddd-spacing-1, 0.25rem);
+      color: var(--ddd-theme-default-slateMaxLight);
+      font-size: var(--ddd-font-size-xs);
+      margin-bottom: var(--ddd-spacing-1);
     }
 
     .team-achievements {
-      margin-top: var(--ddd-spacing-4, 1rem);
-      padding-top: var(--ddd-spacing-3, 0.75rem);
-      border-top: 1px solid var(--ddd-theme-default-slateLight, #e2e8f0);
+      margin-top: var(--ddd-spacing-4);
+      padding-top: var(--ddd-spacing-3);
+      border-top: 1px solid var(--ddd-theme-default-slateLight);
     }
 
     .team-achievements h4 {
-      font-size: var(--ddd-font-size-xs, 0.75rem);
-      font-weight: var(--ddd-font-weight-bold, 600);
-      margin: 0 0 var(--ddd-spacing-2, 0.5rem) 0;
-      color: var(--ddd-theme-default-coalyGray, #333333);
+      font-size: var(--ddd-font-size-xs);
+      font-weight: var(--ddd-font-weight-bold);
+      margin: 0 0 var(--ddd-spacing-2) 0;
+      color: var(--ddd-theme-default-coalyGray);
     }
 
     .team-achievements ul {
       margin: 0;
-      padding-left: var(--ddd-spacing-4, 1rem);
-      font-size: var(--ddd-font-size-xs, 0.75rem);
-      color: var(--ddd-theme-default-slateMaxLight, #666666);
+      padding-left: var(--ddd-spacing-4);
+      font-size: var(--ddd-font-size-xs);
+      color: var(--ddd-theme-default-slateMaxLight);
     }
 
     .team-achievements li {
-      margin-bottom: var(--ddd-spacing-1, 0.25rem);
+      margin-bottom: var(--ddd-spacing-1);
     }
 
     .team-stats {
@@ -156,36 +156,36 @@ export class TeamsPage extends DDDSuper(LitElement) {
     }
 
     .stat-label {
-      font-size: var(--ddd-font-size-xs, 0.75rem);
+      font-size: var(--ddd-font-size-xs);
       color: #64748b;
       text-transform: uppercase;
-      letter-spacing: var(--ddd-ls-16-lg, 0.5px);
-      font-weight: var(--ddd-font-weight-medium, 500);
+      letter-spacing: var(--ddd-ls-16-lg);
+      font-weight: var(--ddd-font-weight-medium);
     }
 
     .footer {
-      background: var(--ddd-theme-default-white, #ffffff);
+      background: var(--ddd-theme-default-white);
       color: #64748b;
-      padding: var(--ddd-spacing-6, 2rem);
+      padding: var(--ddd-spacing-6);
       text-align: center;
-      border-top: 1px solid var(--ddd-theme-default-slateLight, #e2e8f0);
-      margin-top: var(--ddd-spacing-8, 2rem);
+      border-top: 1px solid var(--ddd-theme-default-slateLight);
+      margin-top: var(--ddd-spacing-8);
     }
 
     .footer-content {
-      max-width: var(--ddd-breakpoint-md, 800px);
+      max-width: var(--ddd-breakpoint-md);
       margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: var(--ddd-spacing-4, 1rem);
+      gap: var(--ddd-spacing-4);
       flex-wrap: wrap;
     }
 
     .footer-logo {
       width: 120px;
       height: 40px;
-      background: var(--ddd-theme-default-white, #ffffff);
+      background: var(--ddd-theme-default-white);
       
       display: flex;
       align-items: center;
@@ -201,7 +201,7 @@ export class TeamsPage extends DDDSuper(LitElement) {
     }
 
     .copyright {
-      font-size: var(--ddd-font-size-sm, 0.875rem);
+      font-size: var(--ddd-font-size-sm);
     }
   `;
 

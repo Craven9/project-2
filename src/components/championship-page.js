@@ -15,71 +15,71 @@ export class ChampionshipPage extends DDDSuper(LitElement) {
 
     .championship-container {
       min-height: 100vh;
-      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-      padding: var(--ddd-spacing-10, 2.5rem) var(--ddd-spacing-8, 2rem);
-      color: var(--ddd-theme-default-coalyGray, #333333);
+      background: var(--ddd-theme-default-slateLight);
+      padding: var(--ddd-spacing-10) var(--ddd-spacing-8);
+      color: var(--ddd-theme-default-coalyGray);
     }
 
     .back-button {
       background: transparent;
-      border: 2px solid #1e3a8a;
-      color: #1e3a8a;
-      padding: var(--ddd-spacing-2, 0.5rem) var(--ddd-spacing-5, 1.25rem);
+      border: 2px solid var(--ddd-theme-default-navy);
+      color: var(--ddd-theme-default-navy);
+      padding: var(--ddd-spacing-2) var(--ddd-spacing-5);
       
       cursor: pointer;
-      font-size: var(--ddd-font-size-sm, 0.875rem);
-      font-weight: var(--ddd-font-weight-bold, 600);
+      font-size: var(--ddd-font-size-sm);
+      font-weight: var(--ddd-font-weight-bold);
       transition: all 0.3s ease;
       display: flex;
       align-items: center;
-      gap: var(--ddd-spacing-2, 0.5rem);
-      margin-bottom: var(--ddd-spacing-5, 1.25rem);
+      gap: var(--ddd-spacing-2);
+      margin-bottom: var(--ddd-spacing-5);
       max-width: 800px;
       margin-left: auto;
       margin-right: auto;
     }
 
     .back-button:hover {
-      background: #1e3a8a;
-      color: var(--ddd-theme-default-white, #ffffff);
+      background: var(--ddd-theme-default-navy);
+      color: var(--ddd-theme-default-white);
       transform: translateY(-1px);
     }
 
     .article-header {
       max-width: 800px;
-      margin: 0 auto var(--ddd-spacing-10, 2.5rem) auto;
-      background: var(--ddd-theme-default-white, #ffffff);
+      margin: 0 auto var(--ddd-spacing-10) auto;
+      background: var(--ddd-theme-default-white);
       
-      padding: var(--ddd-spacing-12, 3rem) var(--ddd-spacing-10, 2.5rem);
+      padding: var(--ddd-spacing-12) var(--ddd-spacing-10);
       box-shadow: 0 8px 25px rgba(0,0,0,0.1);
       text-align: center;
     }
 
     .category-badge {
-      background: linear-gradient(135deg, #f59e0b, #fbbf24);
-      color: var(--ddd-theme-default-white, #ffffff);
-      padding: var(--ddd-spacing-2, 0.5rem) var(--ddd-spacing-5, 1.25rem);
-      font-size: var(--ddd-font-size-xs, 0.75rem);
-      font-weight: var(--ddd-font-weight-bold, 600);
+      background: var(--ddd-theme-default-yellowLightAccent);
+      color: var(--ddd-theme-default-white);
+      padding: var(--ddd-spacing-2) var(--ddd-spacing-5);
+      font-size: var(--ddd-font-size-xs);
+      font-weight: var(--ddd-font-weight-bold);
       text-transform: uppercase;
-      letter-spacing: var(--ddd-ls-16-lg, 1px);
+      letter-spacing: var(--ddd-ls-16-lg);
       display: inline-block;
-      margin-bottom: var(--ddd-spacing-6, 1.5rem);
+      margin-bottom: var(--ddd-spacing-4);
     }
 
     .article-title {
-      font-size: var(--ddd-font-size-4xl, 2.5rem);
-      color: var(--ddd-theme-default-navy80, #1e3a8a);
-      margin: 0 0 var(--ddd-spacing-5, 1.25rem) 0;
-      font-weight: var(--ddd-font-weight-black, 900);
-      line-height: var(--ddd-lh-120, 1.2);
+      font-size: var(--ddd-font-size-4xl);
+      color: var(--ddd-theme-default-navy80);
+      margin: 0 0 var(--ddd-spacing-5) 0;
+      font-weight: var(--ddd-font-weight-black);
+      line-height: var(--ddd-lh-120);
     }
 
     .article-summary {
-      font-size: var(--ddd-font-size-xl, 1.25rem);
-      color: var(--ddd-theme-default-slateMaxLight, #6b7280);
-      line-height: var(--ddd-lh-140, 1.6);
-      margin: 0 0 var(--ddd-spacing-8, 2rem) 0;
+      font-size: var(--ddd-font-size-xl);
+      color: var(--ddd-theme-default-slateMaxLight);
+      line-height: var(--ddd-lh-140);
+      margin: 0 0 var(--ddd-spacing-8) 0;
       font-weight: 400;
     }
 
@@ -87,43 +87,43 @@ export class ChampionshipPage extends DDDSuper(LitElement) {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: var(--ddd-spacing-6, 1.5rem);
-      padding-top: var(--ddd-spacing-5, 1.25rem);
-      border-top: 1px solid var(--ddd-theme-default-slateLight, #e5e7eb);
-      color: var(--ddd-theme-default-slateMaxLight, #6b7280);
-      font-size: var(--ddd-font-size-sm, 0.875rem);
+      gap: var(--ddd-spacing-6);
+      padding-top: var(--ddd-spacing-5);
+      border-top: 1px solid var(--ddd-theme-default-slateLight);
+      color: var(--ddd-theme-default-slateMaxLight);
+      font-size: var(--ddd-font-size-sm);
     }
 
     .match-result-card {
       max-width: 800px;
-      margin: 0 auto var(--ddd-spacing-10, 2.5rem) auto;
-      background: var(--ddd-theme-default-white, #ffffff);
+      margin: 0 auto var(--ddd-spacing-10) auto;
+      background: var(--ddd-theme-default-white);
       
-      padding: var(--ddd-spacing-10, 2.5rem);
+      padding: var(--ddd-spacing-10);
       box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     }
 
     .result-title {
-      color: var(--ddd-theme-default-navy80, #1e3a8a);
+      color: var(--ddd-theme-default-navy80);
       text-align: center;
-      margin: 0 0 var(--ddd-spacing-8, 2rem) 0;
-      font-size: var(--ddd-font-size-2xl, 1.75rem);
-      font-weight: var(--ddd-font-weight-black, 700);
+      margin: 0 0 var(--ddd-spacing-8) 0;
+      font-size: var(--ddd-font-size-2xl);
+      font-weight: var(--ddd-font-weight-black);
     }
 
     .score-display {
       background: linear-gradient(135deg, #f59e0b, #fbbf24);
-      color: var(--ddd-theme-default-white, #ffffff);
-      padding: var(--ddd-spacing-8, 2rem);
+      color: var(--ddd-theme-default-white);
+      padding: var(--ddd-spacing-8);
       
       text-align: center;
-      margin-bottom: var(--ddd-spacing-8, 2rem);
+      margin-bottom: var(--ddd-spacing-8);
     }
 
     .score-grid {
       display: grid;
       grid-template-columns: 2fr auto 2fr;
-      gap: var(--ddd-spacing-5, 1.25rem);
+      gap: var(--ddd-spacing-5);
       align-items: center;
       max-width: 500px;
       margin: 0 auto;
@@ -136,85 +136,85 @@ export class ChampionshipPage extends DDDSuper(LitElement) {
     }
 
     .team-name {
-      font-size: var(--ddd-font-size-xl, 1.25rem);
-      font-weight: var(--ddd-font-weight-black, 700);
-      margin-bottom: var(--ddd-spacing-2, 0.5rem);
+      font-size: var(--ddd-font-size-xl);
+      font-weight: var(--ddd-font-weight-black);
+      margin-bottom: var(--ddd-spacing-2);
     }
 
     .team-label {
-      font-size: var(--ddd-font-size-sm, 0.875rem);
+      font-size: var(--ddd-font-size-sm);
       opacity: 0.9;
     }
 
     .final-score {
-      font-size: var(--ddd-font-size-5xl, 3rem);
-      font-weight: var(--ddd-font-weight-black, 900);
+      font-size: var(--ddd-font-size-5xl);
+      font-weight: var(--ddd-font-weight-black);
       text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     }
 
     .match-stats {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: var(--ddd-spacing-5, 1.25rem);
-      margin-bottom: var(--ddd-spacing-8, 2rem);
+      gap: var(--ddd-spacing-5);
+      margin-bottom: var(--ddd-spacing-8);
     }
 
     .stat-item {
-      background: var(--ddd-theme-default-limestoneLight, #f8fafc);
-      padding: var(--ddd-spacing-5, 1.25rem);
+      background: var(--ddd-theme-default-limestoneLight);
+      padding: var(--ddd-spacing-5);
       
       text-align: center;
     }
 
     .stat-label {
-      color: var(--ddd-theme-default-slateMaxLight, #6b7280);
-      font-size: var(--ddd-font-size-xs, 0.75rem);
-      font-weight: var(--ddd-font-weight-bold, 600);
-      margin-bottom: var(--ddd-spacing-1, 0.25rem);
+      color: var(--ddd-theme-default-slateMaxLight);
+      font-size: var(--ddd-font-size-xs);
+      font-weight: var(--ddd-font-weight-bold);
+      margin-bottom: var(--ddd-spacing-1);
     }
 
     .stat-value {
-      color: var(--ddd-theme-default-navy80, #1e3a8a);
-      font-weight: var(--ddd-font-weight-black, 700);
+      color: var(--ddd-theme-default-navy80);
+      font-weight: var(--ddd-font-weight-black);
     }
 
     .mvp-section {
       background: linear-gradient(135deg, rgba(30, 58, 138, 0.1), rgba(59, 130, 246, 0.1));
-      padding: var(--ddd-spacing-6, 1.5rem);
+      padding: var(--ddd-spacing-6);
       
       text-align: center;
     }
 
     .mvp-title {
-      color: var(--ddd-theme-default-navy80, #1e3a8a);
-      margin: 0 0 var(--ddd-spacing-4, 1rem) 0;
-      font-size: var(--ddd-font-size-xl, 1.25rem);
-      font-weight: var(--ddd-font-weight-black, 700);
+      color: var(--ddd-theme-default-navy80);
+      margin: 0 0 var(--ddd-spacing-4) 0;
+      font-size: var(--ddd-font-size-xl);
+      font-weight: var(--ddd-font-weight-black);
     }
 
     .mvp-name {
-      color: var(--ddd-theme-default-navy80, #1e3a8a);
-      font-size: var(--ddd-font-size-2xl, 1.75rem);
-      font-weight: var(--ddd-font-weight-black, 700);
-      margin-bottom: var(--ddd-spacing-2, 0.5rem);
+      color: var(--ddd-theme-default-navy80);
+      font-size: var(--ddd-font-size-2xl);
+      font-weight: var(--ddd-font-weight-black);
+      margin-bottom: var(--ddd-spacing-2);
     }
 
     .mvp-team {
-      color: var(--ddd-theme-default-slateMaxLight, #6b7280);
-      font-size: var(--ddd-font-size-base, 1rem);
-      margin-bottom: var(--ddd-spacing-1, 0.25rem);
+      color: var(--ddd-theme-default-slateMaxLight);
+      font-size: var(--ddd-font-size-base);
+      margin-bottom: var(--ddd-spacing-1);
     }
 
     .mvp-stats {
-      color: var(--ddd-theme-default-slateMaxLight, #6b7280);
-      font-size: var(--ddd-font-size-sm, 0.875rem);
-      font-weight: var(--ddd-font-weight-bold, 600);
+      color: var(--ddd-theme-default-slateMaxLight);
+      font-size: var(--ddd-font-size-sm);
+      font-weight: var(--ddd-font-weight-bold);
     }
 
     .championship-photo {
       max-width: 800px;
-      margin: 0 auto var(--ddd-spacing-10, 2.5rem) auto;
-      background: var(--ddd-theme-default-white, #ffffff);
+      margin: 0 auto var(--ddd-spacing-10) auto;
+      background: var(--ddd-theme-default-white);
       
       overflow: hidden;
       box-shadow: 0 8px 25px rgba(0,0,0,0.1);
@@ -228,99 +228,99 @@ export class ChampionshipPage extends DDDSuper(LitElement) {
     }
 
     .photo-caption {
-      padding: var(--ddd-spacing-5, 1.25rem);
+      padding: var(--ddd-spacing-5);
       text-align: center;
-      color: var(--ddd-theme-default-slateMaxLight, #6b7280);
-      font-size: var(--ddd-font-size-sm, 0.875rem);
+      color: var(--ddd-theme-default-slateMaxLight);
+      font-size: var(--ddd-font-size-sm);
       font-style: italic;
     }
 
     .article-content {
       max-width: 800px;
       margin: 0 auto;
-      background: var(--ddd-theme-default-white, #ffffff);
+      background: var(--ddd-theme-default-white);
       
-      padding: var(--ddd-spacing-10, 2.5rem);
+      padding: var(--ddd-spacing-10);
       box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-      line-height: var(--ddd-lh-150, 1.8);
+      line-height: var(--ddd-lh-150);
     }
 
     .content-paragraph {
-      color: var(--ddd-theme-default-coalyGray, #374151);
-      margin-bottom: var(--ddd-spacing-5, 1.25rem);
-      font-size: var(--ddd-font-size-base, 1rem);
+      color: var(--ddd-theme-default-coalyGray);
+      margin-bottom: var(--ddd-spacing-5);
+      font-size: var(--ddd-font-size-base);
     }
 
     .content-subheading {
-      color: var(--ddd-theme-default-navy80, #1e3a8a);
-      margin: var(--ddd-spacing-10, 2.5rem) 0 var(--ddd-spacing-5, 1.25rem) 0;
-      font-size: var(--ddd-font-size-2xl, 1.75rem);
-      font-weight: var(--ddd-font-weight-black, 700);
+      color: var(--ddd-theme-default-navy80);
+      margin: var(--ddd-spacing-10) 0 var(--ddd-spacing-5) 0;
+      font-size: var(--ddd-font-size-2xl);
+      font-weight: var(--ddd-font-weight-black);
     }
 
     .content-highlight {
       background: linear-gradient(135deg, #f59e0b, #fbbf24);
-      color: var(--ddd-theme-default-white, #ffffff);
-      padding: var(--ddd-spacing-6, 1.5rem);
-      margin: var(--ddd-spacing-8, 2rem) 0;
-      font-size: var(--ddd-font-size-lg, 1.125rem);
-      font-weight: var(--ddd-font-weight-bold, 600);
+      color: var(--ddd-theme-default-white);
+      padding: var(--ddd-spacing-6);
+      margin: var(--ddd-spacing-8) 0;
+      font-size: var(--ddd-font-size-lg);
+      font-weight: var(--ddd-font-weight-bold);
       text-align: center;
     }
 
     .content-quote {
-      border-left: 4px solid var(--ddd-theme-default-navy80, #1e3a8a);
-      padding: var(--ddd-spacing-6, 1.5rem) var(--ddd-spacing-8, 2rem);
-      margin: var(--ddd-spacing-8, 2rem) 0;
-      background: var(--ddd-theme-default-limestoneLight, #f8fafc);
+      border-left: 4px solid var(--ddd-theme-default-navy80);
+      padding: var(--ddd-spacing-6) var(--ddd-spacing-8);
+      margin: var(--ddd-spacing-8) 0;
+      background: var(--ddd-theme-default-limestoneLight);
       
       font-style: italic;
-      color: var(--ddd-theme-default-coalyGray, #374151);
-      font-size: var(--ddd-font-size-lg, 1.125rem);
+      color: var(--ddd-theme-default-coalyGray);
+      font-size: var(--ddd-font-size-lg);
     }
 
     .quote-attribution {
       display: block;
-      margin-top: var(--ddd-spacing-4, 1rem);
+      margin-top: var(--ddd-spacing-4);
       font-style: normal;
-      font-weight: var(--ddd-font-weight-bold, 600);
-      color: var(--ddd-theme-default-navy80, #1e3a8a);
-      font-size: var(--ddd-font-size-sm, 0.875rem);
+      font-weight: var(--ddd-font-weight-bold);
+      color: var(--ddd-theme-default-navy80);
+      font-size: var(--ddd-font-size-sm);
     }
 
     .next-season-cta {
       background: linear-gradient(135deg, #059669, #10b981);
-      color: var(--ddd-theme-default-white, #ffffff);
-      padding: var(--ddd-spacing-8, 2rem);
+      color: var(--ddd-theme-default-white);
+      padding: var(--ddd-spacing-8);
       
       text-align: center;
-      margin-top: var(--ddd-spacing-10, 2.5rem);
+      margin-top: var(--ddd-spacing-10);
     }
 
     .cta-title {
-      margin: 0 0 var(--ddd-spacing-4, 1rem) 0;
-      font-size: var(--ddd-font-size-2xl, 1.75rem);
-      font-weight: var(--ddd-font-weight-black, 700);
+      margin: 0 0 var(--ddd-spacing-4) 0;
+      font-size: var(--ddd-font-size-2xl);
+      font-weight: var(--ddd-font-weight-black);
     }
 
     .cta-description {
-      margin: 0 0 var(--ddd-spacing-6, 1.5rem) 0;
-      font-size: var(--ddd-font-size-base, 1rem);
+      margin: 0 0 var(--ddd-spacing-6) 0;
+      font-size: var(--ddd-font-size-base);
       opacity: 0.95;
     }
 
     .cta-button {
-      background: var(--ddd-theme-default-white, #ffffff);
-      color: #059669;
+      background: var(--ddd-theme-default-white);
+      color: var(--ddd-theme-default-successGreen);
       border: none;
-      padding: var(--ddd-spacing-4, 1rem) var(--ddd-spacing-9, 2.25rem);
+      padding: var(--ddd-spacing-4) var(--ddd-spacing-9);
       
-      font-size: var(--ddd-font-size-base, 1rem);
-      font-weight: var(--ddd-font-weight-bold, 600);
+      font-size: var(--ddd-font-size-base);
+      font-weight: var(--ddd-font-weight-bold);
       cursor: pointer;
       transition: all 0.3s ease;
       text-transform: uppercase;
-      letter-spacing: var(--ddd-ls-16-lg, 1px);
+      letter-spacing: var(--ddd-ls-16-lg);
     }
 
     .cta-button:hover {
@@ -329,12 +329,12 @@ export class ChampionshipPage extends DDDSuper(LitElement) {
     }
 
     .footer {
-      background: var(--ddd-theme-default-white, #ffffff);
-      color: var(--ddd-theme-default-slateMaxLight, #64748b);
-      padding: var(--ddd-spacing-8, 2rem);
+      background: var(--ddd-theme-default-white);
+      color: var(--ddd-theme-default-slateMaxLight);
+      padding: var(--ddd-spacing-8);
       text-align: center;
-      border-top: 1px solid var(--ddd-theme-default-slateLight, #e2e8f0);
-      margin-top: var(--ddd-spacing-10, 2.5rem);
+      border-top: 1px solid var(--ddd-theme-default-slateLight);
+      margin-top: var(--ddd-spacing-10);
     }
 
     .footer-content {
@@ -343,19 +343,19 @@ export class ChampionshipPage extends DDDSuper(LitElement) {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: var(--ddd-spacing-4, 1rem);
+      gap: var(--ddd-spacing-4);
       flex-wrap: wrap;
     }
 
     .footer-logo {
       width: 120px;
       height: 40px;
-      background: var(--ddd-theme-default-white, #ffffff);
+      background: var(--ddd-theme-default-white);
       
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid var(--ddd-theme-default-slateLight, #e2e8f0);
+      border: 1px solid var(--ddd-theme-default-slateLight);
       overflow: hidden;
     }
 
@@ -366,29 +366,29 @@ export class ChampionshipPage extends DDDSuper(LitElement) {
     }
 
     .copyright {
-      font-size: var(--ddd-font-size-sm, 0.875rem);
+      font-size: var(--ddd-font-size-sm);
     }
 
     @media (max-width: 768px) {
       .championship-container {
-        padding: var(--ddd-spacing-6, 1.5rem) var(--ddd-spacing-4, 1rem);
+        padding: var(--ddd-spacing-6) var(--ddd-spacing-4);
       }
 
       .article-header {
-        padding: var(--ddd-spacing-8, 2rem) var(--ddd-spacing-6, 1.5rem);
+        padding: var(--ddd-spacing-8) var(--ddd-spacing-6);
       }
 
       .article-title {
-        font-size: var(--ddd-font-size-2xl, 1.75rem);
+        font-size: var(--ddd-font-size-2xl);
       }
 
       .score-grid {
         grid-template-columns: 1fr;
-        gap: var(--ddd-spacing-4, 1rem);
+        gap: var(--ddd-spacing-4);
       }
 
       .final-score {
-        font-size: var(--ddd-font-size-3xl, 2rem);
+        font-size: var(--ddd-font-size-3xl);
       }
 
       .match-stats {

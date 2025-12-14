@@ -32,33 +32,33 @@ export class PslSchedule extends DDDSuper(LitElement) {
       }
 
       .schedule-container {
-        max-width: var(--ddd-breakpoint-xl, 1200px);
+        max-width: var(--ddd-breakpoint-xl);
         margin: 0 auto;
-        padding: var(--ddd-spacing-6, 2rem);
+        padding: var(--ddd-spacing-6);
       }
 
       .schedule-header {
         text-align: center;
-        margin-bottom: var(--ddd-spacing-8, 3rem);
+        margin-bottom: var(--ddd-spacing-8);
       }
 
       .schedule-title {
-        font-size: var(--ddd-font-size-3xl, 2.25rem);
-        font-weight: var(--ddd-font-weight-bold, 700);
-        color: var(--ddd-theme-default-coalyGray, #333);
-        margin: 0 0 var(--ddd-spacing-2, 0.5rem) 0;
+        font-size: var(--ddd-font-size-3xl);
+        font-weight: var(--ddd-font-weight-bold);
+        color: var(--ddd-theme-default-coalyGray);
+        margin: 0 0 var(--ddd-spacing-2) 0;
       }
 
       .schedule-subtitle {
-        font-size: var(--ddd-font-size-lg, 1.125rem);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        font-size: var(--ddd-font-size-lg);
+        color: var(--ddd-theme-default-coalyGray);
         margin: 0;
       }
 
       .schedule-filters {
         display: flex;
-        gap: var(--ddd-spacing-4, 1rem);
-        margin-bottom: var(--ddd-spacing-6, 2rem);
+        gap: var(--ddd-spacing-4);
+        margin-bottom: var(--ddd-spacing-6);
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
@@ -66,63 +66,63 @@ export class PslSchedule extends DDDSuper(LitElement) {
 
       .filter-group {
         display: flex;
-        gap: var(--ddd-spacing-3, 0.75rem);
+        gap: var(--ddd-spacing-3);
         align-items: center;
       }
 
       .filter-label {
-        font-size: var(--ddd-font-size-sm, 0.875rem);
-        font-weight: var(--ddd-font-weight-medium, 500);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        font-size: var(--ddd-font-size-sm);
+        font-weight: var(--ddd-font-weight-medium);
+        color: var(--ddd-theme-default-coalyGray);
       }
 
       .filter-select {
-        padding: var(--ddd-spacing-3, 0.75rem);
-        border: 2px solid var(--ddd-theme-default-slateLight, #e2e8f0);
+        padding: var(--ddd-spacing-3);
+        border: 2px solid var(--ddd-theme-default-slateLight);
         
-        font-size: var(--ddd-font-size-sm, 0.875rem);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        font-size: var(--ddd-font-size-sm);
+        color: var(--ddd-theme-default-coalyGray);
         font-family: var(--ddd-font-primary);
         min-width: 150px;
       }
 
       .schedule-grid {
         display: grid;
-        gap: var(--ddd-spacing-4, 1rem);
+        gap: var(--ddd-spacing-4);
       }
 
       .week-section {
-        background: var(--ddd-theme-default-white, #fff);
+        background: var(--ddd-theme-default-white);
         
-        border: 1px solid var(--ddd-theme-default-slateLight, #e2e8f0);
-        box-shadow: var(--ddd-boxShadow-1, 0 2px 4px rgba(0,0,0,0.1));
+        border: 1px solid var(--ddd-theme-default-slateLight);
+        box-shadow: var(--ddd-boxShadow-1);
         overflow: hidden;
       }
 
       .week-header {
-        background: linear-gradient(135deg, var(--ddd-theme-default-skyBlue, #3b82f6), var(--ddd-theme-default-navy, #1e3a8a));
-        color: var(--ddd-theme-default-white, #fff);
-        padding: var(--ddd-spacing-4, 1rem);
+        background: linear-gradient(135deg, var(--ddd-theme-default-skyBlue), var(--ddd-theme-default-navy));
+        color: var(--ddd-theme-default-white);
+        padding: var(--ddd-spacing-4);
       }
 
       .week-title {
-        font-size: var(--ddd-font-size-xl, 1.25rem);
-        font-weight: var(--ddd-font-weight-bold, 700);
+        font-size: var(--ddd-font-size-xl);
+        font-weight: var(--ddd-font-weight-bold);
         margin: 0;
       }
 
       .games-list {
-        padding: var(--ddd-spacing-4, 1rem);
+        padding: var(--ddd-spacing-4);
       }
 
       .game-card {
         display: grid;
         grid-template-columns: 1fr auto 1fr auto;
-        gap: var(--ddd-spacing-4, 1rem);
+        gap: var(--ddd-spacing-4);
         align-items: center;
-        padding: var(--ddd-spacing-4, 1rem);
-        border: 1px solid var(--ddd-theme-default-slateLight, #e2e8f0);
-        margin-bottom: var(--ddd-spacing-3, 0.75rem);
+        padding: var(--ddd-spacing-4);
+        border: 1px solid var(--ddd-theme-default-slateLight);
+        margin-bottom: var(--ddd-spacing-3);
         transition: all 0.3s ease;
       }
 
@@ -135,23 +135,23 @@ export class PslSchedule extends DDDSuper(LitElement) {
       }
 
       .team-name {
-        font-size: var(--ddd-font-size-base, 1rem);
-        font-weight: var(--ddd-font-weight-bold, 700);
-        color: var(--ddd-theme-default-coalyGray, #333);
-        margin: 0 0 var(--ddd-spacing-1, 0.25rem) 0;
+        font-size: var(--ddd-font-size-base);
+        font-weight: var(--ddd-font-weight-bold);
+        color: var(--ddd-theme-default-coalyGray);
+        margin: 0 0 var(--ddd-spacing-1) 0;
       }
 
       .team-division {
-        font-size: var(--ddd-font-size-xs, 0.75rem);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        font-size: var(--ddd-font-size-xs);
+        color: var(--ddd-theme-default-coalyGray);
         text-transform: uppercase;
         letter-spacing: 0.5px;
       }
 
       .vs-divider {
-        font-size: var(--ddd-font-size-lg, 1.125rem);
-        font-weight: var(--ddd-font-weight-bold, 700);
-        color: var(--ddd-theme-default-skyBlue, #3b82f6);
+        font-size: var(--ddd-font-size-lg);
+        font-weight: var(--ddd-font-weight-bold);
+        color: var(--ddd-theme-default-skyBlue);
         text-align: center;
       }
 
@@ -161,24 +161,24 @@ export class PslSchedule extends DDDSuper(LitElement) {
       }
 
       .game-time {
-        font-size: var(--ddd-font-size-sm, 0.875rem);
-        font-weight: var(--ddd-font-weight-bold, 700);
-        color: var(--ddd-theme-default-coalyGray, #333);
-        margin: 0 0 var(--ddd-spacing-1, 0.25rem) 0;
+        font-size: var(--ddd-font-size-sm);
+        font-weight: var(--ddd-font-weight-bold);
+        color: var(--ddd-theme-default-coalyGray);
+        margin: 0 0 var(--ddd-spacing-1) 0;
       }
 
       .game-location {
-        font-size: var(--ddd-font-size-xs, 0.75rem);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        font-size: var(--ddd-font-size-xs);
+        color: var(--ddd-theme-default-coalyGray);
       }
 
       .score {
-        font-size: var(--ddd-font-size-xl, 1.25rem);
-        font-weight: var(--ddd-font-weight-bold, 700);
-        color: var(--ddd-theme-default-skyBlue, #3b82f6);
+        font-size: var(--ddd-font-size-xl);
+        font-weight: var(--ddd-font-weight-bold);
+        color: var(--ddd-theme-default-skyBlue);
         text-align: center;
-        background: var(--ddd-theme-default-slateLight, #e2e8f0);
-        padding: var(--ddd-spacing-2, 0.5rem);
+        background: var(--ddd-theme-default-slateLight);
+        padding: var(--ddd-spacing-2);
         
       }
 
@@ -188,33 +188,33 @@ export class PslSchedule extends DDDSuper(LitElement) {
 
       .completed-badge {
         position: absolute;
-        top: var(--ddd-spacing-2, 0.5rem);
-        right: var(--ddd-spacing-2, 0.5rem);
-        background: var(--ddd-theme-default-forestGreen, #16a34a);
-        color: var(--ddd-theme-default-white, #fff);
-        font-size: var(--ddd-font-size-2xs, 0.625rem);
-        font-weight: var(--ddd-font-weight-bold, 700);
-        padding: var(--ddd-spacing-1, 0.25rem) var(--ddd-spacing-2, 0.5rem);
+        top: var(--ddd-spacing-2);
+        right: var(--ddd-spacing-2);
+        background: var(--ddd-theme-default-forestGreen);
+        color: var(--ddd-theme-default-white);
+        font-size: var(--ddd-font-size-2xs);
+        font-weight: var(--ddd-font-weight-bold);
+        padding: var(--ddd-spacing-1) var(--ddd-spacing-2);
         
         text-transform: uppercase;
         letter-spacing: 0.25px;
-        box-shadow: var(--ddd-boxShadow-1, 0 1px 3px rgba(0,0,0,0.1));
+        box-shadow: var(--ddd-boxShadow-1);
       }
 
       .upcoming .team-name {
-        color: var(--ddd-theme-default-skyBlue, #3b82f6);
+        color: var(--ddd-theme-default-skyBlue);
       }
 
       .no-games {
         text-align: center;
-        padding: var(--ddd-spacing-8, 3rem);
-        color: var(--ddd-theme-default-slateMaxLight, #666);
-        font-size: var(--ddd-font-size-lg, 1.125rem);
+        padding: var(--ddd-spacing-8);
+        color: var(--ddd-theme-default-slateMaxLight);
+        font-size: var(--ddd-font-size-lg);
       }
 
       @media (max-width: 768px) {
         .schedule-container {
-          padding: var(--ddd-spacing-4, 1rem);
+          padding: var(--ddd-spacing-4);
         }
 
         .schedule-filters {
@@ -228,7 +228,7 @@ export class PslSchedule extends DDDSuper(LitElement) {
 
         .game-card {
           grid-template-columns: 1fr;
-          gap: var(--ddd-spacing-3, 0.75rem);
+          gap: var(--ddd-spacing-3);
           text-align: center;
         }
 

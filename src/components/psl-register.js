@@ -30,42 +30,42 @@ export class PslRegister extends DDDSuper(LitElement) {
       }
 
       .register-container {
-        max-width: var(--ddd-breakpoint-md, 800px);
+        max-width: var(--ddd-breakpoint-md);
         margin: 0 auto;
-        padding: var(--ddd-spacing-6, 2rem);
+        padding: var(--ddd-spacing-6);
       }
 
       .register-header {
         text-align: center;
-        margin-bottom: var(--ddd-spacing-8, 3rem);
+        margin-bottom: var(--ddd-spacing-8);
       }
 
       .register-title {
-        font-size: var(--ddd-font-size-3xl, 2.25rem);
-        font-weight: var(--ddd-font-weight-bold, 700);
-        color: var(--ddd-theme-default-coalyGray, #333);
-        margin: 0 0 var(--ddd-spacing-2, 0.5rem) 0;
+        font-size: var(--ddd-font-size-3xl);
+        font-weight: var(--ddd-font-weight-bold);
+        color: var(--ddd-theme-default-coalyGray);
+        margin: 0 0 var(--ddd-spacing-2) 0;
       }
 
       .register-subtitle {
-        font-size: var(--ddd-font-size-lg, 1.125rem);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        font-size: var(--ddd-font-size-lg);
+        color: var(--ddd-theme-default-coalyGray);
         margin: 0;
       }
 
       .form-container {
-        background: var(--ddd-theme-default-white, #fff);
+        background: var(--ddd-theme-default-white);
         
-        padding: var(--ddd-spacing-8, 3rem);
-        box-shadow: var(--ddd-boxShadow-1, 0 2px 4px rgba(0,0,0,0.1));
-        border: 1px solid var(--ddd-theme-default-slateLight, #e2e8f0);
+        padding: var(--ddd-spacing-8);
+        box-shadow: var(--ddd-boxShadow-1);
+        border: 1px solid var(--ddd-theme-default-slateLight);
       }
 
       .form-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: var(--ddd-spacing-6, 2rem);
-        margin-bottom: var(--ddd-spacing-6, 2rem);
+        gap: var(--ddd-spacing-6);
+        margin-bottom: var(--ddd-spacing-6);
       }
 
       .form-group {
@@ -78,10 +78,10 @@ export class PslRegister extends DDDSuper(LitElement) {
       }
 
       .form-label {
-        font-size: var(--ddd-font-size-sm, 0.875rem);
-        font-weight: var(--ddd-font-weight-medium, 500);
-        color: var(--ddd-theme-default-coalyGray, #333);
-        margin-bottom: var(--ddd-spacing-2, 0.5rem);
+        font-size: var(--ddd-font-size-sm);
+        font-weight: var(--ddd-font-weight-medium);
+        color: var(--ddd-theme-default-coalyGray);
+        margin-bottom: var(--ddd-spacing-2);
         text-transform: uppercase;
         letter-spacing: 0.5px;
       }
@@ -89,19 +89,19 @@ export class PslRegister extends DDDSuper(LitElement) {
       .form-input,
       .form-select,
       .form-textarea {
-        padding: var(--ddd-spacing-3, 0.75rem);
-        border: 2px solid var(--ddd-theme-default-slateLight, #e2e8f0);
+        padding: var(--ddd-spacing-3);
+        border: 2px solid var(--ddd-theme-default-slateLight);
         
-        font-size: var(--ddd-font-size-base, 1rem);
-        color: var(--ddd-theme-default-coalyGray, #333);
-        background: var(--ddd-theme-default-white, #ffffff);
+        font-size: var(--ddd-font-size-base);
+        color: var(--ddd-theme-default-coalyGray);
+        background: var(--ddd-theme-default-white);
         transition: border-color 0.3s ease, box-shadow 0.3s ease;
         font-family: var(--ddd-font-primary);
       }
 
       .form-input::placeholder,
       .form-textarea::placeholder {
-        color: var(--ddd-theme-default-slateMaxLight, #666);
+        color: var(--ddd-theme-default-slateMaxLight);
         opacity: 1;
       }
 
@@ -110,14 +110,14 @@ export class PslRegister extends DDDSuper(LitElement) {
         .form-input,
         .form-select,
         .form-textarea {
-          background: var(--ddd-theme-default-white, #ffffff);
-          color: var(--ddd-theme-default-coalyGray, #333);
-          border-color: var(--ddd-theme-default-slateLight, #e2e8f0);
+          background: var(--ddd-theme-default-white);
+          color: var(--ddd-theme-default-coalyGray);
+          border-color: var(--ddd-theme-default-slateLight);
         }
         
         .form-input::placeholder,
         .form-textarea::placeholder {
-          color: var(--ddd-theme-default-slateMaxLight, #666);
+          color: var(--ddd-theme-default-slateMaxLight);
         }
       }
 
@@ -125,7 +125,7 @@ export class PslRegister extends DDDSuper(LitElement) {
       .form-select:focus,
       .form-textarea:focus {
         outline: none;
-        border-color: var(--ddd-theme-default-skyBlue, #3b82f6);
+        border-color: var(--ddd-theme-default-skyBlue);
         box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
       }
 
@@ -137,8 +137,8 @@ export class PslRegister extends DDDSuper(LitElement) {
       .checkbox-group {
         display: flex;
         align-items: center;
-        gap: var(--ddd-spacing-2, 0.5rem);
-        margin: var(--ddd-spacing-4, 1rem) 0;
+        gap: var(--ddd-spacing-2);
+        margin: var(--ddd-spacing-4) 0;
       }
 
       .checkbox-input {
@@ -148,29 +148,29 @@ export class PslRegister extends DDDSuper(LitElement) {
       }
 
       .checkbox-label {
-        font-size: var(--ddd-font-size-sm, 0.875rem);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        font-size: var(--ddd-font-size-sm);
+        color: var(--ddd-theme-default-coalyGray);
       }
 
       .form-actions {
         display: flex;
-        gap: var(--ddd-spacing-4, 1rem);
+        gap: var(--ddd-spacing-4);
         justify-content: center;
-        margin-top: var(--ddd-spacing-6, 2rem);
+        margin-top: var(--ddd-spacing-6);
       }
 
       @media (max-width: 768px) {
         .register-container {
-          padding: var(--ddd-spacing-4, 1rem);
+          padding: var(--ddd-spacing-4);
         }
         
         .form-container {
-          padding: var(--ddd-spacing-6, 2rem);
+          padding: var(--ddd-spacing-6);
         }
         
         .form-grid {
           grid-template-columns: 1fr;
-          gap: var(--ddd-spacing-4, 1rem);
+          gap: var(--ddd-spacing-4);
         }
 
         .form-actions {

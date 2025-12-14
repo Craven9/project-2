@@ -9,10 +9,10 @@ export class PslFooter extends DDDSuper(LitElement) {
     }
 
     .footer {
-      background: linear-gradient(135deg, var(--ddd-theme-default-navy, #1e3a8a), var(--ddd-theme-default-coalyGray, #333333));
-      color: var(--ddd-theme-default-white, #ffffff);
-      padding: var(--ddd-spacing-10, 3rem) var(--ddd-spacing-6, 2rem) var(--ddd-spacing-6, 2rem);
-      margin-top: var(--ddd-spacing-8, 2rem);
+      background: linear-gradient(135deg, var(--ddd-theme-default-navy), var(--ddd-theme-default-coalyGray));
+      color: var(--ddd-theme-default-white);
+      padding: var(--ddd-spacing-10) var(--ddd-spacing-6) var(--ddd-spacing-6);
+      margin-top: var(--ddd-spacing-8);
       position: relative;
       overflow: hidden;
     }
@@ -24,7 +24,7 @@ export class PslFooter extends DDDSuper(LitElement) {
       left: 0;
       right: 0;
       height: 3px;
-      background: linear-gradient(90deg, var(--ddd-theme-default-skyBlue, #3b82f6), var(--ddd-theme-default-forestGreen, #16a34a));
+      background: linear-gradient(90deg, var(--ddd-theme-default-skyBlue), var(--ddd-theme-default-forestGreen));
     }
 
     .footer-content {
@@ -32,7 +32,7 @@ export class PslFooter extends DDDSuper(LitElement) {
       margin: 0 auto;
       display: grid;
       grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: var(--ddd-spacing-10, 3rem);
+      gap: var(--ddd-spacing-10);
       position: relative;
       z-index: 2;
     }
@@ -48,10 +48,10 @@ export class PslFooter extends DDDSuper(LitElement) {
     }
 
     .footer-section h3 {
-      margin: 0 0 var(--ddd-spacing-5, 1.5rem) 0;
-      font-size: var(--ddd-font-size-xl, 1.25rem);
-      font-weight: var(--ddd-font-weight-bold, 700);
-      color: var(--ddd-theme-default-skyBlue, #3b82f6);
+      margin: 0 0 var(--ddd-spacing-5) 0;
+      font-size: var(--ddd-font-size-xl);
+      font-weight: var(--ddd-font-weight-bold);
+      color: var(--ddd-theme-default-skyBlue);
       text-transform: uppercase;
       letter-spacing: 0.5px;
       position: relative;
@@ -64,7 +64,7 @@ export class PslFooter extends DDDSuper(LitElement) {
       left: 0;
       width: 30px;
       height: 2px;
-      background: var(--ddd-theme-default-skyBlue, #3b82f6);
+      background: var(--ddd-theme-default-skyBlue);
     }
 
     .footer-links {
@@ -73,7 +73,7 @@ export class PslFooter extends DDDSuper(LitElement) {
       margin: 0;
       display: flex;
       flex-direction: column;
-      gap: var(--ddd-spacing-3, 0.75rem);
+      gap: var(--ddd-spacing-3);
     }
 
     .footer-links li {
@@ -84,10 +84,10 @@ export class PslFooter extends DDDSuper(LitElement) {
       color: rgba(255, 255, 255, 0.85);
       text-decoration: none;
       transition: all 0.3s ease;
-      padding: var(--ddd-spacing-1, 0.25rem) 0;
+      padding: var(--ddd-spacing-1) 0;
       
       position: relative;
-      font-weight: var(--ddd-font-weight-medium, 500);
+      font-weight: var(--ddd-font-weight-medium);
     }
 
     .footer-links a::before {
@@ -97,12 +97,12 @@ export class PslFooter extends DDDSuper(LitElement) {
       bottom: 0;
       width: 0;
       height: 1px;
-      background: var(--ddd-theme-default-skyBlue, #3b82f6);
+      background: var(--ddd-theme-default-skyBlue);
       transition: width 0.3s ease;
     }
 
     .footer-links a:hover {
-      color: var(--ddd-theme-default-skyBlue, #3b82f6);
+      color: var(--ddd-theme-default-skyBlue);
       transform: translateX(4px);
     }
 
@@ -112,8 +112,8 @@ export class PslFooter extends DDDSuper(LitElement) {
 
     .social-links {
       display: flex;
-      gap: var(--ddd-spacing-4, 1rem);
-      margin-top: var(--ddd-spacing-2, 0.5rem);
+      gap: var(--ddd-spacing-4);
+      margin-top: var(--ddd-spacing-2);
     }
 
     .social-link {
@@ -124,7 +124,7 @@ export class PslFooter extends DDDSuper(LitElement) {
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--ddd-theme-default-white, #ffffff);
+      color: var(--ddd-theme-default-white);
       text-decoration: none;
       transition: all 0.3s ease;
       backdrop-filter: blur(10px);
@@ -132,17 +132,17 @@ export class PslFooter extends DDDSuper(LitElement) {
     }
 
     .social-link:hover {
-      background: var(--ddd-theme-default-skyBlue, #3b82f6);
+      background: var(--ddd-theme-default-skyBlue);
       transform: translateY(-4px) scale(1.05);
       box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
-      border-color: var(--ddd-theme-default-skyBlue, #3b82f6);
+      border-color: var(--ddd-theme-default-skyBlue);
     }
 
     .logo-footer {
       width: 80px;
       height: 80px;
-      margin: 0 0 var(--ddd-spacing-5, 1.5rem) 0;
-      background: linear-gradient(135deg, var(--ddd-theme-default-white, #ffffff), var(--ddd-theme-default-slateLight, #e2e8f0));
+      margin: 0 0 var(--ddd-spacing-5) 0;
+      background: linear-gradient(135deg, var(--ddd-theme-default-white), var(--ddd-theme-default-slateLight));
       
       display: flex;
       align-items: center;
@@ -156,7 +156,7 @@ export class PslFooter extends DDDSuper(LitElement) {
       content: '';
       position: absolute;
       inset: 2px;
-      background: var(--ddd-theme-default-white, #ffffff);
+      background: var(--ddd-theme-default-white);
       
     }
 
@@ -169,10 +169,10 @@ export class PslFooter extends DDDSuper(LitElement) {
     }
 
     .league-title {
-      font-size: var(--ddd-font-size-xl, 1.25rem);
-      font-weight: var(--ddd-font-weight-bold, 700);
-      color: var(--ddd-theme-default-white, #ffffff);
-      margin: 0 0 var(--ddd-spacing-3, 0.75rem) 0;
+      font-size: var(--ddd-font-size-xl);
+      font-weight: var(--ddd-font-weight-bold);
+      color: var(--ddd-theme-default-white);
+      margin: 0 0 var(--ddd-spacing-3) 0;
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
       line-height: 1.3;
     }
@@ -180,15 +180,15 @@ export class PslFooter extends DDDSuper(LitElement) {
     .league-description {
       color: rgba(255, 255, 255, 0.85);
       line-height: 1.5;
-      font-size: var(--ddd-font-size-base, 1rem);
+      font-size: var(--ddd-font-size-base);
       margin: 0;
     }
 
     .footer-bottom {
       border-top: 1px solid rgba(255, 255, 255, 0.15);
-      margin-top: var(--ddd-spacing-8, 2rem);
-      padding-top: var(--ddd-spacing-6, 2rem);
-      font-size: var(--ddd-font-size-sm, 0.875rem);
+      margin-top: var(--ddd-spacing-8);
+      padding-top: var(--ddd-spacing-6);
+      font-size: var(--ddd-font-size-sm);
     }
 
     .footer-bottom-content {
@@ -196,7 +196,7 @@ export class PslFooter extends DDDSuper(LitElement) {
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: var(--ddd-spacing-4, 1rem);
+      gap: var(--ddd-spacing-4);
     }
 
     .footer-bottom-content p {
@@ -207,10 +207,10 @@ export class PslFooter extends DDDSuper(LitElement) {
     .powered-by {
       display: flex;
       align-items: center;
-      gap: var(--ddd-spacing-3, 0.75rem);
-      font-size: var(--ddd-font-size-sm, 0.875rem);
+      gap: var(--ddd-spacing-3);
+      font-size: var(--ddd-font-size-sm);
       color: rgba(255, 255, 255, 0.6);
-      padding: var(--ddd-spacing-2, 0.5rem) var(--ddd-spacing-4, 1rem);
+      padding: var(--ddd-spacing-2) var(--ddd-spacing-4);
       background: rgba(255, 255, 255, 0.05);
       
       backdrop-filter: blur(10px);
@@ -220,7 +220,7 @@ export class PslFooter extends DDDSuper(LitElement) {
     .powered-logo {
       width: 36px;
       height: 36px;
-      background: var(--ddd-theme-default-white, #ffffff);
+      background: var(--ddd-theme-default-white);
       
       display: flex;
       align-items: center;
@@ -238,25 +238,25 @@ export class PslFooter extends DDDSuper(LitElement) {
     @media (max-width: 1024px) {
       .footer-content {
         grid-template-columns: 1fr 1fr;
-        gap: var(--ddd-spacing-8, 2rem);
+        gap: var(--ddd-spacing-8);
       }
       
       .footer-section.logo-section {
         grid-column: 1 / -1;
         align-items: center;
         text-align: center;
-        margin-bottom: var(--ddd-spacing-4, 1rem);
+        margin-bottom: var(--ddd-spacing-4);
       }
     }
 
     @media (max-width: 768px) {
       .footer {
-        padding: var(--ddd-spacing-8, 2rem) var(--ddd-spacing-4, 1rem) var(--ddd-spacing-6, 2rem);
+        padding: var(--ddd-spacing-8) var(--ddd-spacing-4) var(--ddd-spacing-6);
       }
 
       .footer-content {
         grid-template-columns: 1fr;
-        gap: var(--ddd-spacing-6, 2rem);
+        gap: var(--ddd-spacing-6);
       }
       
       .footer-section.logo-section {
@@ -270,7 +270,7 @@ export class PslFooter extends DDDSuper(LitElement) {
       .footer-bottom-content {
         flex-direction: column;
         text-align: center;
-        gap: var(--ddd-spacing-3, 0.75rem);
+        gap: var(--ddd-spacing-3);
       }
     }
   `;

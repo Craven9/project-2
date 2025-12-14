@@ -18,7 +18,7 @@ export class NavigationHeader extends DDDSuper(LitElement) {
     }
 
     .nav-container {
-      background: rgba(0, 63, 127, 0.95);
+      background: rgba(0);
       backdrop-filter: blur(10px);
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
@@ -28,7 +28,7 @@ export class NavigationHeader extends DDDSuper(LitElement) {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: var(--ddd-spacing-3, 0.75rem) var(--ddd-spacing-6, 2rem);
+      padding: var(--ddd-spacing-3) var(--ddd-spacing-6);
       max-width: 1200px;
       margin: 0 auto;
     }
@@ -36,7 +36,7 @@ export class NavigationHeader extends DDDSuper(LitElement) {
     .logo-section {
       display: flex;
       align-items: center;
-      gap: var(--ddd-spacing-3, 0.75rem);
+      gap: var(--ddd-spacing-3);
       cursor: pointer;
       transition: transform 0.3s ease;
     }
@@ -49,8 +49,8 @@ export class NavigationHeader extends DDDSuper(LitElement) {
       width: 40px;
       height: 40px;
       
-      background: var(--ddd-theme-default-white, #ffffff);
-      padding: 4px;
+      background: var(--ddd-theme-default-white);
+      padding: var(--ddd-spacing-1);
     }
 
     .logo img {
@@ -60,15 +60,15 @@ export class NavigationHeader extends DDDSuper(LitElement) {
     }
 
     .brand-text {
-      color: var(--ddd-theme-default-white, #ffffff);
-      font-size: var(--ddd-font-size-lg, 1.125rem);
-      font-weight: var(--ddd-font-weight-black, 900);
+      color: var(--ddd-theme-default-white);
+      font-size: var(--ddd-font-size-lg);
+      font-weight: var(--ddd-font-weight-black);
       letter-spacing: 0.5px;
     }
 
     .nav-links {
       display: flex;
-      gap: var(--ddd-spacing-6, 2rem);
+      gap: var(--ddd-spacing-6);
       list-style: none;
       margin: 0;
       padding: 0;
@@ -77,9 +77,9 @@ export class NavigationHeader extends DDDSuper(LitElement) {
     .nav-link {
       color: rgba(255, 255, 255, 0.9);
       text-decoration: none;
-      font-weight: var(--ddd-font-weight-medium, 500);
-      font-size: var(--ddd-font-size-sm, 0.875rem);
-      padding: var(--ddd-spacing-2, 0.5rem) var(--ddd-spacing-3, 0.75rem);
+      font-weight: var(--ddd-font-weight-medium);
+      font-size: var(--ddd-font-size-sm);
+      padding: var(--ddd-spacing-2) var(--ddd-spacing-3);
       
       transition: all 0.3s ease;
       position: relative;
@@ -87,15 +87,15 @@ export class NavigationHeader extends DDDSuper(LitElement) {
     }
 
     .nav-link:hover {
-      color: var(--ddd-theme-default-white, #ffffff);
+      color: var(--ddd-theme-default-white);
       background: rgba(255, 255, 255, 0.1);
       transform: translateY(-1px);
     }
 
     .nav-link.active {
-      color: var(--ddd-theme-default-white, #ffffff);
+      color: var(--ddd-theme-default-white);
       background: rgba(255, 255, 255, 0.2);
-      font-weight: var(--ddd-font-weight-bold, 600);
+      font-weight: var(--ddd-font-weight-bold);
     }
 
     .nav-link.active::after {
@@ -106,7 +106,7 @@ export class NavigationHeader extends DDDSuper(LitElement) {
       transform: translateX(-50%);
       width: 20px;
       height: 2px;
-      background: #fbbf24;
+      background: var(--ddd-theme-default-accent);
       
     }
 
@@ -114,10 +114,10 @@ export class NavigationHeader extends DDDSuper(LitElement) {
       display: none;
       background: none;
       border: none;
-      color: var(--ddd-theme-default-white, #ffffff);
+      color: var(--ddd-theme-default-white);
       font-size: 1.5rem;
       cursor: pointer;
-      padding: var(--ddd-spacing-2, 0.5rem);
+      padding: var(--ddd-spacing-2);
       
       transition: background 0.3s ease;
     }
@@ -128,9 +128,9 @@ export class NavigationHeader extends DDDSuper(LitElement) {
 
     .mobile-nav {
       display: none;
-      background: #003F7F;
+      background: var(--ddd-theme-default-navy);
       border-top: 1px solid rgba(255, 255, 255, 0.1);
-      padding: var(--ddd-spacing-4, 1rem);
+      padding: var(--ddd-spacing-4);
     }
 
     .mobile-nav.open {
@@ -140,14 +140,14 @@ export class NavigationHeader extends DDDSuper(LitElement) {
     .mobile-nav-links {
       display: flex;
       flex-direction: column;
-      gap: var(--ddd-spacing-3, 0.75rem);
+      gap: var(--ddd-spacing-3);
     }
 
     .mobile-nav-link {
       color: rgba(255, 255, 255, 0.9);
       text-decoration: none;
-      font-weight: var(--ddd-font-weight-medium, 500);
-      padding: var(--ddd-spacing-3, 0.75rem);
+      font-weight: var(--ddd-font-weight-medium);
+      padding: var(--ddd-spacing-3);
       
       transition: all 0.3s ease;
       cursor: pointer;
@@ -155,14 +155,14 @@ export class NavigationHeader extends DDDSuper(LitElement) {
 
     .mobile-nav-link:hover,
     .mobile-nav-link.active {
-      color: var(--ddd-theme-default-white, #ffffff);
+      color: var(--ddd-theme-default-white);
       background: rgba(255, 255, 255, 0.1);
     }
 
     /* Mobile responsiveness */
     @media (max-width: 768px) {
       .nav-content {
-        padding: var(--ddd-spacing-3, 0.75rem) var(--ddd-spacing-4, 1rem);
+        padding: var(--ddd-spacing-3) var(--ddd-spacing-4);
       }
 
       .nav-links {
@@ -174,7 +174,7 @@ export class NavigationHeader extends DDDSuper(LitElement) {
       }
 
       .brand-text {
-        font-size: var(--ddd-font-size-base, 1rem);
+        font-size: var(--ddd-font-size-base);
       }
     }
 
@@ -185,7 +185,7 @@ export class NavigationHeader extends DDDSuper(LitElement) {
       }
 
       .brand-text {
-        font-size: var(--ddd-font-size-sm, 0.875rem);
+        font-size: var(--ddd-font-size-sm);
       }
     }
   `;

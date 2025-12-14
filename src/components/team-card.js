@@ -20,10 +20,10 @@ export class TeamCard extends DDDSuper(LitElement) {
     }
 
     .team-card {
-      background: var(--ddd-theme-default-white, #ffffff);
-      padding: var(--ddd-spacing-6, 2rem);
+      background: var(--ddd-theme-default-white);
+      padding: var(--ddd-spacing-6);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      border: 1px solid var(--ddd-theme-default-slateLight, #e2e8f0);
+      border: 1px solid var(--ddd-theme-default-slateLight);
       transition: all 0.3s ease;
       text-align: center;
     }
@@ -32,38 +32,38 @@ export class TeamCard extends DDDSuper(LitElement) {
       width: 80px;
       height: 80px;
       
-      margin: 0 auto var(--ddd-spacing-4, 1rem);
+      margin: 0 auto var(--ddd-spacing-4);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: var(--ddd-font-size-2xl, 1.875rem);
-      font-weight: var(--ddd-font-weight-black, 900);
-      color: var(--ddd-theme-default-white, #ffffff);
+      font-size: var(--ddd-font-size-2xl);
+      font-weight: var(--ddd-font-weight-black);
+      color: var(--ddd-theme-default-white);
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
 
     .team-name {
-      font-size: var(--ddd-font-size-xl, 1.25rem);
-      font-weight: var(--ddd-font-weight-bold, 600);
-      color: var(--ddd-theme-default-coalyGray, #333333);
-      margin: 0 0 var(--ddd-spacing-2, 0.5rem) 0;
+      font-size: var(--ddd-font-size-xl);
+      font-weight: var(--ddd-font-weight-bold);
+      color: var(--ddd-theme-default-coalyGray);
+      margin: 0 0 var(--ddd-spacing-2) 0;
     }
 
     .team-record {
-      font-size: var(--ddd-font-size-base, 1rem);
-      color: var(--ddd-theme-default-coalyGray, #333333);
-      margin-bottom: var(--ddd-spacing-4, 1rem);
-      font-weight: var(--ddd-font-weight-medium, 500);
+      font-size: var(--ddd-font-size-base);
+      color: var(--ddd-theme-default-coalyGray);
+      margin-bottom: var(--ddd-spacing-4);
+      font-weight: var(--ddd-font-weight-medium);
     }
 
     .team-stats {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: var(--ddd-spacing-4, 1rem);
-      margin: var(--ddd-spacing-4, 1rem) 0;
-      padding: var(--ddd-spacing-4, 1rem);
-      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      gap: var(--ddd-spacing-4);
+      margin: var(--ddd-spacing-4) 0;
+      padding: var(--ddd-spacing-4);
+      background: var(--ddd-theme-default-slateLight);
       
     }
 
@@ -72,41 +72,41 @@ export class TeamCard extends DDDSuper(LitElement) {
     }
 
     .stat-number {
-      font-size: var(--ddd-font-size-xl, 1.25rem);
-      font-weight: var(--ddd-font-weight-black, 900);
-      color: var(--ddd-theme-default-coalyGray, #333333);
-      margin-bottom: var(--ddd-spacing-1, 0.25rem);
+      font-size: var(--ddd-font-size-xl);
+      font-weight: var(--ddd-font-weight-black);
+      color: var(--ddd-theme-default-coalyGray);
+      margin-bottom: var(--ddd-spacing-1);
     }
 
     .stat-label {
-      font-size: var(--ddd-font-size-xs, 0.75rem);
-      color: var(--ddd-theme-default-coalyGray, #333333);
+      font-size: var(--ddd-font-size-xs);
+      color: var(--ddd-theme-default-coalyGray);
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      font-weight: var(--ddd-font-weight-medium, 500);
+      font-weight: var(--ddd-font-weight-medium);
     }
 
     .team-captain {
-      margin-top: var(--ddd-spacing-4, 1rem);
-      padding: var(--ddd-spacing-3, 0.75rem);
-      background: var(--ddd-theme-default-skyBlue, #3b82f6);
-      color: var(--ddd-theme-default-white, #ffffff);
+      margin-top: var(--ddd-spacing-4);
+      padding: var(--ddd-spacing-3);
+      background: var(--ddd-theme-default-skyBlue);
+      color: var(--ddd-theme-default-white);
       
-      font-size: var(--ddd-font-size-sm, 0.875rem);
-      font-weight: var(--ddd-font-weight-medium, 500);
+      font-size: var(--ddd-font-size-sm);
+      font-weight: var(--ddd-font-weight-medium);
     }
 
     .captain-label {
       display: block;
-      font-size: var(--ddd-font-size-xs, 0.75rem);
+      font-size: var(--ddd-font-size-xs);
       opacity: 0.8;
-      margin-bottom: var(--ddd-spacing-1, 0.25rem);
+      margin-bottom: var(--ddd-spacing-1);
     }
 
     @media (max-width: 600px) {
       .team-stats {
         grid-template-columns: repeat(2, 1fr);
-        gap: var(--ddd-spacing-2, 0.5rem);
+        gap: var(--ddd-spacing-2);
       }
     }
   `;
@@ -114,7 +114,7 @@ export class TeamCard extends DDDSuper(LitElement) {
   constructor() {
     super();
     this.name = 'Team Name';
-    this.color = '#3b82f6';
+    this.color = 'var(--ddd-theme-default-skyBlue)';
     this.record = '0-0-0';
     this.wins = 0;
     this.losses = 0;

@@ -18,9 +18,9 @@ export class NewsCard extends DDDSuper(LitElement) {
     }
 
     .news-card {
-      background: var(--ddd-theme-default-white, #ffffff);
+      background: var(--ddd-theme-default-white);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      border: 1px solid var(--ddd-theme-default-slateLight, #e2e8f0);
+      border: 1px solid var(--ddd-theme-default-slateLight);
       transition: all 0.3s ease;
       overflow: hidden;
       cursor: pointer;
@@ -29,12 +29,12 @@ export class NewsCard extends DDDSuper(LitElement) {
     .news-image {
       width: 100%;
       height: 180px;
-      background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+      background: var(--ddd-theme-default-skyBlue);
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--ddd-theme-default-white, #ffffff);
-      font-size: 3rem;
+      color: var(--ddd-theme-default-white);
+      font-size: var(--ddd-font-size-3xl);
       position: relative;
       overflow: hidden;
     }
@@ -47,33 +47,33 @@ export class NewsCard extends DDDSuper(LitElement) {
 
     .category-badge {
       position: absolute;
-      top: var(--ddd-spacing-3, 0.75rem);
-      left: var(--ddd-spacing-3, 0.75rem);
+      top: var(--ddd-spacing-3);
+      left: var(--ddd-spacing-3);
       background: rgba(0, 0, 0, 0.7);
-      color: var(--ddd-theme-default-white, #ffffff);
-      padding: var(--ddd-spacing-1, 0.25rem) var(--ddd-spacing-3, 0.75rem);
+      color: var(--ddd-theme-default-white);
+      padding: var(--ddd-spacing-1) var(--ddd-spacing-3);
       
-      font-size: var(--ddd-font-size-xs, 0.75rem);
-      font-weight: var(--ddd-font-weight-bold, 600);
+      font-size: var(--ddd-font-size-xs);
+      font-weight: var(--ddd-font-weight-bold);
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
 
     .news-content {
-      padding: var(--ddd-spacing-6, 2rem);
+      padding: var(--ddd-spacing-6);
     }
 
     .news-meta {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: var(--ddd-spacing-3, 0.75rem);
-      font-size: var(--ddd-font-size-sm, 0.875rem);
-      color: var(--ddd-theme-default-coalyGray, #333333);
+      margin-bottom: var(--ddd-spacing-3);
+      font-size: var(--ddd-font-size-sm);
+      color: var(--ddd-theme-default-coalyGray);
     }
 
     .news-date {
-      font-weight: var(--ddd-font-weight-medium, 500);
+      font-weight: var(--ddd-font-weight-medium);
     }
 
     .news-author {
@@ -81,38 +81,38 @@ export class NewsCard extends DDDSuper(LitElement) {
     }
 
     .news-headline {
-      font-size: var(--ddd-font-size-xl, 1.25rem);
-      font-weight: var(--ddd-font-weight-bold, 600);
-      color: var(--ddd-theme-default-coalyGray, #333333);
-      margin: 0 0 var(--ddd-spacing-3, 0.75rem) 0;
+      font-size: var(--ddd-font-size-xl);
+      font-weight: var(--ddd-font-weight-bold);
+      color: var(--ddd-theme-default-coalyGray);
+      margin: 0 0 var(--ddd-spacing-3) 0;
       line-height: 1.3;
     }
 
     .news-summary {
-      font-size: var(--ddd-font-size-base, 1rem);
-      color: var(--ddd-theme-default-coalyGray, #333333);
+      font-size: var(--ddd-font-size-base);
+      color: var(--ddd-theme-default-coalyGray);
       line-height: 1.5;
-      margin: 0 0 var(--ddd-spacing-4, 1rem) 0;
+      margin: 0 0 var(--ddd-spacing-4) 0;
     }
 
     .read-more {
       display: inline-flex;
       align-items: center;
-      color: var(--ddd-theme-default-skyBlue, #3b82f6);
+      color: var(--ddd-theme-default-skyBlue);
       text-decoration: none;
-      font-weight: var(--ddd-font-weight-medium, 500);
-      font-size: var(--ddd-font-size-sm, 0.875rem);
+      font-weight: var(--ddd-font-weight-medium);
+      font-size: var(--ddd-font-size-sm);
       transition: all 0.3s ease;
     }
 
     .read-more:hover {
-      color: #1e40af;
+      color: var(--ddd-theme-default-navy);
       transform: translateX(2px);
     }
 
     .read-more::after {
       content: '';
-      margin-left: var(--ddd-spacing-2, 0.5rem);
+      margin-left: var(--ddd-spacing-2);
       transition: transform 0.3s ease;
     }
 
@@ -122,13 +122,13 @@ export class NewsCard extends DDDSuper(LitElement) {
 
     @media (max-width: 600px) {
       .news-content {
-        padding: var(--ddd-spacing-4, 1rem);
+        padding: var(--ddd-spacing-4);
       }
       
       .news-meta {
         flex-direction: column;
         align-items: flex-start;
-        gap: var(--ddd-spacing-1, 0.25rem);
+        gap: var(--ddd-spacing-1);
       }
     }
   `;
@@ -162,7 +162,7 @@ export class NewsCard extends DDDSuper(LitElement) {
         <div class="news-image">
           ${this.image ? 
             html`<img src="${this.image}" alt="${this.headline}" />` :
-            html`<div style="font-size: 2rem; font-weight: bold;">NEWS</div>`
+            html`<div style="font-size: var(--ddd-font-size-2xl); font-weight: var(--ddd-font-weight-bold);">NEWS</div>`
           }
           ${this.category ? html`
             <div class="category-badge">${this.category}</div>

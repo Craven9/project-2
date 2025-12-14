@@ -33,72 +33,72 @@ export class PslHome extends DDDSuper(LitElement) {
       }
 
       .home-container {
-        max-width: var(--ddd-breakpoint-lg, 1200px);
+        max-width: var(--ddd-breakpoint-lg);
         margin: 0 auto;
-        padding: var(--ddd-spacing-6, 2rem);
+        padding: var(--ddd-spacing-6);
       }
 
       .hero-section {
-        margin-bottom: var(--ddd-spacing-8, 3rem);
+        margin-bottom: var(--ddd-spacing-8);
       }
 
       .quick-stats {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: var(--ddd-spacing-4, 1rem);
-        margin-bottom: var(--ddd-spacing-8, 3rem);
+        gap: var(--ddd-spacing-4);
+        margin-bottom: var(--ddd-spacing-8);
       }
 
       .upcoming-games {
-        margin-bottom: var(--ddd-spacing-8, 3rem);
+        margin-bottom: var(--ddd-spacing-8);
       }
 
       .section-title {
-        font-size: var(--ddd-font-size-xl, 1.25rem);
-        font-weight: var(--ddd-font-weight-bold, 700);
-        color: var(--ddd-theme-default-coalyGray, #333);
-        margin-bottom: var(--ddd-spacing-4, 1rem);
+        font-size: var(--ddd-font-size-xl);
+        font-weight: var(--ddd-font-weight-bold);
+        color: var(--ddd-theme-default-coalyGray);
+        margin-bottom: var(--ddd-spacing-4);
         text-align: center;
       }
 
       .games-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: var(--ddd-spacing-4, 1rem);
+        gap: var(--ddd-spacing-4);
       }
 
       .news-section {
-        background: var(--ddd-theme-default-white, #fff);
-        padding: var(--ddd-spacing-6, 2rem);
+        background: var(--ddd-theme-default-white);
+        padding: var(--ddd-spacing-6);
         
-        box-shadow: var(--ddd-boxShadow-1, 0 2px 4px rgba(0,0,0,0.1));
-        margin-bottom: var(--ddd-spacing-6, 2rem);
+        box-shadow: var(--ddd-boxShadow-1);
+        margin-bottom: var(--ddd-spacing-6);
       }
 
       .cta-section {
         text-align: center;
-        background: var(--ddd-theme-default-white, #fff);
-        padding: var(--ddd-spacing-8, 3rem);
+        background: var(--ddd-theme-default-white);
+        padding: var(--ddd-spacing-8);
         
-        box-shadow: var(--ddd-boxShadow-1, 0 2px 4px rgba(0,0,0,0.1));
+        box-shadow: var(--ddd-boxShadow-1);
       }
 
       .cta-title {
-        font-size: var(--ddd-font-size-2xl, 1.875rem);
-        font-weight: var(--ddd-font-weight-bold, 700);
+        font-size: var(--ddd-font-size-2xl);
+        font-weight: var(--ddd-font-weight-bold);
         color: var(--ddd-theme-default-coalyGray);
-        margin-bottom: var(--ddd-spacing-2, 0.5rem);
+        margin-bottom: var(--ddd-spacing-2);
       }
 
       .cta-subtitle {
-        font-size: var(--ddd-font-size-base, 1rem);
-        color: var(--ddd-theme-default-coalyGray, #333);
-        margin-bottom: var(--ddd-spacing-6, 2rem);
+        font-size: var(--ddd-font-size-base);
+        color: var(--ddd-theme-default-coalyGray);
+        margin-bottom: var(--ddd-spacing-6);
       }
 
       @media (max-width: 768px) {
         .home-container {
-          padding: var(--ddd-spacing-4, 1rem);
+          padding: var(--ddd-spacing-4);
         }
         
         .quick-stats {
@@ -136,17 +136,17 @@ export class PslHome extends DDDSuper(LitElement) {
           <stat-card
             number="12"
             label="Active Teams"
-            color="var(--ddd-theme-default-skyBlue, #3b82f6)">
+            color="var(--ddd-theme-default-skyBlue)">
           </stat-card>
           <stat-card
             number="156"
             label="Total Players"
-            color="var(--ddd-theme-default-forestGreen, #10b981)">
+            color="var(--ddd-theme-default-forestGreen)">
           </stat-card>
           <stat-card
             number="28"
             label="Games Played"
-            color="var(--ddd-theme-default-orange, #f59e0b)">
+            color="var(--ddd-theme-default-orange)">
           </stat-card>
         </div>
 

@@ -32,14 +32,14 @@ export class PslHeader extends DDDSuper(LitElement) {
       }
 
       .header {
-        background: linear-gradient(135deg, var(--ddd-theme-default-navy, #1e40af) 0%, var(--ddd-theme-default-skyBlue, #3b82f6) 100%);
-        color: var(--ddd-theme-default-white, #ffffff);
-        padding: var(--ddd-spacing-4, 1rem) var(--ddd-spacing-6, 2rem);
-        box-shadow: var(--ddd-boxShadow-2, 0 4px 8px rgba(0,0,0,0.15));
+        background: linear-gradient(135deg, var(--ddd-theme-default-navy) 0%, var(--ddd-theme-default-skyBlue) 100%);
+        color: var(--ddd-theme-default-white);
+        padding: var(--ddd-spacing-4) var(--ddd-spacing-6);
+        box-shadow: var(--ddd-boxShadow-2);
       }
 
       .header-container {
-        max-width: var(--ddd-breakpoint-lg, 1200px);
+        max-width: var(--ddd-breakpoint-lg);
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -49,7 +49,7 @@ export class PslHeader extends DDDSuper(LitElement) {
       .logo-section {
         display: flex;
         align-items: center;
-        gap: var(--ddd-spacing-3, 0.75rem);
+        gap: var(--ddd-spacing-3);
       }
 
       .logo {
@@ -60,8 +60,8 @@ export class PslHeader extends DDDSuper(LitElement) {
         display: flex;
         align-items: center;
         justify-content: center;
-        background: var(--ddd-theme-default-white, #ffffff);
-        padding: var(--ddd-spacing-1, 0.25rem);
+        background: var(--ddd-theme-default-white);
+        padding: var(--ddd-spacing-1);
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
 
@@ -72,27 +72,27 @@ export class PslHeader extends DDDSuper(LitElement) {
       }
 
       .site-title {
-        font-size: var(--ddd-font-size-xl, 1.25rem);
-        font-weight: var(--ddd-font-weight-bold, 700);
+        font-size: var(--ddd-font-size-xl);
+        font-weight: var(--ddd-font-weight-bold);
         margin: 0;
       }
 
       .nav {
         display: flex;
-        gap: var(--ddd-spacing-2, 0.5rem);
+        gap: var(--ddd-spacing-2);
       }
 
       .nav-link {
-        padding: var(--ddd-spacing-2, 0.5rem) var(--ddd-spacing-4, 1rem);
+        padding: var(--ddd-spacing-2) var(--ddd-spacing-4);
         text-decoration: none;
-        color: var(--ddd-theme-default-white, #ffffff);
+        color: var(--ddd-theme-default-white);
         
         transition: all 0.3s ease;
-        font-weight: var(--ddd-font-weight-medium, 500);
+        font-weight: var(--ddd-font-weight-medium);
         cursor: pointer;
         border: none;
         background: transparent;
-        font-size: var(--ddd-font-size-base, 1rem);
+        font-size: var(--ddd-font-size-base);
       }
 
       .nav-link:hover {
@@ -100,18 +100,18 @@ export class PslHeader extends DDDSuper(LitElement) {
       }
 
       .nav-link.active {
-        background: var(--ddd-theme-default-white, #ffffff);
-        color: var(--ddd-theme-default-navy, #1e40af);
+        background: var(--ddd-theme-default-white);
+        color: var(--ddd-theme-default-navy);
       }
 
       .mobile-menu-toggle {
         display: none;
         background: rgba(255, 255, 255, 0.1);
         border: 2px solid rgba(255, 255, 255, 0.3);
-        color: var(--ddd-theme-default-white, #ffffff);
-        font-size: var(--ddd-font-size-xl, 1.25rem);
+        color: var(--ddd-theme-default-white);
+        font-size: var(--ddd-font-size-xl);
         cursor: pointer;
-        padding: var(--ddd-spacing-3, 0.75rem);
+        padding: var(--ddd-spacing-3);
         transition: all 0.3s ease;
         min-width: 44px;
         min-height: 44px;
@@ -130,10 +130,10 @@ export class PslHeader extends DDDSuper(LitElement) {
         top: 100%;
         left: 0;
         right: 0;
-        background: var(--ddd-theme-default-navy, #1e40af);
+        background: var(--ddd-theme-default-navy);
         flex-direction: column;
-        padding: var(--ddd-spacing-4, 1rem);
-        box-shadow: var(--ddd-boxShadow-2, 0 4px 8px rgba(0,0,0,0.15));
+        padding: var(--ddd-spacing-4);
+        box-shadow: var(--ddd-boxShadow-2);
       }
 
       .mobile-nav.open {
@@ -154,7 +154,7 @@ export class PslHeader extends DDDSuper(LitElement) {
         }
         
         .site-title {
-          font-size: var(--ddd-font-size-base, 1rem);
+          font-size: var(--ddd-font-size-base);
         }
       }
     `];

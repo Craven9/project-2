@@ -15,8 +15,8 @@ export class HomePage extends DDDSuper(LitElement) {
 
     .home-container {
       min-height: 100vh;
-      background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #1e40af 100%);
-      color: var(--ddd-theme-default-white, #ffffff);
+      background: var(--ddd-theme-default-slateLight);
+      color: var(--ddd-theme-default-coalyGray);
       display: flex;
       flex-direction: column;
       position: relative;
@@ -48,32 +48,32 @@ export class HomePage extends DDDSuper(LitElement) {
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: var(--ddd-spacing-10, 2.5rem);
+      padding: var(--ddd-spacing-10);
       position: relative;
       z-index: 1;
     }
 
     .hero-content {
-      max-width: var(--ddd-breakpoint-md, 800px);
+      max-width: var(--ddd-breakpoint-md);
       position: relative;
       z-index: 2;
     }
 
     h1 {
-      font-size: var(--ddd-font-size-4xl, 3rem);
-      margin-bottom: var(--ddd-spacing-4, 1rem);
-      font-weight: var(--ddd-font-weight-black, 900);
-      line-height: var(--ddd-lh-120, 1.2);
-      color: var(--ddd-theme-default-white, #ffffff);
+      font-size: var(--ddd-font-size-4xl);
+      margin-bottom: var(--ddd-spacing-4);
+      font-weight: var(--ddd-font-weight-black);
+      line-height: var(--ddd-lh-120);
+      color: var(--ddd-theme-default-white);
       text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     }
 
     .subtitle {
-      font-size: var(--ddd-font-size-xl, 1.25rem);
-      margin-bottom: var(--ddd-spacing-8, 2rem);
+      font-size: var(--ddd-font-size-xl);
+      margin-bottom: var(--ddd-spacing-8);
       opacity: 0.95;
-      line-height: var(--ddd-lh-140, 1.4);
-      color: var(--ddd-theme-default-white, #ffffff);
+      line-height: var(--ddd-lh-140);
+      color: var(--ddd-theme-default-white);
     }
 
     .buttons {
@@ -96,20 +96,20 @@ export class HomePage extends DDDSuper(LitElement) {
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
-      color: var(--ddd-theme-default-white, #ffffff);
+      background: var(--ddd-theme-default-original87Pink);
+      color: var(--ddd-theme-default-white);
       border: 2px solid transparent;
     }
 
     .btn-primary:hover {
-      background: linear-gradient(135deg, #e55a2b 0%, #ff6b35 100%);
-      box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+      background: var(--ddd-theme-default-original87Pink);
+      box-shadow: var(--ddd-boxShadow-lg);
     }
 
     .btn-secondary {
       background: rgba(255, 255, 255, 0.15);
-      color: var(--ddd-theme-default-white, #ffffff);
-      border: var(--ddd-border-sm, 2px) solid rgba(255, 255, 255, 0.4);
+      color: var(--ddd-theme-default-white);
+      border: var(--ddd-border-sm) solid rgba(255, 255, 255, 0.4);
       backdrop-filter: blur(10px);
     }
 
@@ -120,26 +120,26 @@ export class HomePage extends DDDSuper(LitElement) {
     }
 
     .btn-success {
-      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-      color: var(--ddd-theme-default-white, #ffffff);
+      background: var(--ddd-theme-default-successGreen);
+      color: var(--ddd-theme-default-white);
       border: 2px solid transparent;
     }
 
     .btn-success:hover {
-      background: linear-gradient(135deg, #059669 0%, #047857 100%);
-      box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+      background: var(--ddd-theme-default-limeGreen);
+      box-shadow: var(--ddd-boxShadow-lg);
     }
 
     .btn-championship {
-      background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
-      color: var(--ddd-theme-default-coalyGray, #333333);
+      background: var(--ddd-theme-default-accent);
+      color: var(--ddd-theme-default-coalyGray);
       border: 2px solid transparent;
-      font-weight: var(--ddd-font-weight-bold, 600);
+      font-weight: var(--ddd-font-weight-bold);
     }
 
     .btn-championship:hover {
-      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-      box-shadow: 0 8px 25px rgba(251, 191, 36, 0.4);
+      background: var(--ddd-theme-default-alertOrange);
+      box-shadow: var(--ddd-boxShadow-lg);
     }
 
     .btn:hover {
@@ -152,7 +152,7 @@ export class HomePage extends DDDSuper(LitElement) {
       top: 0;
       left: 0;
       right: 0;
-      padding: var(--ddd-spacing-4, 1rem) var(--ddd-spacing-8, 2rem);
+      padding: var(--ddd-spacing-4) var(--ddd-spacing-8);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -162,22 +162,22 @@ export class HomePage extends DDDSuper(LitElement) {
     }
 
     .logo {
-      font-size: var(--ddd-font-size-xl, 1.25rem);
-      font-weight: var(--ddd-font-weight-black, 900);
-      color: var(--ddd-theme-default-white, #ffffff);
+      font-size: var(--ddd-font-size-xl);
+      font-weight: var(--ddd-font-weight-black);
+      color: var(--ddd-theme-default-white);
     }
 
     .nav-links {
       display: flex;
-      gap: var(--ddd-spacing-8, 2rem);
+      gap: var(--ddd-spacing-8);
     }
 
     .nav-link {
-      color: var(--ddd-theme-default-white, #ffffff);
+      color: var(--ddd-theme-default-white);
       text-decoration: none;
-      font-weight: var(--ddd-font-weight-medium, 500);
+      font-weight: var(--ddd-font-weight-medium);
       transition: all 0.3s ease;
-      padding: var(--ddd-spacing-2, 0.5rem) var(--ddd-spacing-3, 0.75rem);
+      padding: var(--ddd-spacing-2) var(--ddd-spacing-3);
       border: 2px solid transparent;
       background: transparent;
       cursor: pointer;
@@ -193,20 +193,20 @@ export class HomePage extends DDDSuper(LitElement) {
 
     .footer {
       background: rgba(0, 0, 0, 0.3);
-      color: var(--ddd-theme-default-white, #ffffff);
-      padding: var(--ddd-spacing-4, 1rem) var(--ddd-spacing-6, 2rem);
+      color: var(--ddd-theme-default-white);
+      padding: var(--ddd-spacing-4) var(--ddd-spacing-6);
       text-align: center;
       backdrop-filter: blur(10px);
       border-top: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     .footer-content {
-      max-width: var(--ddd-breakpoint-md, 800px);
+      max-width: var(--ddd-breakpoint-md);
       margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: var(--ddd-spacing-4, 1rem);
+      gap: var(--ddd-spacing-4);
       flex-wrap: wrap;
     }
 
@@ -230,7 +230,7 @@ export class HomePage extends DDDSuper(LitElement) {
     }
 
     .copyright {
-      font-size: var(--ddd-font-size-sm, 0.875rem);
+      font-size: var(--ddd-font-size-sm);
       opacity: 0.9;
     }
   `;

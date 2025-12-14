@@ -11,14 +11,14 @@ export class PslButton extends DDDSuper(LitElement) {
   static styles = css`
     :host {
       display: inline-block;
-      margin: var(--ddd-spacing-2, 0.5rem);
+      margin: var(--ddd-spacing-2);
     }
 
     .btn {
-      padding: var(--ddd-spacing-3, 0.75rem) var(--ddd-spacing-6, 2rem);
+      padding: var(--ddd-spacing-3) var(--ddd-spacing-6);
       font-family: var(--ddd-font-primary);
-      font-size: var(--ddd-font-size-base, 1rem);
-      font-weight: var(--ddd-font-weight-medium, 500);
+      font-size: var(--ddd-font-size-base);
+      font-weight: var(--ddd-font-weight-medium);
       
       border: none;
       cursor: pointer;
@@ -46,37 +46,37 @@ export class PslButton extends DDDSuper(LitElement) {
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-      color: var(--ddd-theme-default-white, #ffffff);
+      background: var(--ddd-theme-default-skyBlue);
+      color: var(--ddd-theme-default-white);
     }
 
-    .btn-primary:hover:not(:disabled) {
-      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    .btn-primary:hover {
+      background: var(--ddd-theme-default-navy);
     }
 
     .btn-success {
-      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-      color: var(--ddd-theme-default-white, #ffffff);
+      background: var(--ddd-theme-default-limeLightAccent);
+      color: var(--ddd-theme-default-white);
     }
 
-    .btn-success:hover:not(:disabled) {
-      background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    .btn-success:hover {
+      background: var(--ddd-theme-default-limeLightAccent);
     }
 
     .btn-secondary {
-      background: var(--ddd-theme-default-slateLight, #e2e8f0);
-      color: var(--ddd-theme-default-coalyGray, #333333);
-      border: 2px solid var(--ddd-theme-default-slateGray, #64748b);
+      background: var(--ddd-theme-default-slateLight);
+      color: var(--ddd-theme-default-coalyGray);
+      border: 2px solid var(--ddd-theme-default-slateGray);
     }
 
     .btn-secondary:hover:not(:disabled) {
-      background: var(--ddd-theme-default-slateGray, #64748b);
-      color: var(--ddd-theme-default-white, #ffffff);
+      background: var(--ddd-theme-default-slateGray);
+      color: var(--ddd-theme-default-white);
     }
 
     .btn-warning {
       background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-      color: var(--ddd-theme-default-white, #ffffff);
+      color: var(--ddd-theme-default-white);
     }
 
     .btn-warning:hover:not(:disabled) {
@@ -85,7 +85,7 @@ export class PslButton extends DDDSuper(LitElement) {
 
     .btn-danger {
       background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
-      color: var(--ddd-theme-default-white, #ffffff);
+      color: var(--ddd-theme-default-white);
     }
 
     .btn-danger:hover:not(:disabled) {

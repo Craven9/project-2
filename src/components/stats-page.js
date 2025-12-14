@@ -16,29 +16,29 @@ export class StatsPage extends DDDSuper(LitElement) {
 
     .stats-container {
       min-height: 100vh;
-      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-      padding: var(--ddd-spacing-8, 2rem);
-      color: var(--ddd-theme-default-coalyGray, #333333);
+      background: var(--ddd-theme-default-slateLight);
+      padding: var(--ddd-spacing-8);
+      color: var(--ddd-theme-default-coalyGray);
     }
 
     .back-button {
       position: absolute;
-      top: var(--ddd-spacing-8, 2rem);
-      left: var(--ddd-spacing-8, 2rem);
-      padding: var(--ddd-spacing-2, 0.5rem) var(--ddd-spacing-5, 1.25rem);
-      background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-      color: var(--ddd-theme-default-white, #ffffff);
+      top: var(--ddd-spacing-8);
+      left: var(--ddd-spacing-8);
+      padding: var(--ddd-spacing-2) var(--ddd-spacing-5);
+      background: var(--ddd-theme-default-skyBlue);
+      color: var(--ddd-theme-default-white);
       border: none;
       cursor: pointer;
-      font-weight: var(--ddd-font-weight-bold, 600);
+      font-weight: var(--ddd-font-weight-bold);
       transition: all 0.3s ease;
-      box-shadow: 0 2px 8px rgba(30, 64, 175, 0.3);
+      box-shadow: var(--ddd-boxShadow-lg);
     }
 
     .back-button:hover {
-      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+      background: var(--ddd-theme-default-navy);
       transform: translateY(-1px);
-      box-shadow: 0 4px 12px rgba(30, 64, 175, 0.4);
+      box-shadow: var(--ddd-boxShadow-2);
     }
 
     .header {
@@ -48,13 +48,13 @@ export class StatsPage extends DDDSuper(LitElement) {
 
     h1 {
       font-size: var(--ddd-font-size-3xl);
-      color: var(--ddd-theme-default-navy80);
+      color: var(--ddd-theme-default-coalyGray);
       margin-bottom: var(--ddd-spacing-2);
       font-weight: var(--ddd-font-weight-black);
     }
 
     .subtitle {
-      color: var(--ddd-theme-default-coalyGray, #333333);
+      color: var(--ddd-theme-default-coalyGray);
       font-size: var(--ddd-font-size-lg);
     }
 
@@ -62,7 +62,7 @@ export class StatsPage extends DDDSuper(LitElement) {
       max-width: var(--ddd-breakpoint-lg);
       margin: 0 auto;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit);
       gap: var(--ddd-spacing-8);
     }
 
@@ -101,7 +101,7 @@ export class StatsPage extends DDDSuper(LitElement) {
     }
 
     .stat-label {
-      color: var(--ddd-theme-default-coalyGray, #333333);
+      color: var(--ddd-theme-default-coalyGray);
       font-size: var(--ddd-font-size-lg);
       font-weight: var(--ddd-font-weight-bold);
       text-transform: uppercase;
@@ -149,47 +149,47 @@ export class StatsPage extends DDDSuper(LitElement) {
       flex: 1;
       font-weight: var(--ddd-font-weight-bold);
       margin-left: var(--ddd-spacing-4);
-      color: var(--ddd-theme-default-coalyGray, #333333);
+      color: var(--ddd-theme-default-coalyGray);
     }
 
     .team-record {
-      color: var(--ddd-theme-default-slateGray, #4a5568);
-      font-size: var(--ddd-font-size-sm, 0.875rem);
-      margin-right: var(--ddd-spacing-4, 1rem);
+      color: var(--ddd-theme-default-slateGray);
+      font-size: var(--ddd-font-size-sm);
+      margin-right: var(--ddd-spacing-4);
     }
 
     .points {
-      font-weight: var(--ddd-font-weight-black, 700);
-      color: #10b981;
+      font-weight: var(--ddd-font-weight-black);
+      color: var(--ddd-theme-default-successGreen);
     }
 
     .footer {
-      background: var(--ddd-theme-default-white, #ffffff);
-      color: var(--ddd-theme-default-slateGray, #4a5568);
-      padding: var(--ddd-spacing-6, 2rem);
+      background: var(--ddd-theme-default-white);
+      color: var(--ddd-theme-default-slateGray);
+      padding: var(--ddd-spacing-6);
       text-align: center;
-      border-top: 1px solid var(--ddd-theme-default-slateLight, #e2e8f0);
-      margin-top: var(--ddd-spacing-8, 2rem);
+      border-top: 1px solid var(--ddd-theme-default-slateLight);
+      margin-top: var(--ddd-spacing-8);
     }
 
     .footer-content {
-      max-width: var(--ddd-breakpoint-md, 800px);
+      max-width: var(--ddd-breakpoint-md);
       margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: var(--ddd-spacing-4, 1rem);
+      gap: var(--ddd-spacing-4);
       flex-wrap: wrap;
     }
 
     .footer-logo {
       width: 120px;
       height: 40px;
-      background: var(--ddd-theme-default-white, #ffffff);
+      background: var(--ddd-theme-default-white);
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid #e2e8f0;
+      border: 1px solid var(--ddd-theme-default-slateLight);
       overflow: hidden;
     }
 
@@ -200,7 +200,7 @@ export class StatsPage extends DDDSuper(LitElement) {
     }
 
     .copyright {
-      font-size: var(--ddd-font-size-sm, 0.875rem);
+      font-size: var(--ddd-font-size-sm);
     }
   `;
 
@@ -245,31 +245,31 @@ export class StatsPage extends DDDSuper(LitElement) {
 
         <div class="stats-grid">
           <div class="stat-card">
-            <div class="stat-icon" style="background-color: #3b82f6;">⚽</div>
+            <div class="stat-icon" style="background: var(--ddd-theme-default-skyBlue);">⚽</div>
             <div class="stat-number">${this.stats.totalGames}</div>
             <div class="stat-label">Total Games</div>
           </div>
 
           <div class="stat-card">
-            <div class="stat-icon" style="background-color: #10b981;">🥅</div>
+            <div class="stat-icon" style="background: var(--ddd-theme-default-limeLightAccent);">🥅</div>
             <div class="stat-number">${this.stats.totalGoals}</div>
             <div class="stat-label">Total Goals</div>
           </div>
 
           <div class="stat-card">
-            <div class="stat-icon" style="background-color: #dc2626;">👥</div>
+            <div class="stat-icon" style="background: var(--ddd-theme-default-pinkLightAccent);">👥</div>
             <div class="stat-number">${this.stats.totalTeams}</div>
             <div class="stat-label">Teams</div>
           </div>
 
           <div class="stat-card">
-            <div class="stat-icon" style="background-color: #f59e0b;">📊</div>
+            <div class="stat-icon" style="background: var(--ddd-theme-default-yellowLightAccent);">📊</div>
             <div class="stat-number">${this.stats.avgGoalsPerGame}</div>
             <div class="stat-label">Avg Goals/Game</div>
           </div>
 
           <div class="stat-card">
-            <div class="stat-icon" style="background-color: #8b5cf6;">👥</div>
+            <div class="stat-icon" style="background: var(--ddd-theme-default-potentialMidnight);">👥</div>
             <div class="stat-number">${this.stats.activePlayers}</div>
             <div class="stat-label">Active Players</div>
           </div>

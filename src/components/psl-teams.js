@@ -32,33 +32,33 @@ export class PslTeams extends DDDSuper(LitElement) {
       }
 
       .teams-container {
-        max-width: var(--ddd-breakpoint-xl, 1200px);
+        max-width: var(--ddd-breakpoint-xl);
         margin: 0 auto;
-        padding: var(--ddd-spacing-6, 2rem);
+        padding: var(--ddd-spacing-6);
       }
 
       .teams-header {
         text-align: center;
-        margin-bottom: var(--ddd-spacing-8, 3rem);
+        margin-bottom: var(--ddd-spacing-8);
       }
 
       .teams-title {
-        font-size: var(--ddd-font-size-3xl, 2.25rem);
-        font-weight: var(--ddd-font-weight-bold, 700);
-        color: var(--ddd-theme-default-coalyGray, #333);
-        margin: 0 0 var(--ddd-spacing-2, 0.5rem) 0;
+        font-size: var(--ddd-font-size-3xl);
+        font-weight: var(--ddd-font-weight-bold);
+        color: var(--ddd-theme-default-coalyGray);
+        margin: 0 0 var(--ddd-spacing-2) 0;
       }
 
       .teams-subtitle {
-        font-size: var(--ddd-font-size-lg, 1.125rem);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        font-size: var(--ddd-font-size-lg);
+        color: var(--ddd-theme-default-coalyGray);
         margin: 0;
       }
 
       .teams-filters {
         display: flex;
-        gap: var(--ddd-spacing-4, 1rem);
-        margin-bottom: var(--ddd-spacing-6, 2rem);
+        gap: var(--ddd-spacing-4);
+        margin-bottom: var(--ddd-spacing-6);
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -66,17 +66,17 @@ export class PslTeams extends DDDSuper(LitElement) {
 
       .filter-group {
         display: flex;
-        gap: var(--ddd-spacing-3, 0.75rem);
+        gap: var(--ddd-spacing-3);
         align-items: center;
       }
 
       .filter-select,
       .search-input {
-        padding: var(--ddd-spacing-3, 0.75rem);
-        border: 2px solid var(--ddd-theme-default-slateLight, #e2e8f0);
+        padding: var(--ddd-spacing-3);
+        border: 2px solid var(--ddd-theme-default-slateLight);
         
-        font-size: var(--ddd-font-size-sm, 0.875rem);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        font-size: var(--ddd-font-size-sm);
+        color: var(--ddd-theme-default-coalyGray);
         font-family: var(--ddd-font-primary);
       }
 
@@ -86,47 +86,47 @@ export class PslTeams extends DDDSuper(LitElement) {
 
       .teams-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: var(--ddd-spacing-6, 2rem);
+        grid-template-columns: repeat(auto-fit);
+        gap: var(--ddd-spacing-6);
       }
 
       .team-card {
-        background: var(--ddd-theme-default-white, #fff);
-        border: 1px solid var(--ddd-theme-default-slateLight, #e2e8f0);
-        box-shadow: var(--ddd-boxShadow-1, 0 2px 4px rgba(0,0,0,0.1));
+        background: var(--ddd-theme-default-white);
+        border: 1px solid var(--ddd-theme-default-slateLight);
+        box-shadow: var(--ddd-boxShadow-1);
         overflow: hidden;
         transition: all 0.3s ease;
       }
 
       .team-header {
-        background: linear-gradient(135deg, var(--ddd-theme-default-skyBlue, #3b82f6), var(--ddd-theme-default-navy, #1e3a8a));
-        color: var(--ddd-theme-default-white, #fff);
-        padding: var(--ddd-spacing-4, 1rem);
+        background: linear-gradient(135deg, var(--ddd-theme-default-skyBlue), var(--ddd-theme-default-navy));
+        color: var(--ddd-theme-default-white);
+        padding: var(--ddd-spacing-4);
         position: relative;
       }
 
       .team-name {
-        font-size: var(--ddd-font-size-xl, 1.25rem);
-        font-weight: var(--ddd-font-weight-bold, 700);
-        margin: 0 0 var(--ddd-spacing-1, 0.25rem) 0;
+        font-size: var(--ddd-font-size-xl);
+        font-weight: var(--ddd-font-weight-bold);
+        margin: 0 0 var(--ddd-spacing-1) 0;
       }
 
       .team-division {
-        font-size: var(--ddd-font-size-sm, 0.875rem);
+        font-size: var(--ddd-font-size-sm);
         opacity: 0.9;
         text-transform: uppercase;
         letter-spacing: 0.5px;
       }
 
       .team-info {
-        padding: var(--ddd-spacing-4, 1rem);
+        padding: var(--ddd-spacing-4);
       }
 
       .team-stats {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: var(--ddd-spacing-4, 1rem);
-        margin-bottom: var(--ddd-spacing-4, 1rem);
+        gap: var(--ddd-spacing-4);
+        margin-bottom: var(--ddd-spacing-4);
       }
 
       .stat-item {
@@ -134,30 +134,30 @@ export class PslTeams extends DDDSuper(LitElement) {
       }
 
       .stat-value {
-        font-size: var(--ddd-font-size-xl, 1.25rem);
-        font-weight: var(--ddd-font-weight-bold, 700);
-        color: var(--ddd-theme-default-skyBlue, #3b82f6);
+        font-size: var(--ddd-font-size-xl);
+        font-weight: var(--ddd-font-weight-bold);
+        color: var(--ddd-theme-default-skyBlue);
         margin: 0;
       }
 
       .stat-label {
-        font-size: var(--ddd-font-size-xs, 0.75rem);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        font-size: var(--ddd-font-size-xs);
+        color: var(--ddd-theme-default-coalyGray);
         text-transform: uppercase;
         letter-spacing: 0.5px;
-        margin: var(--ddd-spacing-1, 0.25rem) 0 0 0;
+        margin: var(--ddd-spacing-1) 0 0 0;
       }
 
       .team-details {
-        margin-bottom: var(--ddd-spacing-4, 1rem);
+        margin-bottom: var(--ddd-spacing-4);
       }
 
       .detail-row {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: var(--ddd-spacing-2, 0.5rem) 0;
-        border-bottom: 1px solid var(--ddd-theme-default-slateLight, #e2e8f0);
+        padding: var(--ddd-spacing-2) 0;
+        border-bottom: 1px solid var(--ddd-theme-default-slateLight);
       }
 
       .detail-row:last-child {
@@ -165,28 +165,28 @@ export class PslTeams extends DDDSuper(LitElement) {
       }
 
       .detail-label {
-        font-size: var(--ddd-font-size-sm, 0.875rem);
-        color: var(--ddd-theme-default-coalyGray, #333);
-        font-weight: var(--ddd-font-weight-medium, 500);
+        font-size: var(--ddd-font-size-sm);
+        color: var(--ddd-theme-default-coalyGray);
+        font-weight: var(--ddd-font-weight-medium);
       }
 
       .detail-value {
-        font-size: var(--ddd-font-size-sm, 0.875rem);
-        color: var(--ddd-theme-default-coalyGray, #333);
-        font-weight: var(--ddd-font-weight-bold, 700);
+        font-size: var(--ddd-font-size-sm);
+        color: var(--ddd-theme-default-coalyGray);
+        font-weight: var(--ddd-font-weight-bold);
       }
 
       .no-teams {
         text-align: center;
         grid-column: 1 / -1;
-        padding: var(--ddd-spacing-8, 3rem);
-        color: var(--ddd-theme-default-slateMaxLight, #666);
-        font-size: var(--ddd-font-size-lg, 1.125rem);
+        padding: var(--ddd-spacing-8);
+        color: var(--ddd-theme-default-slateMaxLight);
+        font-size: var(--ddd-font-size-lg);
       }
 
       @media (max-width: 768px) {
         .teams-container {
-          padding: var(--ddd-spacing-4, 1rem);
+          padding: var(--ddd-spacing-4);
         }
         
         .teams-filters {
@@ -209,7 +209,7 @@ export class PslTeams extends DDDSuper(LitElement) {
 
         .team-stats {
           grid-template-columns: repeat(4, 1fr);
-          gap: var(--ddd-spacing-2, 0.5rem);
+          gap: var(--ddd-spacing-2);
         }
       }
     `];

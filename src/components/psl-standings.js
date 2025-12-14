@@ -30,65 +30,65 @@ export class PslStandings extends DDDSuper(LitElement) {
       }
 
       .standings-container {
-        max-width: var(--ddd-breakpoint-xl, 1200px);
+        max-width: var(--ddd-breakpoint-xl);
         margin: 0 auto;
-        padding: var(--ddd-spacing-6, 2rem);
+        padding: var(--ddd-spacing-6);
       }
 
       .standings-header {
         text-align: center;
-        margin-bottom: var(--ddd-spacing-8, 3rem);
+        margin-bottom: var(--ddd-spacing-8);
       }
 
       .standings-title {
-        font-size: var(--ddd-font-size-3xl, 2.25rem);
-        font-weight: var(--ddd-font-weight-bold, 700);
-        color: var(--ddd-theme-default-coalyGray, #333);
-        margin: 0 0 var(--ddd-spacing-2, 0.5rem) 0;
+        font-size: var(--ddd-font-size-3xl);
+        font-weight: var(--ddd-font-weight-bold);
+        color: var(--ddd-theme-default-coalyGray);
+        margin: 0 0 var(--ddd-spacing-2) 0;
       }
 
       .standings-subtitle {
-        font-size: var(--ddd-font-size-lg, 1.125rem);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        font-size: var(--ddd-font-size-lg);
+        color: var(--ddd-theme-default-coalyGray);
         margin: 0;
       }
 
       .division-tabs {
         display: flex;
         justify-content: center;
-        margin-bottom: var(--ddd-spacing-6, 2rem);
-        gap: var(--ddd-spacing-2, 0.5rem);
+        margin-bottom: var(--ddd-spacing-6);
+        gap: var(--ddd-spacing-2);
         flex-wrap: wrap;
       }
 
       .division-tab {
-        padding: var(--ddd-spacing-3, 0.75rem) var(--ddd-spacing-6, 2rem);
-        background: var(--ddd-theme-default-white, #fff);
-        border: 2px solid var(--ddd-theme-default-slateLight, #e2e8f0);
+        padding: var(--ddd-spacing-3) var(--ddd-spacing-6);
+        background: var(--ddd-theme-default-white);
+        border: 2px solid var(--ddd-theme-default-slateLight);
         
-        font-size: var(--ddd-font-size-sm, 0.875rem);
-        font-weight: var(--ddd-font-weight-medium, 500);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        font-size: var(--ddd-font-size-sm);
+        font-weight: var(--ddd-font-weight-medium);
+        color: var(--ddd-theme-default-coalyGray);
         cursor: pointer;
         transition: all 0.3s ease;
         font-family: var(--ddd-font-primary);
       }
 
       .division-tab:hover {
-        border-color: var(--ddd-theme-default-skyBlue, #3b82f6);
+        border-color: var(--ddd-theme-default-skyBlue);
       }
 
       .division-tab.active {
-        background: var(--ddd-theme-default-skyBlue, #3b82f6);
-        color: var(--ddd-theme-default-white, #fff);
-        border-color: var(--ddd-theme-default-skyBlue, #3b82f6);
+        background: var(--ddd-theme-default-skyBlue);
+        color: var(--ddd-theme-default-white);
+        border-color: var(--ddd-theme-default-skyBlue);
       }
 
       .standings-table {
-        background: var(--ddd-theme-default-white, #fff);
+        background: var(--ddd-theme-default-white);
         
-        box-shadow: var(--ddd-boxShadow-1, 0 2px 4px rgba(0,0,0,0.1));
-        border: 1px solid var(--ddd-theme-default-slateLight, #e2e8f0);
+        box-shadow: var(--ddd-boxShadow-1);
+        border: 1px solid var(--ddd-theme-default-slateLight);
         overflow: hidden;
       }
 
@@ -98,15 +98,15 @@ export class PslStandings extends DDDSuper(LitElement) {
       }
 
       .table-header {
-        background: linear-gradient(135deg, var(--ddd-theme-default-skyBlue, #3b82f6), var(--ddd-theme-default-navy, #1e3a8a));
-        color: var(--ddd-theme-default-white, #fff);
+        background: linear-gradient(135deg, var(--ddd-theme-default-skyBlue), var(--ddd-theme-default-navy));
+        color: var(--ddd-theme-default-white);
       }
 
       .table-header th {
-        padding: var(--ddd-spacing-4, 1rem);
+        padding: var(--ddd-spacing-4);
         text-align: left;
-        font-size: var(--ddd-font-size-sm, 0.875rem);
-        font-weight: var(--ddd-font-weight-bold, 700);
+        font-size: var(--ddd-font-size-sm);
+        font-weight: var(--ddd-font-weight-bold);
         text-transform: uppercase;
         letter-spacing: 0.5px;
       }
@@ -120,12 +120,12 @@ export class PslStandings extends DDDSuper(LitElement) {
       }
 
       tbody tr {
-        border-bottom: 1px solid var(--ddd-theme-default-slateLight, #e2e8f0);
+        border-bottom: 1px solid var(--ddd-theme-default-slateLight);
         transition: background-color 0.2s ease;
       }
 
       tbody tr:hover {
-        background: var(--ddd-theme-default-athertonViolet, #f8fafc);
+        background: var(--ddd-theme-default-athertonViolet);
       }
 
       tbody tr:last-child {
@@ -133,20 +133,20 @@ export class PslStandings extends DDDSuper(LitElement) {
       }
 
       tbody td {
-        padding: var(--ddd-spacing-4, 1rem);
-        font-size: var(--ddd-font-size-sm, 0.875rem);
-        color: var(--ddd-theme-default-coalyGray, #333);
+        padding: var(--ddd-spacing-4);
+        font-size: var(--ddd-font-size-sm);
+        color: var(--ddd-theme-default-coalyGray);
       }
 
       .position {
-        font-weight: var(--ddd-font-weight-bold, 700);
-        color: var(--ddd-theme-default-skyBlue, #3b82f6);
+        font-weight: var(--ddd-font-weight-bold);
+        color: var(--ddd-theme-default-skyBlue);
         text-align: center;
         width: 60px;
       }
 
       .team-name {
-        font-weight: var(--ddd-font-weight-bold, 700);
+        font-weight: var(--ddd-font-weight-bold);
         min-width: 200px;
       }
 
@@ -156,8 +156,8 @@ export class PslStandings extends DDDSuper(LitElement) {
       }
 
       .points {
-        font-weight: var(--ddd-font-weight-bold, 700);
-        color: var(--ddd-theme-default-skyBlue, #3b82f6);
+        font-weight: var(--ddd-font-weight-bold);
+        color: var(--ddd-theme-default-skyBlue);
         text-align: center;
         width: 80px;
       }
@@ -173,23 +173,23 @@ export class PslStandings extends DDDSuper(LitElement) {
         height: 20px;
         
         margin: 0 1px;
-        color: var(--ddd-theme-default-white, #fff);
-        font-size: var(--ddd-font-size-xs, 0.75rem);
-        font-weight: var(--ddd-font-weight-bold, 700);
+        color: var(--ddd-theme-default-white);
+        font-size: var(--ddd-font-size-xs);
+        font-weight: var(--ddd-font-weight-bold);
         line-height: 20px;
         text-align: center;
       }
 
       .form-indicator.win {
-        background: var(--ddd-theme-default-forestGreen, #16a34a);
+        background: var(--ddd-theme-default-forestGreen);
       }
 
       .form-indicator.loss {
-        background: var(--ddd-theme-default-original87Pink, #dc2626);
+        background: var(--ddd-theme-default-original87Pink);
       }
 
       .form-indicator.draw {
-        background: var(--ddd-theme-default-slateMaxLight, #666);
+        background: var(--ddd-theme-default-slateMaxLight);
       }
 
       .top-position {
@@ -202,7 +202,7 @@ export class PslStandings extends DDDSuper(LitElement) {
 
       @media (max-width: 768px) {
         .standings-container {
-          padding: var(--ddd-spacing-4, 1rem);
+          padding: var(--ddd-spacing-4);
         }
 
         .division-tabs {
@@ -220,8 +220,8 @@ export class PslStandings extends DDDSuper(LitElement) {
 
         .table-header th,
         tbody td {
-          padding: var(--ddd-spacing-2, 0.5rem);
-          font-size: var(--ddd-font-size-xs, 0.75rem);
+          padding: var(--ddd-spacing-2);
+          font-size: var(--ddd-font-size-xs);
         }
 
         .team-name {

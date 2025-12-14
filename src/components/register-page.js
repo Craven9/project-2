@@ -15,58 +15,58 @@ export class RegisterPage extends DDDSuper(LitElement) {
 
     .register-container {
       min-height: 100vh;
-      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-      padding: var(--ddd-spacing-8, 2rem);
-      color: var(--ddd-theme-default-coalyGray, #333333);
+      background: linear-gradient(135deg);
+      padding: var(--ddd-spacing-8);
+      color: var(--ddd-theme-default-coalyGray);
     }
 
     .header {
       text-align: center;
-      margin-bottom: var(--ddd-spacing-8, 2rem);
+      margin-bottom: var(--ddd-spacing-8);
     }
 
     h1 {
-      font-size: var(--ddd-font-size-3xl, 2.5rem);
-      color: #1e40af;
-      margin-bottom: var(--ddd-spacing-2, 0.5rem);
-      font-weight: var(--ddd-font-weight-black, 900);
+      font-size: var(--ddd-font-size-3xl);
+      color: var(--ddd-theme-default-coalyGray);
+      margin-bottom: var(--ddd-spacing-2);
+      font-weight: var(--ddd-font-weight-black);
     }
 
     .subtitle {
-      color: #64748b;
-      font-size: var(--ddd-font-size-lg, 1.125rem);
+      color: var(--ddd-theme-default-coalyGray);
+      font-size: var(--ddd-font-size-lg);
     }
 
     .form-container {
       max-width: 600px;
       margin: 0 auto;
-      background: var(--ddd-theme-default-white, #ffffff);
+      background: var(--ddd-theme-default-white);
       
-      padding: var(--ddd-spacing-8, 2rem);
-      box-shadow: var(--ddd-boxShadow-md, 0 4px 8px rgba(0,0,0,0.1));
+      padding: var(--ddd-spacing-8);
+      box-shadow: var(--ddd-boxShadow-md);
       border: 1px solid #e2e8f0;
     }
 
     .form-group {
-      margin-bottom: var(--ddd-spacing-6, 1.5rem);
+      margin-bottom: var(--ddd-spacing-6);
     }
 
     .form-label {
       display: block;
-      margin-bottom: var(--ddd-spacing-2, 0.5rem);
-      font-weight: var(--ddd-font-weight-bold, 600);
+      margin-bottom: var(--ddd-spacing-2);
+      font-weight: var(--ddd-font-weight-bold);
       color: #374151;
-      font-size: var(--ddd-font-size-sm, 0.875rem);
+      font-size: var(--ddd-font-size-sm);
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
 
     .form-input {
       width: 100%;
-      padding: var(--ddd-spacing-3, 0.75rem);
+      padding: var(--ddd-spacing-3);
       border: 2px solid #e2e8f0;
       
-      font-size: var(--ddd-font-size-base, 16px);
+      font-size: var(--ddd-font-size-base);
       transition: all 0.3s ease;
       box-sizing: border-box;
     }
@@ -79,9 +79,9 @@ export class RegisterPage extends DDDSuper(LitElement) {
 
     .form-select {
       width: 100%;
-      padding: var(--ddd-spacing-3, 0.75rem);
+      padding: var(--ddd-spacing-3);
       border: 2px solid #e2e8f0;
-      font-size: var(--ddd-font-size-base, 16px);
+      font-size: var(--ddd-font-size-base);
       background-color: white;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -98,30 +98,30 @@ export class RegisterPage extends DDDSuper(LitElement) {
       width: 40px;
       height: 40px;
       border: 2px solid #e2e8f0;
-      margin-top: var(--ddd-spacing-2, 0.5rem);
+      margin-top: var(--ddd-spacing-2);
       transition: all 0.3s ease;
     }
 
     .form-row {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: var(--ddd-spacing-4, 1rem);
+      gap: var(--ddd-spacing-4);
     }
 
     .submit-button {
       width: 100%;
-      padding: var(--ddd-spacing-4, 1rem) var(--ddd-spacing-6, 1.5rem);
+      padding: var(--ddd-spacing-4) var(--ddd-spacing-6);
       background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-      color: var(--ddd-theme-default-white, #ffffff);
+      color: var(--ddd-theme-default-white);
       border: none;
       
-      font-size: var(--ddd-font-size-lg, 1.125rem);
-      font-weight: var(--ddd-font-weight-bold, 600);
+      font-size: var(--ddd-font-size-lg);
+      font-weight: var(--ddd-font-weight-bold);
       cursor: pointer;
       transition: all 0.3s ease;
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      margin-top: var(--ddd-spacing-4, 1rem);
+      margin-top: var(--ddd-spacing-4);
     }
 
     .submit-button:hover {
@@ -198,11 +198,11 @@ export class RegisterPage extends DDDSuper(LitElement) {
                 id="teamColor" 
                 name="teamColor" 
                 class="form-select" 
-                value="#3b82f6"
+                value="var(--ddd-theme-default-skyBlue)"
                 @input="${this._updateColorPreview}"
                 required
               />
-              <div class="color-preview" style="background-color: #3b82f6;"></div>
+              <div class="color-preview" style="background: var(--ddd-theme-default-skyBlue);"></div>
             </div>
 
             <div class="form-row">

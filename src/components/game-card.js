@@ -20,10 +20,10 @@ export class GameCard extends DDDSuper(LitElement) {
     }
 
     .game-card {
-      background: var(--ddd-theme-default-white, #ffffff);
-      padding: var(--ddd-spacing-6, 2rem);
+      background: var(--ddd-theme-default-white);
+      padding: var(--ddd-spacing-6);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      border: 1px solid var(--ddd-theme-default-slateLight, #e2e8f0);
+      border: 1px solid var(--ddd-theme-default-slateLight);
       transition: all 0.3s ease;
     }
 
@@ -31,50 +31,50 @@ export class GameCard extends DDDSuper(LitElement) {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: var(--ddd-spacing-4, 1rem);
+      margin-bottom: var(--ddd-spacing-4);
     }
 
     .game-date {
-      font-weight: var(--ddd-font-weight-medium, 500);
-      color: var(--ddd-theme-default-coalyGray, #333333);
-      font-size: var(--ddd-font-size-base, 1rem);
+      font-weight: var(--ddd-font-weight-medium);
+      color: var(--ddd-theme-default-coalyGray);
+      font-size: var(--ddd-font-size-base);
     }
 
     .game-time {
-      background: var(--ddd-theme-default-skyBlue, #3b82f6);
-      color: var(--ddd-theme-default-white, #ffffff);
-      padding: var(--ddd-spacing-1, 0.25rem) var(--ddd-spacing-3, 0.75rem);
+      background: var(--ddd-theme-default-skyBlue);
+      color: var(--ddd-theme-default-white);
+      padding: var(--ddd-spacing-1) var(--ddd-spacing-3);
       
-      font-size: var(--ddd-font-size-sm, 0.875rem);
-      font-weight: var(--ddd-font-weight-medium, 500);
+      font-size: var(--ddd-font-size-sm);
+      font-weight: var(--ddd-font-weight-medium);
     }
 
     .teams-matchup {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: var(--ddd-spacing-4, 1rem) 0;
-      padding: var(--ddd-spacing-5, 1.5rem) var(--ddd-spacing-4, 1rem);
-      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      margin: var(--ddd-spacing-4) 0;
+      padding: var(--ddd-spacing-5) var(--ddd-spacing-4);
+      background: var(--ddd-theme-default-slateLight);
       
     }
 
     .team {
-      font-weight: var(--ddd-font-weight-medium, 500);
-      font-size: var(--ddd-font-size-base, 1rem);
-      color: var(--ddd-theme-default-coalyGray, #333333);
+      font-weight: var(--ddd-font-weight-medium);
+      font-size: var(--ddd-font-size-base);
+      color: var(--ddd-theme-default-coalyGray);
     }
 
     .vs {
-      background: linear-gradient(135deg, var(--ddd-theme-default-skyBlue, #3b82f6) 0%, var(--ddd-theme-default-navy, #1e40af) 100%);
-      color: var(--ddd-theme-default-white, #ffffff);
-      padding: var(--ddd-spacing-3, 0.75rem);
+      background: linear-gradient(135deg, var(--ddd-theme-default-skyBlue) 0%, var(--ddd-theme-default-navy) 100%);
+      color: var(--ddd-theme-default-white);
+      padding: var(--ddd-spacing-3);
       
-      font-size: var(--ddd-font-size-xs, 0.75rem);
-      font-weight: var(--ddd-font-weight-bold, 700);
+      font-size: var(--ddd-font-size-xs);
+      font-weight: var(--ddd-font-weight-bold);
       letter-spacing: 1px;
       box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
-      border: 2px solid var(--ddd-theme-default-white, #ffffff);
+      border: 2px solid var(--ddd-theme-default-white);
       width: 45px;
       height: 45px;
       display: flex;
@@ -84,49 +84,49 @@ export class GameCard extends DDDSuper(LitElement) {
     }
 
     .score {
-      background: var(--ddd-theme-default-skyBlue, #3b82f6);
-      color: var(--ddd-theme-default-white, #ffffff);
-      padding: var(--ddd-spacing-2, 0.5rem) var(--ddd-spacing-4, 1rem);
+      background: var(--ddd-theme-default-skyBlue);
+      color: var(--ddd-theme-default-white);
+      padding: var(--ddd-spacing-2) var(--ddd-spacing-4);
       
-      font-size: var(--ddd-font-size-lg, 1.125rem);
-      font-weight: var(--ddd-font-weight-bold, 600);
+      font-size: var(--ddd-font-size-lg);
+      font-weight: var(--ddd-font-weight-bold);
     }
 
     .game-location {
       display: flex;
       align-items: center;
-      gap: var(--ddd-spacing-2, 0.5rem);
-      color: var(--ddd-theme-default-coalyGray, #333333);
-      font-size: var(--ddd-font-size-sm, 0.875rem);
-      margin-top: var(--ddd-spacing-3, 0.75rem);
+      gap: var(--ddd-spacing-2);
+      color: var(--ddd-theme-default-coalyGray);
+      font-size: var(--ddd-font-size-sm);
+      margin-top: var(--ddd-spacing-3);
       opacity: 0.8;
       font-style: italic;
     }
 
     .status-badge {
       display: inline-block;
-      padding: var(--ddd-spacing-1, 0.25rem) var(--ddd-spacing-3, 0.75rem);
+      padding: var(--ddd-spacing-1) var(--ddd-spacing-3);
       
-      font-size: var(--ddd-font-size-xs, 0.75rem);
-      font-weight: var(--ddd-font-weight-medium, 500);
+      font-size: var(--ddd-font-size-xs);
+      font-weight: var(--ddd-font-weight-medium);
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      margin-top: var(--ddd-spacing-3, 0.75rem);
+      margin-top: var(--ddd-spacing-3);
     }
 
     .status-upcoming {
-      background: #dbeafe;
-      color: #1e40af;
+      background: var(--ddd-theme-default-skyLightAccent);
+      color: var(--ddd-theme-default-skyBlue);
     }
 
     .status-completed {
-      background: #dcfce7;
-      color: #166534;
+      background: var(--ddd-theme-default-limeLightAccent);
+      color: var(--ddd-theme-default-successGreen);
     }
 
     .status-live {
-      background: #fee2e2;
-      color: #dc2626;
+      background: var(--ddd-theme-default-pinkLightAccent);
+      color: var(--ddd-theme-default-error);
       animation: pulse 2s infinite;
     }
 
@@ -138,12 +138,12 @@ export class GameCard extends DDDSuper(LitElement) {
     @media (max-width: 600px) {
       .game-header {
         flex-direction: column;
-        gap: var(--ddd-spacing-2, 0.5rem);
+        gap: var(--ddd-spacing-2);
       }
       
       .teams-matchup {
         flex-direction: column;
-        gap: var(--ddd-spacing-3, 0.75rem);
+        gap: var(--ddd-spacing-3);
       }
     }
   `;

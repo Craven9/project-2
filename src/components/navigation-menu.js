@@ -14,11 +14,11 @@ export class NavigationMenu extends DDDSuper(LitElement) {
     }
 
     .nav-menu {
-      background: var(--ddd-theme-default-white, #ffffff);
+      background: var(--ddd-theme-default-white);
       
-      padding: var(--ddd-spacing-4, 1rem);
+      padding: var(--ddd-spacing-4);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      border: 1px solid var(--ddd-theme-default-slateLight, #e2e8f0);
+      border: 1px solid var(--ddd-theme-default-slateLight);
     }
 
     .nav-list {
@@ -26,7 +26,7 @@ export class NavigationMenu extends DDDSuper(LitElement) {
       list-style: none;
       margin: 0;
       padding: 0;
-      gap: var(--ddd-spacing-2, 0.5rem);
+      gap: var(--ddd-spacing-2);
     }
 
     :host([vertical]) .nav-list {
@@ -39,43 +39,43 @@ export class NavigationMenu extends DDDSuper(LitElement) {
 
     .nav-link {
       display: block;
-      padding: var(--ddd-spacing-3, 0.75rem) var(--ddd-spacing-4, 1rem);
-      color: var(--ddd-theme-default-coalyGray, #333333);
+      padding: var(--ddd-spacing-3) var(--ddd-spacing-4);
+      color: var(--ddd-theme-default-coalyGray);
       text-decoration: none;
       
       transition: all 0.3s ease;
-      font-weight: var(--ddd-font-weight-medium, 500);
+      font-weight: var(--ddd-font-weight-medium);
       text-align: center;
       cursor: pointer;
       border: 2px solid transparent;
     }
 
     .nav-link:hover {
-      background: var(--ddd-theme-default-slateLight, #e2e8f0);
-      color: var(--ddd-theme-default-skyBlue, #3b82f6);
+      background: var(--ddd-theme-default-slateLight);
+      color: var(--ddd-theme-default-skyBlue);
       transform: translateY(-1px);
     }
 
     .nav-link.active {
-      background: var(--ddd-theme-default-skyBlue, #3b82f6);
-      color: var(--ddd-theme-default-white, #ffffff);
-      border-color: var(--ddd-theme-default-skyBlue, #3b82f6);
-      font-weight: var(--ddd-font-weight-bold, 600);
+      background: var(--ddd-theme-default-skyBlue);
+      color: var(--ddd-theme-default-white);
+      border-color: var(--ddd-theme-default-skyBlue);
+      font-weight: var(--ddd-font-weight-bold);
     }
 
     .nav-link.active:hover {
-      background: #1e40af;
-      border-color: #1e40af;
+      background: var(--ddd-theme-default-skyBlue);
+      border-color: var(--ddd-theme-default-skyBlue);
       transform: translateY(-1px);
     }
 
     .nav-icon {
-      margin-right: var(--ddd-spacing-2, 0.5rem);
-      font-size: var(--ddd-font-size-sm, 0.875rem);
+      margin-right: var(--ddd-spacing-2);
+      font-size: var(--ddd-font-size-sm);
     }
 
     :host([vertical]) .nav-icon {
-      margin-right: var(--ddd-spacing-2, 0.5rem);
+      margin-right: var(--ddd-spacing-2);
       margin-bottom: 0;
     }
 

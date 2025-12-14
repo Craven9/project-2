@@ -26,7 +26,7 @@ export class HeroBanner extends DDDSuper(LitElement) {
       align-items: center;
       justify-content: center;
       text-align: center;
-      color: var(--ddd-theme-default-white, #ffffff);
+      color: var(--ddd-theme-default-white);
       box-shadow: 0 8px 32px rgba(30, 64, 175, 0.3);
       width: 100%;
     }
@@ -55,36 +55,36 @@ export class HeroBanner extends DDDSuper(LitElement) {
       position: relative;
       z-index: 1;
       max-width: 700px;
-      padding: var(--ddd-spacing-6, 2rem);
+      padding: var(--ddd-spacing-6);
       text-align: center;
       width: 100%;
     }
 
     .hero-title {
-      font-size: var(--ddd-font-size-4xl, 3rem);
-      font-weight: var(--ddd-font-weight-black, 900);
-      margin: 0 0 var(--ddd-spacing-6, 2rem) 0;
+      font-size: var(--ddd-font-size-4xl);
+      font-weight: var(--ddd-font-weight-black);
+      margin: 0 0 var(--ddd-spacing-6) 0;
       text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       line-height: 1.1;
       letter-spacing: -0.5px;
     }
 
     .hero-subtitle {
-      font-size: var(--ddd-font-size-xl, 1.25rem);
-      margin: 0 0 var(--ddd-spacing-8, 3rem) 0;
+      font-size: var(--ddd-font-size-xl);
+      margin: 0 0 var(--ddd-spacing-8) 0;
       opacity: 0.95;
-      font-weight: var(--ddd-font-weight-medium, 500);
+      font-weight: var(--ddd-font-weight-medium);
       line-height: 1.5;
       max-width: 100%;
     }
 
     .hero-cta {
-      background: var(--ddd-theme-default-white, #ffffff);
-      color: var(--ddd-theme-default-skyBlue, #3b82f6);
-      padding: var(--ddd-spacing-4, 1rem) var(--ddd-spacing-8, 3rem);
+      background: var(--ddd-theme-default-white);
+      color: var(--ddd-theme-default-skyBlue);
+      padding: var(--ddd-spacing-4) var(--ddd-spacing-8);
       border: none;
-      font-size: var(--ddd-font-size-lg, 1.125rem);
-      font-weight: var(--ddd-font-weight-bold, 600);
+      font-size: var(--ddd-font-size-lg);
+      font-weight: var(--ddd-font-weight-bold);
       cursor: pointer;
       transition: all 0.3s ease;
       text-decoration: none;
@@ -97,7 +97,7 @@ export class HeroBanner extends DDDSuper(LitElement) {
     .hero-cta:hover {
       transform: translateY(-2px);
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-      background: var(--ddd-theme-default-slateLight, #e2e8f0);
+      background: var(--ddd-theme-default-slateLight);
     }
 
     @media (max-width: 768px) {
@@ -106,15 +106,15 @@ export class HeroBanner extends DDDSuper(LitElement) {
       }
       
       .hero-title {
-        font-size: var(--ddd-font-size-3xl, 2.25rem);
+        font-size: var(--ddd-font-size-3xl);
       }
       
       .hero-subtitle {
-        font-size: var(--ddd-font-size-lg, 1.125rem);
+        font-size: var(--ddd-font-size-lg);
       }
       
       .hero-content {
-        padding: var(--ddd-spacing-6, 2rem);
+        padding: var(--ddd-spacing-6);
       }
     }
 
@@ -124,12 +124,12 @@ export class HeroBanner extends DDDSuper(LitElement) {
       }
       
       .hero-title {
-        font-size: var(--ddd-font-size-2xl, 1.875rem);
+        font-size: var(--ddd-font-size-2xl);
       }
       
       .hero-cta {
-        padding: var(--ddd-spacing-3, 0.75rem) var(--ddd-spacing-6, 2rem);
-        font-size: var(--ddd-font-size-base, 1rem);
+        padding: var(--ddd-spacing-3) var(--ddd-spacing-6);
+        font-size: var(--ddd-font-size-base);
       }
     }
   `;

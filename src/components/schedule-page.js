@@ -16,9 +16,9 @@ export class SchedulePage extends DDDSuper(LitElement) {
 
     .schedule-container {
       min-height: 100vh;
-      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-      padding: var(--ddd-spacing-8, 2rem);
-      color: var(--ddd-theme-default-coalyGray, #333333);
+      background: linear-gradient(135deg);
+      padding: var(--ddd-spacing-8);
+      color: var(--ddd-theme-default-coalyGray);
     }
 
     .header {
@@ -28,41 +28,41 @@ export class SchedulePage extends DDDSuper(LitElement) {
 
     .back-button {
       position: absolute;
-      top: var(--ddd-spacing-8, 2rem);
-      left: var(--ddd-spacing-8, 2rem);
-      padding: var(--ddd-spacing-2, 0.5rem) var(--ddd-spacing-5, 1.25rem);
+      top: var(--ddd-spacing-8);
+      left: var(--ddd-spacing-8);
+      padding: var(--ddd-spacing-2) var(--ddd-spacing-5);
       background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-      color: var(--ddd-theme-default-white, #ffffff);
+      color: var(--ddd-theme-default-white);
       border: none;
       cursor: pointer;
-      font-weight: var(--ddd-font-weight-bold, 600);
-      transition: all var(--ddd-duration-rapid, 0.3s ease);
-      box-shadow: var(--ddd-boxShadow-sm, 0 2px 4px rgba(0,0,0,0.1));
+      font-weight: var(--ddd-font-weight-bold);
+      transition: all var(--ddd-duration-rapid);
+      box-shadow: var(--ddd-boxShadow-sm);
     }
 
     .back-button:hover {
       background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
       transform: translateY(-1px);
-      box-shadow: var(--ddd-boxShadow-md, 0 4px 8px rgba(0,0,0,0.15));
+      box-shadow: var(--ddd-boxShadow-md);
     }
 
     h1 {
-      font-size: var(--ddd-font-size-3xl, 2.5rem);
+      font-size: var(--ddd-font-size-3xl);
       color: #1e40af;
-      margin-bottom: var(--ddd-spacing-2, 0.5rem);
-      font-weight: var(--ddd-font-weight-black, 900);
+      margin-bottom: var(--ddd-spacing-2);
+      font-weight: var(--ddd-font-weight-black);
     }
 
     .subtitle {
-      color: #64748b;
-      font-size: var(--ddd-font-size-lg, 1.125rem);
+      color: var(--ddd-theme-default-coalyGray);
+      font-size: var(--ddd-font-size-lg);
     }
 
     .games-grid {
       max-width: var(--ddd-breakpoint-lg);
       margin: 0 auto;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-template-columns: repeat(auto-fit);
       gap: var(--ddd-spacing-6);
     }
 
@@ -81,50 +81,47 @@ export class SchedulePage extends DDDSuper(LitElement) {
     }
 
     .game-completed {
-      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      background: linear-gradient(135deg);
       opacity: 0.8;
     }
 
     .game-championship {
-      border: 2px solid #fbbf24;
-      background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+      border: 2px solid var(--ddd-theme-default-accent);
+      background: var(--ddd-theme-default-yellowLightAccent);
     }
 
     .game-type-badge {
-      background: #fbbf24;
-      color: #92400e;
-      padding: 2px 8px;
-      
-      font-size: 0.75rem;
-      font-weight: 600;
+      background: var(--ddd-theme-default-accent);
+      color: var(--ddd-theme-default-coalyGray);
+      padding: var(--ddd-spacing-1) var(--ddd-spacing-2);
+      font-size: var(--ddd-font-size-xs);
+      font-weight: var(--ddd-font-weight-semibold);
     }
 
     .score {
-      font-weight: var(--ddd-font-weight-bold, 600);
-      color: var(--ddd-theme-default-coalyGray, #333333);
+      font-weight: var(--ddd-font-weight-bold);
+      color: var(--ddd-theme-default-coalyGray);
       background: rgba(255, 255, 255, 0.8);
-      padding: 4px 8px;
-      
-      margin: 0 8px;
+      padding: var(--ddd-spacing-1) var(--ddd-spacing-2);
+      margin: 0 var(--ddd-spacing-2);
     }
 
     .game-status {
-      margin-top: var(--ddd-spacing-3, 0.75rem);
-      font-size: var(--ddd-font-size-xs, 0.75rem);
-      font-weight: var(--ddd-font-weight-medium, 500);
+      margin-top: var(--ddd-spacing-3);
+      font-size: var(--ddd-font-size-xs);
+      font-weight: var(--ddd-font-weight-medium);
       text-align: center;
-      padding: 4px;
-      
+      padding: var(--ddd-spacing-1);
     }
 
     .game-status.upcoming {
-      background: #dbeafe;
-      color: #1e40af;
+      background: var(--ddd-theme-default-skyLightAccent);
+      color: var(--ddd-theme-default-skyBlue);
     }
 
     .game-status:not(.upcoming) {
-      background: #dcfce7;
-      color: #166534;
+      background: var(--ddd-theme-default-limeLightAccent);
+      color: var(--ddd-theme-default-successGreen);
     }
 
     .game-header {
@@ -135,18 +132,18 @@ export class SchedulePage extends DDDSuper(LitElement) {
     }
 
     .game-date {
-      background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-      color: var(--ddd-theme-default-white, #ffffff);
-      padding: var(--ddd-spacing-2, 0.5rem) var(--ddd-spacing-4, 1rem);
+      background: linear-gradient(135deg);
+      color: var(--ddd-theme-default-white);
+      padding: var(--ddd-spacing-2) var(--ddd-spacing-4);
       
-      font-size: var(--ddd-font-size-sm, 0.875rem);
-      font-weight: var(--ddd-font-weight-bold, 600);
+      font-size: var(--ddd-font-size-sm);
+      font-weight: var(--ddd-font-weight-bold);
       box-shadow: 0 2px 4px rgba(30, 64, 175, 0.3);
     }
 
     .game-time {
       color: #64748b;
-      font-weight: var(--ddd-font-weight-medium, 500);
+      font-weight: var(--ddd-font-weight-medium);
     }
 
     .teams {
@@ -155,15 +152,15 @@ export class SchedulePage extends DDDSuper(LitElement) {
     }
 
     .team-matchup {
-      font-size: var(--ddd-font-size-xl, 1.25rem);
-      font-weight: var(--ddd-font-weight-black, 700);
+      font-size: var(--ddd-font-size-xl);
+      font-weight: var(--ddd-font-weight-black);
       color: #1e40af;
-      margin-bottom: var(--ddd-spacing-2, 0.5rem);
+      margin-bottom: var(--ddd-spacing-2);
     }
 
     .vs {
       color: #64748b;
-      font-weight: var(--ddd-font-weight-normal, 400);
+      font-weight: var(--ddd-font-weight-normal);
     }
 
     .game-location {
@@ -173,28 +170,28 @@ export class SchedulePage extends DDDSuper(LitElement) {
     }
 
     .footer {
-      background: var(--ddd-theme-default-white, #ffffff);
-      color: #64748b;
-      padding: var(--ddd-spacing-6, 2rem);
+      background: var(--ddd-theme-default-white);
+      color: var(--ddd-theme-default-slateGray);
+      padding: var(--ddd-spacing-6);
       text-align: center;
-      border-top: 1px solid var(--ddd-theme-default-slateLight, #e2e8f0);
-      margin-top: var(--ddd-spacing-8, 2rem);
+      border-top: 1px solid var(--ddd-theme-default-slateLight);
+      margin-top: var(--ddd-spacing-8);
     }
 
     .footer-content {
-      max-width: var(--ddd-breakpoint-md, 800px);
+      max-width: var(--ddd-breakpoint-md);
       margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: var(--ddd-spacing-4, 1rem);
+      gap: var(--ddd-spacing-4);
       flex-wrap: wrap;
     }
 
     .footer-logo {
       width: 120px;
       height: 40px;
-      background: var(--ddd-theme-default-white, #ffffff);
+      background: var(--ddd-theme-default-white);
       
       display: flex;
       align-items: center;
@@ -210,7 +207,7 @@ export class SchedulePage extends DDDSuper(LitElement) {
     }
 
     .copyright {
-      font-size: var(--ddd-font-size-sm, 0.875rem);
+      font-size: var(--ddd-font-size-sm);
     }
   `;
 
