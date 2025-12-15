@@ -18,8 +18,7 @@ export class PslSchedule extends DDDSuper(LitElement) {
     return {
       ...super.properties,
       games: { type: Array },
-      selectedWeek: { type: String },
-      selectedDivision: { type: String }
+      selectedWeek: { type: String }
     };
   }
 
@@ -151,7 +150,7 @@ export class PslSchedule extends DDDSuper(LitElement) {
       .vs-divider {
         font-size: var(--ddd-font-size-lg);
         font-weight: var(--ddd-font-weight-bold);
-        color: var(--ddd-theme-default-skyBlue);
+        color: var(--ddd-theme-default-coalyGray);
         text-align: center;
       }
 
@@ -175,7 +174,7 @@ export class PslSchedule extends DDDSuper(LitElement) {
       .score {
         font-size: var(--ddd-font-size-xl);
         font-weight: var(--ddd-font-weight-bold);
-        color: var(--ddd-theme-default-skyBlue);
+        color: var(--ddd-theme-default-coalyGray);
         text-align: center;
         background: var(--ddd-theme-default-slateLight);
         padding: var(--ddd-spacing-2);
@@ -253,7 +252,7 @@ export class PslSchedule extends DDDSuper(LitElement) {
           {
             homeTeam: "Penn State Lions",
             awayTeam: "Nittany United",
-            division: "Elite",
+            division: "Premier League",
             time: "2:00 PM",
             location: "Beaver Stadium",
             status: "completed",
@@ -263,7 +262,7 @@ export class PslSchedule extends DDDSuper(LitElement) {
           {
             homeTeam: "Blue & White FC",
             awayTeam: "Campus Crusaders", 
-            division: "Recreational",
+            division: "Premier League",
             time: "4:00 PM",
             location: "IM Fields East",
             status: "completed",
@@ -279,7 +278,7 @@ export class PslSchedule extends DDDSuper(LitElement) {
           {
             homeTeam: "State College Strikers",
             awayTeam: "Happy Valley Stars",
-            division: "Elite",
+            division: "Premier League",
             time: "1:00 PM",
             location: "Penn State Fields",
             status: "completed",
@@ -289,7 +288,7 @@ export class PslSchedule extends DDDSuper(LitElement) {
           {
             homeTeam: "Nittany United",
             awayTeam: "Blue & White FC",
-            division: "Competitive",
+            division: "Premier League",
             time: "3:30 PM",
             location: "Jeffrey Field",
             status: "completed",
@@ -305,7 +304,7 @@ export class PslSchedule extends DDDSuper(LitElement) {
           {
             homeTeam: "Penn State Lions",
             awayTeam: "State College Strikers",
-            division: "Elite",
+            division: "Premier League",
             time: "2:00 PM",
             location: "Beaver Stadium",
             status: "upcoming"
@@ -313,7 +312,7 @@ export class PslSchedule extends DDDSuper(LitElement) {
           {
             homeTeam: "Campus Crusaders",
             awayTeam: "Happy Valley Stars",
-            division: "Recreational",
+            division: "Premier League",
             time: "4:00 PM",
             location: "IM Fields West",
             status: "upcoming"
@@ -321,7 +320,7 @@ export class PslSchedule extends DDDSuper(LitElement) {
           {
             homeTeam: "Blue & White FC",
             awayTeam: "Nittany United",
-            division: "Competitive",
+            division: "Premier League",
             time: "6:00 PM",
             location: "IM Fields East",
             status: "upcoming"
@@ -335,7 +334,7 @@ export class PslSchedule extends DDDSuper(LitElement) {
           {
             homeTeam: "Happy Valley Stars",
             awayTeam: "Penn State Lions",
-            division: "Elite",
+            division: "Premier League",
             time: "1:30 PM",
             location: "University Park",
             status: "upcoming"
@@ -343,7 +342,7 @@ export class PslSchedule extends DDDSuper(LitElement) {
           {
             homeTeam: "State College Strikers",
             awayTeam: "Nittany United",
-            division: "Competitive",
+            division: "Premier League",
             time: "3:30 PM",
             location: "Penn State Fields",
             status: "upcoming"
@@ -376,10 +375,6 @@ export class PslSchedule extends DDDSuper(LitElement) {
 
   _handleWeekFilter(e) {
     this.selectedWeek = e.target.value;
-  }
-
-  _handleDivisionFilter(e) {
-    this.selectedDivision = e.target.value;
   }
 
   _renderGame(game) {
@@ -432,19 +427,6 @@ export class PslSchedule extends DDDSuper(LitElement) {
               ${this.games.map(weekData => html`
                 <option value="${weekData.week}">${weekData.week}</option>
               `)}
-            </select>
-          </div>
-
-          <div class="filter-group">
-            <label class="filter-label" for="division-filter">Division:</label>
-            <select 
-              id="division-filter" 
-              class="filter-select"
-              @change="${this._handleDivisionFilter}">
-              <option value="">All Divisions</option>
-              <option value="Elite">Elite</option>
-              <option value="Competitive">Competitive</option>
-              <option value="Recreational">Recreational</option>
             </select>
           </div>
         </div>

@@ -64,8 +64,8 @@ export class NavigationMenu extends DDDSuper(LitElement) {
     }
 
     .nav-link.active:hover {
-      background: var(--ddd-theme-default-skyBlue);
-      border-color: var(--ddd-theme-default-skyBlue);
+      background: var(--ddd-theme-default-coalyGray);
+      border-color: var(--ddd-theme-default-coalyGray);
       transform: translateY(-1px);
     }
 

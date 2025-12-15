@@ -106,9 +106,26 @@ export class PslTeams extends DDDSuper(LitElement) {
       }
 
       .team-name {
-        font-size: var(--ddd-font-size-xl);
-        font-weight: var(--ddd-font-weight-bold);
-        margin: 0 0 var(--ddd-spacing-1) 0;
+        font-size: var(--ddd-font-size-xxl);
+        font-weight: var(--ddd-font-weight-black);
+        color: var(--ddd-theme-default-coalyGray);
+        background: var(--ddd-theme-default-white);
+        margin: 0 0 var(--ddd-spacing-4) 0;
+        padding: var(--ddd-spacing-4);
+        text-align: center;
+        border: 2px solid var(--ddd-theme-default-accent);
+        border-radius: var(--ddd-radius-md);
+        box-shadow: var(--ddd-boxShadow-sm);
+        font-family: var(--ddd-font-primary);
+        position: relative;
+        z-index: 10;
+        transition: all 0.3s ease;
+      }
+
+      .team-name:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--ddd-boxShadow-md);
+        border-color: var(--ddd-theme-default-keystoneYellow);
       }
 
       .team-division {
@@ -221,92 +238,73 @@ export class PslTeams extends DDDSuper(LitElement) {
       {
         id: 1,
         name: "Penn State Lions",
-        division: "Elite",
-        captain: "Sarah Johnson",
+        division: "Premier League",
         wins: 8,
         losses: 2,
         goals: 34,
         founded: "2019",
-        homeField: "Beaver Stadium",
         email: "lions@psu.edu"
       },
       {
         id: 2,
         name: "Nittany United",
-        division: "Competitive",
-        captain: "Mike Rodriguez",
+        division: "Premier League",
         wins: 6,
         losses: 4,
         goals: 28,
         founded: "2020",
-        homeField: "Jeffrey Field",
         email: "united@psu.edu"
       },
       {
         id: 3,
         name: "Blue & White FC",
-        division: "Recreational",
-        captain: "Emma Davis",
+        division: "Premier League",
         wins: 5,
         losses: 3,
         goals: 22,
         founded: "2021",
-        homeField: "IM Fields East",
         email: "bluewhite@psu.edu"
       },
       {
         id: 4,
         name: "Happy Valley Stars",
-        division: "Competitive",
-        captain: "Alex Chen",
+        division: "Premier League",
         wins: 7,
         losses: 3,
         goals: 31,
         founded: "2018",
-        homeField: "University Park",
         email: "stars@psu.edu"
       },
       {
         id: 5,
         name: "State College Strikers",
-        division: "Elite",
-        captain: "Jordan Williams",
+        division: "Premier League",
         wins: 9,
         losses: 1,
         goals: 42,
         founded: "2017",
-        homeField: "Penn State Fields",
         email: "strikers@psu.edu"
       },
       {
         id: 6,
         name: "Campus Crusaders",
-        division: "Recreational",
-        captain: "Taylor Brown",
+        division: "Premier League",
         wins: 4,
         losses: 4,
         goals: 18,
         founded: "2022",
-        homeField: "IM Fields West",
         email: "crusaders@psu.edu"
       }
     ];
-    this.selectedDivision = "";
     this.searchTerm = "";
   }
 
   get filteredTeams() {
     return this.teams.filter(team => {
-      const matchesDivision = !this.selectedDivision || team.division === this.selectedDivision;
       const matchesSearch = !this.searchTerm || 
-        team.name.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
-        team.captain.toLowerCase().includes(this.searchTerm.toLowerCase());
-      return matchesDivision && matchesSearch;
+        team.name.toLowerCase().includes(this.searchTerm.toLowerCase());
+      return matchesSearch;
     });
-  }
-
-  _handleDivisionFilter(e) {
-    this.selectedDivision = e.target.value;
   }
 
   _handleSearch(e) {
@@ -325,23 +323,10 @@ export class PslTeams extends DDDSuper(LitElement) {
 
         <div class="teams-filters">
           <div class="filter-group">
-            <label for="division-filter">Division:</label>
-            <select 
-              id="division-filter" 
-              class="filter-select"
-              @change="${this._handleDivisionFilter}">
-              <option value="">All Divisions</option>
-              <option value="Elite">Elite</option>
-              <option value="Competitive">Competitive</option>
-              <option value="Recreational">Recreational</option>
-            </select>
-          </div>
-
-          <div class="filter-group">
             <input 
               type="text" 
               class="search-input" 
-              placeholder="Search teams or captains..."
+              placeholder="Search teams..."
               @input="${this._handleSearch}">
           </div>
         </div>
@@ -352,7 +337,6 @@ export class PslTeams extends DDDSuper(LitElement) {
               <div class="team-card">
                 <div class="team-header">
                   <h3 class="team-name">${team.name}</h3>
-                  <div class="team-division">${team.division} Division</div>
                 </div>
 
                 <div class="team-info">
@@ -377,18 +361,11 @@ export class PslTeams extends DDDSuper(LitElement) {
 
                   <div class="team-details">
                     <div class="detail-row">
-                      <span class="detail-label">Captain:</span>
-                      <span class="detail-value">${team.captain}</span>
-                    </div>
-                    <div class="detail-row">
                       <span class="detail-label">Founded:</span>
                       <span class="detail-value">${team.founded}</span>
                     </div>
                     <div class="detail-row">
-                      <span class="detail-label">Home Field:</span>
-                      <span class="detail-value">${team.homeField}</span>
-                    </div>
-                    <div class="detail-row">
+
                       <span class="detail-label">Contact:</span>
                       <span class="detail-value">${team.email}</span>
                     </div>

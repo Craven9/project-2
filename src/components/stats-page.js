@@ -96,7 +96,7 @@ export class StatsPage extends DDDSuper(LitElement) {
     .stat-number {
       font-size: var(--ddd-font-size-3xl);
       font-weight: var(--ddd-font-weight-black);
-      color: var(--ddd-theme-default-navy80);
+      color: var(--ddd-theme-default-coalyGray);
       margin-bottom: var(--ddd-spacing-2);
     }
 
@@ -120,7 +120,7 @@ export class StatsPage extends DDDSuper(LitElement) {
 
     .leaderboard h2 {
       text-align: center;
-      color: var(--ddd-theme-default-navy80);
+      color: var(--ddd-theme-default-coalyGray);
       margin-bottom: var(--ddd-spacing-8);
       font-weight: var(--ddd-font-weight-black);
       font-size: var(--ddd-font-size-2xl);
@@ -141,7 +141,7 @@ export class StatsPage extends DDDSuper(LitElement) {
     .rank {
       font-weight: var(--ddd-font-weight-black);
       font-size: var(--ddd-font-size-lg);
-      color: var(--ddd-theme-default-navy80);
+      color: var(--ddd-theme-default-coalyGray);
       min-width: var(--ddd-spacing-10);
     }
 
@@ -160,7 +160,7 @@ export class StatsPage extends DDDSuper(LitElement) {
 
     .points {
       font-weight: var(--ddd-font-weight-black);
-      color: var(--ddd-theme-default-successGreen);
+      color: var(--ddd-theme-default-coalyGray);
     }
 
     .footer {

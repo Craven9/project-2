@@ -116,12 +116,12 @@ export class SchedulePage extends DDDSuper(LitElement) {
 
     .game-status.upcoming {
       background: var(--ddd-theme-default-skyLightAccent);
-      color: var(--ddd-theme-default-skyBlue);
+      color: var(--ddd-theme-default-coalyGray);
     }
 
     .game-status:not(.upcoming) {
       background: var(--ddd-theme-default-limeLightAccent);
-      color: var(--ddd-theme-default-successGreen);
+      color: var(--ddd-theme-default-coalyGray);
     }
 
     .game-header {

@@ -9,8 +9,7 @@ export class TeamCard extends DDDSuper(LitElement) {
     wins: { type: Number },
     losses: { type: Number },
     ties: { type: Number },
-    goals: { type: Number },
-    captain: { type: String }
+    goals: { type: Number }
   };
 
   static styles = css`
@@ -86,23 +85,6 @@ export class TeamCard extends DDDSuper(LitElement) {
       font-weight: var(--ddd-font-weight-medium);
     }
 
-    .team-captain {
-      margin-top: var(--ddd-spacing-4);
-      padding: var(--ddd-spacing-3);
-      background: var(--ddd-theme-default-skyBlue);
-      color: var(--ddd-theme-default-white);
-      
-      font-size: var(--ddd-font-size-sm);
-      font-weight: var(--ddd-font-weight-medium);
-    }
-
-    .captain-label {
-      display: block;
-      font-size: var(--ddd-font-size-xs);
-      opacity: 0.8;
-      margin-bottom: var(--ddd-spacing-1);
-    }
-
     @media (max-width: 600px) {
       .team-stats {
         grid-template-columns: repeat(2, 1fr);
@@ -120,7 +102,6 @@ export class TeamCard extends DDDSuper(LitElement) {
     this.losses = 0;
     this.ties = 0;
     this.goals = 0;
-    this.captain = '';
   }
 
   _getTeamInitials() {
@@ -156,12 +137,6 @@ export class TeamCard extends DDDSuper(LitElement) {
           </div>
         </div>
         
-        ${this.captain ? html`
-          <div class="team-captain">
-            <span class="captain-label">Team Captain</span>
-            ${this.captain}
-          </div>
-        ` : ''}
       </div>
     `;
   }

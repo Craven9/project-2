@@ -98,7 +98,7 @@ export class NewsCard extends DDDSuper(LitElement) {
     .read-more {
       display: inline-flex;
       align-items: center;
-      color: var(--ddd-theme-default-skyBlue);
+      color: var(--ddd-theme-default-coalyGray);
       text-decoration: none;
       font-weight: var(--ddd-font-weight-medium);
       font-size: var(--ddd-font-size-sm);
@@ -106,7 +106,7 @@ export class NewsCard extends DDDSuper(LitElement) {
     }
 
     .read-more:hover {
-      color: var(--ddd-theme-default-navy);
+      color: var(--ddd-theme-default-coalyGray);
       transform: translateX(2px);
     }
 

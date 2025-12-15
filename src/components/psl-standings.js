@@ -16,8 +16,7 @@ export class PslStandings extends DDDSuper(LitElement) {
   static get properties() {
     return {
       ...super.properties,
-      standings: { type: Array },
-      selectedDivision: { type: String }
+      standings: { type: Array }
     };
   }
 

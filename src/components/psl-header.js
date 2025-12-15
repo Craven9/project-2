@@ -32,8 +32,8 @@ export class PslHeader extends DDDSuper(LitElement) {
       }
 
       .header {
-        background: linear-gradient(135deg, var(--ddd-theme-default-navy) 0%, var(--ddd-theme-default-skyBlue) 100%);
-        color: var(--ddd-theme-default-white);
+        background: var(--ddd-theme-default-white);
+        color: var(--ddd-theme-default-coalyGray);
         padding: var(--ddd-spacing-4) var(--ddd-spacing-6);
         box-shadow: var(--ddd-boxShadow-2);
       }
@@ -85,7 +85,7 @@ export class PslHeader extends DDDSuper(LitElement) {
       .nav-link {
         padding: var(--ddd-spacing-2) var(--ddd-spacing-4);
         text-decoration: none;
-        color: var(--ddd-theme-default-white);
+        color: var(--ddd-theme-default-coalyGray);
         
         transition: all 0.3s ease;
         font-weight: var(--ddd-font-weight-medium);
@@ -96,19 +96,19 @@ export class PslHeader extends DDDSuper(LitElement) {
       }
 
       .nav-link:hover {
-        background: rgba(255, 255, 255, 0.1);
+        background: var(--ddd-theme-default-slateLight);
       }
 
       .nav-link.active {
-        background: var(--ddd-theme-default-white);
-        color: var(--ddd-theme-default-navy);
+        background: var(--ddd-theme-default-coalyGray);
+        color: var(--ddd-theme-default-white);
       }
 
       .mobile-menu-toggle {
         display: none;
-        background: rgba(255, 255, 255, 0.1);
-        border: 2px solid rgba(255, 255, 255, 0.3);
-        color: var(--ddd-theme-default-white);
+        background: var(--ddd-theme-default-slateLight);
+        border: 2px solid var(--ddd-theme-default-slateGray);
+        color: var(--ddd-theme-default-coalyGray);
         font-size: var(--ddd-font-size-xl);
         cursor: pointer;
         padding: var(--ddd-spacing-3);

@@ -50,13 +50,13 @@ export class TeamsPage extends DDDSuper(LitElement) {
 
     h1 {
       font-size: var(--ddd-font-size-3xl);
-      color: var(--ddd-theme-default-navy80);
+      color: var(--ddd-theme-default-coalyGray);
       margin-bottom: var(--ddd-spacing-2);
       font-weight: var(--ddd-font-weight-black);
     }
 
     .subtitle {
-      color: var(--ddd-theme-default-slateMaxLight);
+      color: var(--ddd-theme-default-coalyGray);
       font-size: var(--ddd-font-size-lg);
     }
 
@@ -97,21 +97,35 @@ export class TeamsPage extends DDDSuper(LitElement) {
     }
 
     .team-name {
-      font-size: var(--ddd-font-size-xl);
-      font-weight: var(--ddd-font-weight-black);
-      color: var(--ddd-theme-default-navy80);
-      margin-bottom: var(--ddd-spacing-2);
+      font-size: 32px !important;
+      font-weight: 900 !important;
+      color: #000000 !important;
+      background: #ffff00 !important;
+      margin: 20px 0 !important;
+      padding: 20px !important;
+      text-align: center !important;
+      border: 5px solid #ff0000 !important;
+      border-radius: 10px !important;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.5) !important;
+      position: relative !important;
+      z-index: 9999 !important;
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      text-shadow: 2px 2px 4px rgba(255,255,255,0.8) !important;
+      font-family: 'Arial Black', Arial, sans-serif !important;
     }
 
     .team-record {
-      color: var(--ddd-theme-default-slateMaxLight);
+      color: var(--ddd-theme-default-coalyGray);
       margin-bottom: var(--ddd-spacing-4);
+      font-weight: var(--ddd-font-weight-medium);
     }
 
-    .team-captain, .team-coach, .team-founded {
-      color: var(--ddd-theme-default-slateMaxLight);
-      font-size: var(--ddd-font-size-xs);
-      margin-bottom: var(--ddd-spacing-1);
+    .team-coach, .team-founded {
+      color: var(--ddd-theme-default-coalyGray);
+      font-size: var(--ddd-font-size-sm);
+      margin-bottom: var(--ddd-spacing-2);
     }
 
     .team-achievements {
@@ -130,8 +144,8 @@ export class TeamsPage extends DDDSuper(LitElement) {
     .team-achievements ul {
       margin: 0;
       padding-left: var(--ddd-spacing-4);
-      font-size: var(--ddd-font-size-xs);
-      color: var(--ddd-theme-default-slateMaxLight);
+      font-size: var(--ddd-font-size-sm);
+      color: var(--ddd-theme-default-coalyGray);
     }
 
     .team-achievements li {
@@ -152,12 +166,12 @@ export class TeamsPage extends DDDSuper(LitElement) {
     .stat-number {
       font-size: var(--ddd-font-size-xl);
       font-weight: var(--ddd-font-weight-black);
-      color: var(--ddd-theme-default-navy80);
+      color: var(--ddd-theme-default-coalyGray);
     }
 
     .stat-label {
       font-size: var(--ddd-font-size-xs);
-      color: #64748b;
+      color: var(--ddd-theme-default-coalyGray);
       text-transform: uppercase;
       letter-spacing: var(--ddd-ls-16-lg);
       font-weight: var(--ddd-font-weight-medium);
@@ -165,7 +179,7 @@ export class TeamsPage extends DDDSuper(LitElement) {
 
     .footer {
       background: var(--ddd-theme-default-white);
-      color: #64748b;
+      color: var(--ddd-theme-default-coalyGray);
       padding: var(--ddd-spacing-6);
       text-align: center;
       border-top: 1px solid var(--ddd-theme-default-slateLight);
@@ -217,7 +231,6 @@ export class TeamsPage extends DDDSuper(LitElement) {
         wins: 3,
         losses: 0,
         goals: 15,
-        captain: 'Marcus Johnson',
         coach: 'Coach Sarah Williams',
         founded: '2019',
         achievements: ['2024 PSL Champions', '2023 Fair Play Award', 'Best Offensive Record 2024']
@@ -230,7 +243,6 @@ export class TeamsPage extends DDDSuper(LitElement) {
         wins: 2,
         losses: 0,
         goals: 8,
-        captain: 'Sarah Martinez',
         coach: 'Coach Mike Thompson',
         founded: '2020',
         achievements: ['2023 Defensive Excellence Award', 'Most Improved Team 2024']
@@ -243,7 +255,6 @@ export class TeamsPage extends DDDSuper(LitElement) {
         wins: 1,
         losses: 0,
         goals: 6,
-        captain: 'Alex Rodriguez',
         coach: 'Coach Lisa Martinez',
         founded: '2021',
         achievements: ['Fastest Rising Team 2024', 'Best Team Spirit Award']
@@ -256,7 +267,7 @@ export class TeamsPage extends DDDSuper(LitElement) {
         wins: 0,
         losses: 2,
         goals: 4,
-        captain: 'Jamie Foster',
+
         coach: 'Coach David Park',
         founded: '2022',
         achievements: ['Community Choice Award 2024', 'Best Newcomer Team 2023']
@@ -269,7 +280,6 @@ export class TeamsPage extends DDDSuper(LitElement) {
         wins: 2,
         losses: 0,
         goals: 12,
-        captain: 'David Chen',
         coach: 'Coach Amanda Rodriguez',
         founded: '2020',
         achievements: ['Technical Excellence Award 2024', 'Best Tactical Team 2023']
@@ -282,7 +292,6 @@ export class TeamsPage extends DDDSuper(LitElement) {
         wins: 1,
         losses: 1,
         goals: 7,
-        captain: 'Morgan Taylor',
         coach: 'Coach Jennifer Lee',
         founded: '2021',
         achievements: ['Innovation in Play Award', 'Future Stars Recognition']
@@ -320,9 +329,8 @@ export class TeamsPage extends DDDSuper(LitElement) {
               <div class="team-logo" style="background-color: ${team.color}">
                 ${this._getTeamInitials(team.name)}
               </div>
-              <div class="team-name">${team.name}</div>
+              <div class="team-name" style="color: #000000 !important; background: #ffff00 !important; padding: 20px !important; font-weight: 900 !important; font-size: 32px !important; border: 5px solid #ff0000 !important; text-align: center !important; border-radius: 10px !important; text-shadow: 2px 2px 4px rgba(255,255,255,0.8) !important; font-family: 'Arial Black', Arial, sans-serif !important; z-index: 9999 !important; position: relative !important;">${team.name}</div>
               <div class="team-record">Record: ${team.record}</div>
-              ${team.captain ? html`<div class="team-captain">Captain: ${team.captain}</div>` : ''}
               ${team.coach ? html`<div class="team-coach">Coach: ${team.coach}</div>` : ''}
               ${team.founded ? html`<div class="team-founded">Founded: ${team.founded}</div>` : ''}
               <div class="team-stats">

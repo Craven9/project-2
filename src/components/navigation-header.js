@@ -18,9 +18,8 @@ export class NavigationHeader extends DDDSuper(LitElement) {
     }
 
     .nav-container {
-      background: rgba(0);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      background: var(--ddd-theme-default-white);
+      border-bottom: 1px solid var(--ddd-theme-default-slateLight);
       box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     }
 
@@ -75,7 +74,7 @@ export class NavigationHeader extends DDDSuper(LitElement) {
     }
 
     .nav-link {
-      color: rgba(255, 255, 255, 0.9);
+      color: var(--ddd-theme-default-coalyGray);
       text-decoration: none;
       font-weight: var(--ddd-font-weight-medium);
       font-size: var(--ddd-font-size-sm);
@@ -87,14 +86,14 @@ export class NavigationHeader extends DDDSuper(LitElement) {
     }
 
     .nav-link:hover {
-      color: var(--ddd-theme-default-white);
-      background: rgba(255, 255, 255, 0.1);
+      color: var(--ddd-theme-default-coalyGray);
+      background: var(--ddd-theme-default-slateLight);
       transform: translateY(-1px);
     }
 
     .nav-link.active {
       color: var(--ddd-theme-default-white);
-      background: rgba(255, 255, 255, 0.2);
+      background: var(--ddd-theme-default-coalyGray);
       font-weight: var(--ddd-font-weight-bold);
     }
 
@@ -114,7 +113,7 @@ export class NavigationHeader extends DDDSuper(LitElement) {
       display: none;
       background: none;
       border: none;
-      color: var(--ddd-theme-default-white);
+      color: var(--ddd-theme-default-coalyGray);
       font-size: 1.5rem;
       cursor: pointer;
       padding: var(--ddd-spacing-2);
@@ -123,13 +122,13 @@ export class NavigationHeader extends DDDSuper(LitElement) {
     }
 
     .mobile-menu-button:hover {
-      background: rgba(255, 255, 255, 0.1);
+      background: var(--ddd-theme-default-slateLight);
     }
 
     .mobile-nav {
       display: none;
-      background: var(--ddd-theme-default-navy);
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      background: var(--ddd-theme-default-white);
+      border-top: 1px solid var(--ddd-theme-default-slateLight);
       padding: var(--ddd-spacing-4);
     }
 

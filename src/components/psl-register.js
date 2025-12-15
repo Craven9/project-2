@@ -294,21 +294,6 @@ export class PslRegister extends DDDSuper(LitElement) {
               </div>
 
               <div class="form-group">
-                <label class="form-label" for="division">Preferred Division</label>
-                <select 
-                  id="division" 
-                  name="division" 
-                  class="form-select"
-                  .value="${this.formData.division}"
-                  @change="${this._handleInputChange}">
-                  <option value="">Select Division</option>
-                  <option value="recreational">Recreational</option>
-                  <option value="competitive">Competitive</option>
-                  <option value="elite">Elite</option>
-                </select>
-              </div>
-
-              <div class="form-group">
                 <label class="form-label" for="experience">Team Experience Level</label>
                 <select 
                   id="experience" 
