@@ -14,7 +14,6 @@ export class PslFooter extends DDDSuper(LitElement) {
       background: #1f2937;
       color: #ffffff;
       padding: 48px 24px 24px;
-      margin-top: 48px;
       font-family: system-ui, -apple-system, sans-serif;
     }
 

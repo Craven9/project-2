@@ -89,7 +89,7 @@ export class PslHeader extends DDDSuper(LitElement) {
       .nav-link {
         padding: var(--ddd-spacing-2) var(--ddd-spacing-4);
         text-decoration: none;
-        color: var(--ddd-theme-default-coalyGray);
+        color: var(--ddd-theme-default-white);
         
         transition: all 0.3s ease;
         font-weight: var(--ddd-font-weight-medium);
